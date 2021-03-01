@@ -1,3 +1,13 @@
+# SimB Examples
+
+SimB is a simulator built on top of ProB. 
+The modeler can write SimB annotations for a formal model to simulate it.
+Furthermore, it is then possible to validate probabilistic and timing properties with statistical validation techniques such as hypothesis testing and estimation.
+This repository contains formal methods with corresponding SimB annotations.
+ProB2-UI (https://github.com/hhu-stups/prob2_ui) is required to use it.
+
+## Application of Statistical Validation Techniques
+
 | Model                                                    | Simulation                                           | Property                                     | Runs  | VS    | ET        | Result      |
 |----------------------------------------------------------|------------------------------------------------------|----------------------------------------------|-------|-------|-----------|-------------|
 | Coin Toss (CoinToss2.mch)                                | Fair Tosses (CoinToss2_simulation.json)              | Heads in 50% of all Tosses                   | 1 Mio | 4     | 7         | OK (49.93%) |
