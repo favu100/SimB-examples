@@ -12,7 +12,7 @@
 |                                                          | (Tourist_simulation.json)                            | Termination in 300 Steps                     | 100   | 34776 | 1 064 964 | OK (99%)    |
 | Leader Election (LeaderElection.mch)                     | 10 Nodes                                             | Termination in 250 Steps                     | 10000 | 1030  | 37917     | KO (99.46%) |
 |                                                          | (Preference: LeaderElection_PREF)                    | Termination in 500 Steps                     | 10000 | 1029  | 37884     | OK (100%)   |
-| Leader Election (LeaderElection.mch)                     | 100 Nodes                                            | Termination in 5000 Steps                    | -     | -     |           |             |
+| Leader Election (LeaderElection.mch)                     | 100 Nodes                                            | Termination in 5000 Steps                    | -     | -     | -         | -           |
 |                                                          | (Preference: LeaderElection_PREF_2)                  |                                              |       |       |           |             |
 | Traffic Light (TL, TrafficLight.mch)                     | Cars TL from Red to Green                            | Red to Green in 0.5s for Cars                | 1 Mio | 4     | 5         | KO (0%)     |
 |                                                          | (TrafficLight_simulation.json)                       | Red to Green in 1s for Cars                  | 1 Mio | 4     | 5         | OK (100%)   |
