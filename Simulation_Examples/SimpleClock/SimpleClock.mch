@@ -1,0 +1,8 @@
+MACHINE SimpleClock
+VARIABLES c1, c2
+INVARIANT c1 : INTEGER & c2 : INTEGER
+INITIALISATION c1 := 0 || c2 := 0
+OPERATIONS
+    clock1 = BEGIN c1 := 1 - c1 END;
+    clock2 = BEGIN c2 := 1 - c2 END
+END

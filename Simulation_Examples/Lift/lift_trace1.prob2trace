@@ -1,0 +1,118 @@
+{
+  "description": "",
+  "transitionList": [
+    {
+      "name": "$setup_constants",
+      "params": null,
+      "results": null,
+      "destState": {
+        "groundf": "-1",
+        "topf": "2"
+      },
+      "destStateNotChanged": [],
+      "preds": null
+    },
+    {
+      "name": "$initialise_machine",
+      "params": null,
+      "results": null,
+      "destState": {
+        "direction_up": "TRUE",
+        "door_open": "FALSE",
+        "call_buttons": "∅",
+        "cur_floor": "-1",
+        "inside_buttons": "∅"
+      },
+      "destStateNotChanged": [],
+      "preds": null
+    },
+    {
+      "name": "push_inside_button",
+      "params": {
+        "b": "2"
+      },
+      "results": {},
+      "destState": {
+        "inside_buttons": "{2}"
+      },
+      "destStateNotChanged": [
+        "direction_up",
+        "door_open",
+        "call_buttons",
+        "cur_floor"
+      ],
+      "preds": null
+    },
+    {
+      "name": "push_call_button",
+      "params": {
+        "b": "0"
+      },
+      "results": {},
+      "destState": {
+        "call_buttons": "{0}"
+      },
+      "destStateNotChanged": [
+        "direction_up",
+        "door_open",
+        "cur_floor",
+        "inside_buttons"
+      ],
+      "preds": null
+    },
+    {
+      "name": "move_up",
+      "params": {},
+      "results": {},
+      "destState": {
+        "cur_floor": "0"
+      },
+      "destStateNotChanged": [
+        "direction_up",
+        "door_open",
+        "call_buttons",
+        "inside_buttons"
+      ],
+      "preds": null
+    },
+    {
+      "name": "open_door",
+      "params": {},
+      "results": {},
+      "destState": {
+        "door_open": "TRUE"
+      },
+      "destStateNotChanged": [
+        "direction_up",
+        "call_buttons",
+        "cur_floor",
+        "inside_buttons"
+      ],
+      "preds": null
+    },
+    {
+      "name": "close_door",
+      "params": {},
+      "results": {},
+      "destState": {
+        "door_open": "FALSE",
+        "call_buttons": "∅"
+      },
+      "destStateNotChanged": [
+        "direction_up",
+        "cur_floor",
+        "inside_buttons"
+      ],
+      "preds": null
+    }
+  ],
+  "metadata": {
+    "fileType": "Trace",
+    "formatVersion": 1,
+    "savedAt": "2020-12-16T11:51:07.479776Z",
+    "creator": "User",
+    "proB2KernelVersion": "4.0.0-SNAPSHOT",
+    "proBCliVersion": "1.10.0-rc1",
+    "modelName": "Lift (2)"
+  }
+}

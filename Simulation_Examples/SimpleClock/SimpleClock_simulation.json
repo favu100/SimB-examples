@@ -1,0 +1,21 @@
+{
+    "activations": [
+        {
+            "id": "$initialise_machine",
+            "execute": "$initialise_machine",
+            "activating": ["clock1", "clock2"]
+        },
+        {
+            "id": "clock1",
+            "execute": "clock1",
+            "after": 1000,
+            "activating": "clock1"
+        },
+        {
+            "id": "clock2",
+            "execute": "clock2",
+            "after": 300,
+            "activating": "clock2"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "activations": [
+        {
+            "id": "$initialise_machine",
+            "execute": "$initialise_machine",
+            "activating" : "toss"
+        },
+        {
+            "id": "toss_heads",
+            "execute": "toss_heads",
+            "after": 500,
+            "activating" : "toss"
+        },
+        {
+            "id": "toss_tails",
+            "execute": "toss_tails",
+            "after": 500,
+            "activating" : "toss"
+        },
+        {
+            "id": "toss",
+            "chooseActivation": {"toss_heads": "0.5", "toss_tails": "0.5"}
+        }
+    ]
+}

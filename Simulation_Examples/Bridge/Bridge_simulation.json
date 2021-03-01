@@ -1,0 +1,37 @@
+{
+    "activations": [
+        {
+            "id": "$setup_constants",
+            "execute": "$setup_constants"
+        },
+        {
+            "id": "$initialise_machine",
+            "execute": "$initialise_machine",
+            "activating" : "ML_out"
+        },
+        {
+            "id": "ML_out",
+            "execute": "ML_out",
+            "after": 1000,
+            "activating" : ["IL_in", "ML_out"]
+        },
+        {
+            "id": "ML_in",
+            "execute": "ML_in",
+            "after": 1000,
+            "activating" : "ML_out"
+        },
+        {
+            "id": "IL_in",
+            "execute": "IL_in",
+            "after": 1000,
+            "activating" : "IL_out"
+        },
+        {
+            "id": "IL_out",
+            "execute": "IL_out",
+            "after": 1000,
+            "activating" : "ML_in"
+        }
+    ]
+}

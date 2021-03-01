@@ -1,0 +1,177 @@
+{
+  "name": "Blinking",
+  "description": "(this project was created automatically from file /Users/leuschel/git_root/ARTICLES/abz2020_case_study/LightModel/Blinking.mch)",
+  "machines": [
+    {
+      "name": "GenericTimers",
+      "description": "",
+      "location": "GenericTimers.mch",
+      "lastUsedPreferenceName": "default",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": []
+    },
+    {
+      "name": "Sensors",
+      "description": "",
+      "location": "Sensors.mch",
+      "lastUsedPreferenceName": "default",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": []
+    },
+    {
+      "name": "PitmanController_TIME_MC_v4",
+      "description": "",
+      "location": "PitmanController_TIME_MC_v4.mch",
+      "lastUsedPreferenceName": "default",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [
+        "traces/PitmanController_TIME_v3_Trace7.prob2trace",
+        "traces/PitmanController_TIME_MC_v4_Trace7.prob2trace"
+      ],
+      "modelcheckingItems": [
+        {
+          "checked": "SUCCESS",
+          "options": {
+            "options": [
+              "FIND_DEADLOCKS",
+              "FIND_INVARIANT_VIOLATIONS",
+              "INSPECT_EXISTING_NODES"
+            ]
+          },
+          "shouldExecute": true
+        }
+      ]
+    },
+    {
+      "name": "PitmanController_TIME_v4",
+      "description": "",
+      "location": "PitmanController_TIME_v4.mch",
+      "lastUsedPreferenceName": "default",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [
+        "traces/PitmanController_TIME_v3_Trace7.prob2trace"
+      ],
+      "modelcheckingItems": []
+    },
+    {
+      "name": "BlinkLamps_v3",
+      "description": "",
+      "location": "BlinkLamps_v3.mch",
+      "lastUsedPreferenceName": "default",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [
+        {
+          "checked": "NOT_CHECKED",
+          "options": {
+            "options": [
+              "FIND_DEADLOCKS",
+              "FIND_INVARIANT_VIOLATIONS",
+              "INSPECT_EXISTING_NODES"
+            ]
+          },
+          "shouldExecute": true
+        }
+      ]
+    },
+    {
+      "name": "PitmanController_v6",
+      "description": "",
+      "location": "PitmanController_v6.mch",
+      "lastUsedPreferenceName": "default",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [
+        {
+          "checked": "NOT_CHECKED",
+          "options": {
+            "options": [
+              "FIND_DEADLOCKS",
+              "FIND_INVARIANT_VIOLATIONS",
+              "INSPECT_EXISTING_NODES"
+            ]
+          },
+          "shouldExecute": true
+        }
+      ]
+    },
+    {
+      "name": "BlinkLamps_mch",
+      "description": "",
+      "location": "Rodin/v4/BlinkLamps_mch.eventb",
+      "lastUsedPreferenceName": "default",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": []
+    },
+    {
+      "name": "PitmanController_mch",
+      "description": "",
+      "location": "Rodin/v4/PitmanController_mch.eventb",
+      "lastUsedPreferenceName": "default",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": []
+    },
+    {
+      "name": "PitmanController2_TIME_MC_mch",
+      "description": "",
+      "location": "Rodin/v4/PitmanController2_TIME_MC_mch.eventb",
+      "lastUsedPreferenceName": "default",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [
+        {
+          "checked": "SUCCESS",
+          "options": {
+            "options": [
+              "FIND_DEADLOCKS",
+              "FIND_INVARIANT_VIOLATIONS",
+              "INSPECT_EXISTING_NODES"
+            ]
+          },
+          "shouldExecute": true
+        }
+      ]
+    }
+  ],
+  "preferences": []
+}

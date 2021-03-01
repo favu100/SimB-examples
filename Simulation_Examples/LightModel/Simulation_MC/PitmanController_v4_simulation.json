@@ -1,0 +1,129 @@
+{
+    "activations": [
+        {
+            "id": "$setup_constants",
+            "execute": "$setup_constants"
+        },
+        {
+            "id": "$initialise_machine",
+            "execute": "$initialise_machine",
+            "activating" : "ENV_Turn_EngineOn_1"
+        },
+        {
+            "id": "ENV_Turn_EngineOn_1",
+            "execute": "ENV_Turn_EngineOn",
+            "after": 0,
+            "activating" : "run_loop"
+        },
+        {
+            "id": "run_loop",
+            "chooseActivation": {"run_step": "0.98", "start_or_end_blinking": "0.02"}
+        },
+        {
+            "id": "run_step",
+            "chooseActivation": {"time_pass": "IF active_blinkers = {} THEN 1.0 ELSE 0.0 END",
+                                "blinking": "1.0 - IF active_blinkers = {} THEN 1.0 ELSE 0.0 END"}
+        },
+        {
+            "id": "time_pass",
+            "execute": "RTIME_Nothing",
+            "after": "max(ran(curDeadlines))",
+            "fixedVariables": {"delta": "max(ran(curDeadlines))", "newOnCycle" : "FALSE"},
+            "activating" : "run_loop"
+        },
+        {
+            "id": "blinking",
+            "chooseActivation": {"blinking_on": "IF onCycle = FALSE THEN 1.0 ELSE 0.0 END",
+                                "blinking_off":  "1.0 - IF onCycle = FALSE THEN 1.0 ELSE 0.0 END"}
+
+        },
+        {
+            "id": "blinking_on",
+            "execute": "RTIME_BlinkerOn",
+            "fixedVariables": {"delta": "curDeadlines(blink_deadline)"},
+            "after": "curDeadlines(blink_deadline)",
+            "activating" : "run_loop"
+        },
+        {
+            "id": "blinking_off",
+            "execute": "RTIME_BlinkerOff",
+            "fixedVariables": {"delta": "curDeadlines(blink_deadline)"},
+            "after": "curDeadlines(blink_deadline)",
+            "activating" : "run_loop"
+        },
+        {
+            "id": "blinking_first",
+            "chooseActivation": {"blinking_on_first": "IF onCycle = FALSE THEN 1.0 ELSE 0.0 END",
+                                "blinking_off_first": "1.0 - IF onCycle = FALSE THEN 1.0 ELSE 0.0 END"}
+        },
+        {
+            "id": "blinking_on_first",
+            "execute": "RTIME_BlinkerOn",
+            "fixedVariables": {"delta": "curDeadlines(blink_deadline)"},
+            "after": "curDeadlines(blink_deadline)",
+            "activating" : "blinking_off"
+        },
+        {
+            "id": "blinking_off_first",
+            "execute": "RTIME_BlinkerOff",
+            "fixedVariables": {"delta": "curDeadlines(blink_deadline)"},
+            "after": "curDeadlines(blink_deadline)",
+            "activating" : "blinking_on"
+        },
+        
+        {
+            "id": "start_or_end_blinking",
+            "chooseActivation": {"start_blinking": "IF active_blinkers = {} THEN 1.0 ELSE 0.0 END",
+                                 "end_blinking":  "1.0 - IF active_blinkers = {} THEN 1.0 ELSE 0.0 END"}
+        },
+        {
+            "id": "start_blinking",
+            "chooseActivation": {
+                "start_blinking_left": "0.45",
+                "start_blinking_right": "0.45",
+                "start_blinking_hazard": "0.1"
+            }
+        },
+        {
+            "id": "start_blinking_left",
+            "execute": "ENV_Pitman_DirectionBlinking",
+            "fixedVariables": {"newPos": "Downward7"},
+            "after": 0,
+            "activating" : "blinking_first"
+        },
+        {
+            "id": "start_blinking_right",
+            "execute": "ENV_Pitman_DirectionBlinking",
+            "fixedVariables": {"newPos": "Upward7"},
+            "after": 0,
+            "activating" : "blinking_first"
+        },
+        {
+            "id": "start_blinking_hazard",
+            "execute": "ENV_Hazard_blinking",
+            "fixedVariables": {"newSwitchPos": "switch_on"},
+            "after": 0,
+            "activating" : "blinking_first"
+        },
+        {
+            "id": "end_blinking",
+            "chooseActivation": {
+                "end_blinking_1": "IF card(active_blinkers) = 1 THEN 1.0 ELSE 0.0 END",
+                "end_blinking_2": "IF card(active_blinkers) = 2 THEN 1.0 ELSE 0.0 END"
+            }
+        },
+        {
+            "id": "end_blinking_1",
+            "execute": "ENV_Pitman_Reset_to_Neutral",
+            "after": 0,
+            "activating": "time_pass"
+        },
+        {
+            "id": "end_blinking_2",
+            "execute": "ENV_Hazard_blinking",
+            "fixedVariables": {"newSwitchPos": "switch_off"},
+            "after": 0,
+            "activating": "time_pass"
+        }
+    ]
+}

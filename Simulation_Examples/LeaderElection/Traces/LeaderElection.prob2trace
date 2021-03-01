@@ -1,0 +1,1570 @@
+{
+  "description": "",
+  "transitionList": [
+    {
+      "name": "$setup_constants",
+      "params": {},
+      "results": {},
+      "destState": {
+        "r": "{(Nodes1↦Nodes6),(Nodes2↦Nodes10),(Nodes3↦Nodes9),(Nodes4↦Nodes8),(Nodes5↦Nodes7),(Nodes6↦Nodes5),(Nodes7↦Nodes4),(Nodes8↦Nodes3),(Nodes9↦Nodes2),(Nodes10↦Nodes1)}"
+      },
+      "destStateNotChanged": [],
+      "preds": []
+    },
+    {
+      "name": "$initialise_machine",
+      "params": {},
+      "results": {},
+      "destState": {
+        "leader": "∅",
+        "nodesWithToken": "{Nodes1,Nodes2,Nodes3,Nodes4,Nodes5,Nodes6,Nodes7,Nodes8,Nodes9,Nodes10}",
+        "finished": "FALSE"
+      },
+      "destStateNotChanged": [],
+      "preds": []
+    },
+    {
+      "name": "progress",
+      "params": {},
+      "results": {},
+      "destState": {
+        "nodesWithToken": "{Nodes1,Nodes2,Nodes3,Nodes4,Nodes5,Nodes6,Nodes9,Nodes10}"
+      },
+      "destStateNotChanged": [
+        "leader",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "progress",
+      "params": {},
+      "results": {},
+      "destState": {
+        "nodesWithToken": "{Nodes1,Nodes5,Nodes7,Nodes8,Nodes9,Nodes10}"
+      },
+      "destStateNotChanged": [
+        "leader",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "progress",
+      "params": {},
+      "results": {},
+      "destState": {
+        "nodesWithToken": "{Nodes1,Nodes4,Nodes5,Nodes8,Nodes9,Nodes10}"
+      },
+      "destStateNotChanged": [
+        "leader",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "progress",
+      "params": {},
+      "results": {},
+      "destState": {
+        "nodesWithToken": "{Nodes1,Nodes2,Nodes5,Nodes8,Nodes10}"
+      },
+      "destStateNotChanged": [
+        "leader",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "progress",
+      "params": {},
+      "results": {},
+      "destState": {
+        "nodesWithToken": "{Nodes1,Nodes2,Nodes3,Nodes5,Nodes6}"
+      },
+      "destStateNotChanged": [
+        "leader",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "progress",
+      "params": {},
+      "results": {},
+      "destState": {
+        "nodesWithToken": "{Nodes1,Nodes6,Nodes7,Nodes9,Nodes10}"
+      },
+      "destStateNotChanged": [
+        "leader",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "progress",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "progress",
+      "params": {},
+      "results": {},
+      "destState": {
+        "nodesWithToken": "{Nodes1,Nodes2,Nodes4,Nodes5,Nodes10}"
+      },
+      "destStateNotChanged": [
+        "leader",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "progress",
+      "params": {},
+      "results": {},
+      "destState": {
+        "nodesWithToken": "{Nodes1,Nodes2,Nodes6,Nodes7,Nodes8}"
+      },
+      "destStateNotChanged": [
+        "leader",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "progress",
+      "params": {},
+      "results": {},
+      "destState": {
+        "nodesWithToken": "{Nodes2,Nodes4,Nodes6,Nodes8}"
+      },
+      "destStateNotChanged": [
+        "leader",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "progress",
+      "params": {},
+      "results": {},
+      "destState": {
+        "nodesWithToken": "{Nodes3,Nodes4,Nodes6,Nodes10}"
+      },
+      "destStateNotChanged": [
+        "leader",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "progress",
+      "params": {},
+      "results": {},
+      "destState": {
+        "nodesWithToken": "{Nodes1,Nodes3,Nodes4,Nodes5}"
+      },
+      "destStateNotChanged": [
+        "leader",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "progress",
+      "params": {},
+      "results": {},
+      "destState": {
+        "nodesWithToken": "{Nodes3,Nodes5,Nodes6,Nodes8}"
+      },
+      "destStateNotChanged": [
+        "leader",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "progress",
+      "params": {},
+      "results": {},
+      "destState": {
+        "nodesWithToken": "{Nodes3,Nodes5,Nodes6,Nodes9}"
+      },
+      "destStateNotChanged": [
+        "leader",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "progress",
+      "params": {},
+      "results": {},
+      "destState": {
+        "nodesWithToken": "{Nodes2,Nodes5,Nodes7,Nodes9}"
+      },
+      "destStateNotChanged": [
+        "leader",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "progress",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "progress",
+      "params": {},
+      "results": {},
+      "destState": {
+        "nodesWithToken": "{Nodes4,Nodes5,Nodes9,Nodes10}"
+      },
+      "destStateNotChanged": [
+        "leader",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "progress",
+      "params": {},
+      "results": {},
+      "destState": {
+        "nodesWithToken": "{Nodes1,Nodes2,Nodes4,Nodes5}"
+      },
+      "destStateNotChanged": [
+        "leader",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "progress",
+      "params": {},
+      "results": {},
+      "destState": {
+        "nodesWithToken": "{Nodes6,Nodes7,Nodes8,Nodes10}"
+      },
+      "destStateNotChanged": [
+        "leader",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "progress",
+      "params": {},
+      "results": {},
+      "destState": {
+        "nodesWithToken": "{Nodes1,Nodes4,Nodes6,Nodes8}"
+      },
+      "destStateNotChanged": [
+        "leader",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "progress",
+      "params": {},
+      "results": {},
+      "destState": {
+        "nodesWithToken": "{Nodes4,Nodes5,Nodes6,Nodes8}"
+      },
+      "destStateNotChanged": [
+        "leader",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "progress",
+      "params": {},
+      "results": {},
+      "destState": {
+        "nodesWithToken": "{Nodes3,Nodes6,Nodes7,Nodes8}"
+      },
+      "destStateNotChanged": [
+        "leader",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "progress",
+      "params": {},
+      "results": {},
+      "destState": {
+        "nodesWithToken": "{Nodes4,Nodes6,Nodes8,Nodes9}"
+      },
+      "destStateNotChanged": [
+        "leader",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "progress",
+      "params": {},
+      "results": {},
+      "destState": {
+        "nodesWithToken": "{Nodes6,Nodes8,Nodes9}"
+      },
+      "destStateNotChanged": [
+        "leader",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "progress",
+      "params": {},
+      "results": {},
+      "destState": {
+        "nodesWithToken": "{Nodes2,Nodes5,Nodes8}"
+      },
+      "destStateNotChanged": [
+        "leader",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "progress",
+      "params": {},
+      "results": {},
+      "destState": {
+        "nodesWithToken": "{Nodes3,Nodes7,Nodes10}"
+      },
+      "destStateNotChanged": [
+        "leader",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "progress",
+      "params": {},
+      "results": {},
+      "destState": {
+        "nodesWithToken": "{Nodes1,Nodes3,Nodes7}"
+      },
+      "destStateNotChanged": [
+        "leader",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "progress",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "progress",
+      "params": {},
+      "results": {},
+      "destState": {
+        "nodesWithToken": "{Nodes3,Nodes6,Nodes7}"
+      },
+      "destStateNotChanged": [
+        "leader",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "progress",
+      "params": {},
+      "results": {},
+      "destState": {
+        "nodesWithToken": "{Nodes6,Nodes7,Nodes9}"
+      },
+      "destStateNotChanged": [
+        "leader",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "progress",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "progress",
+      "params": {},
+      "results": {},
+      "destState": {
+        "nodesWithToken": "{Nodes2,Nodes5,Nodes7}"
+      },
+      "destStateNotChanged": [
+        "leader",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "progress",
+      "params": {},
+      "results": {},
+      "destState": {
+        "nodesWithToken": "{Nodes7,Nodes10}"
+      },
+      "destStateNotChanged": [
+        "leader",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "progress",
+      "params": {},
+      "results": {},
+      "destState": {
+        "nodesWithToken": "{Nodes1,Nodes7}"
+      },
+      "destStateNotChanged": [
+        "leader",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "progress",
+      "params": {},
+      "results": {},
+      "destState": {
+        "nodesWithToken": "{Nodes6,Nodes7}"
+      },
+      "destStateNotChanged": [
+        "leader",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "progress",
+      "params": {},
+      "results": {},
+      "destState": {
+        "nodesWithToken": "{Nodes5,Nodes7}"
+      },
+      "destStateNotChanged": [
+        "leader",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "progress",
+      "params": {},
+      "results": {},
+      "destState": {
+        "nodesWithToken": "{Nodes7}"
+      },
+      "destStateNotChanged": [
+        "leader",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "elect",
+      "params": {},
+      "results": {},
+      "destState": {
+        "leader": "{Nodes7}",
+        "finished": "TRUE"
+      },
+      "destStateNotChanged": [
+        "nodesWithToken"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    },
+    {
+      "name": "final",
+      "params": {},
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "leader",
+        "nodesWithToken",
+        "finished"
+      ],
+      "preds": []
+    }
+  ],
+  "metadata": {
+    "fileType": "Trace",
+    "formatVersion": 1,
+    "savedAt": "2021-02-25T14:57:44.101908Z",
+    "creator": "User",
+    "proB2KernelVersion": "4.0.0-SNAPSHOT",
+    "proBCliVersion": "1.11.0-nightly",
+    "modelName": "LeaderElection"
+  }
+}

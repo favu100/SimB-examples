@@ -1,0 +1,90 @@
+{
+    "activations": [
+        {
+            "id": "$setup_constants",
+            "execute": "$setup_constants"
+        },
+        {
+            "id": "$initialise_machine",
+            "execute": "$initialise_machine",
+            "activating": ["route_reservation_activation", "route_reservation_activation"]
+        },
+        {
+            "id": "route_reservation_activation",
+            "execute": "route_reservation",
+            "after": 0,
+            "probabilisticVariables": "uniform",
+            "activating" : "point_positionning_activation"
+        },
+        {
+            "id": "route_reservation_activation2",
+            "execute": "route_reservation",
+            "after": 5000,
+            "probabilisticVariables": "uniform",
+            "activating" : "point_positionning_activation"
+        },
+        {
+            "id": "point_positionning_activation",
+            "execute": "point_positionning",
+            "after": 2000,
+            "fixedVariables": {"r": "r"},
+            "activating": "route_formation_activation"
+        },
+        {
+            "id": "route_formation_activation",
+            "execute": "route_formation",
+            "after": 2000,
+            "fixedVariables": {"r": "r"},
+            "activating": "front_move_1_activation"
+        },
+        {
+            "id": "front_move_1_activation",
+            "execute": "FRONT_MOVE_1",
+            "after": 3000,
+            "fixedVariables": {"r": "r"},
+            "activating": "front_move_2_activation_start"
+        },
+        {
+            "id": "front_move_2_activation_start",
+            "execute": "FRONT_MOVE_2",
+            "after": 3000,
+            "fixedVariables": {"b": "fst(r)"},
+            "activating": ["front_move_2_activation", "back_move_2_activation_1"]
+        },
+        {
+            "id": "front_move_2_activation",
+            "execute": "FRONT_MOVE_2",
+            "after": 3000,
+            "fixedVariables": {"b": "TRK(b)"},
+            "activating": ["front_move_2_activation", "back_move_2_activation_1"]
+        },
+        {
+            "id": "back_move_2_activation_1",
+            "execute": "BACK_MOVE_2",
+            "after": 3000,
+            "fixedVariables": {"b": "b"},
+            "activating": ["back_move_2_activation_2", "back_move_1_activation"]
+        },
+        {
+            "id": "back_move_2_activation_2",
+            "execute": "BACK_MOVE_2",
+            "after": 3000,
+            "fixedVariables": {"b": "TRK(b)"},
+            "activating": ["back_move_2_activation_2", "back_move_1_activation"]
+        },
+        {
+            "id": "back_move_1_activation",
+            "execute": "BACK_MOVE_1",
+            "after": 3000,
+            "fixedVariables": {"b": "TRK(b)"},
+            "activating": "route_freeing_activation"
+        },
+        {
+            "id": "route_freeing_activation",
+            "execute": "route_freeing",
+            "after": 1000,
+            "fixedVariables": {"r": "{x,y | x |-> y : lst & x : resrt & y = b}~(b)"},
+            "activating": ["route_reservation_activation2", "route_reservation_activation2"]
+        }
+    ]
+}

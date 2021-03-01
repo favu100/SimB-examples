@@ -1,0 +1,30 @@
+{
+    "activations": [
+        {
+            "id": "$initialise_machine",
+            "execute": "$initialise_machine",
+            "activating" : ["clock1_init", "clock2_init"]
+        },
+        {
+            "id": "clock1_init",
+            "execute": "clock",
+            "after": 0,
+            "fixedVariables": {"cl": "c1"},
+            "activating" : "clock1_2"
+        },
+        {
+            "id": "clock2_init",
+            "execute": "clock",
+            "after": 0,
+            "fixedVariables": {"cl": "c2"},
+            "activating" : "clock1_2"
+        },
+        {
+            "id": "clock1_2",
+            "execute": "clock",
+            "after": "IF cl = c1 THEN 1000 ELSE 300 END",
+            "fixedVariables": {"cl": "cl"},
+            "activating" : "clock1_2"
+        }
+    ]
+}

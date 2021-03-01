@@ -1,0 +1,20 @@
+{
+    "activations": [
+        {
+            "id": "$setup_constants",
+            "execute": "$setup_constants"
+        },
+        {
+            "id": "$initialise_machine",
+            "execute": "$initialise_machine",
+            "activating": "Move"
+        },
+        {
+            "id": "Move",
+            "execute": "Move",
+            "after": 100,
+            "probabilisticVariables": "uniform",
+            "activating": "Move"
+        }
+    ]
+}

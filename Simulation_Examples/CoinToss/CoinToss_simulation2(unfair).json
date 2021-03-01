@@ -1,0 +1,16 @@
+{
+    "activations": [
+        {
+            "id": "$initialise_machine",
+            "execute": "$initialise_machine",
+            "activating" : "toss"
+        },
+        {
+            "id": "toss",
+            "execute": "toss",
+            "after": 500,
+            "probabilisticVariables": {"c": {"Heads": "0.8", "Tails": "0.2"}},
+            "activating" : "toss"
+        }
+    ]
+}

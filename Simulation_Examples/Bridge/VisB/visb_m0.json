@@ -1,0 +1,55 @@
+{
+  "svg": "bridge_island_visualization.svg",
+  "items": [
+    {
+      "id": "nr_cars_on_island",
+      "attr": "text",
+      "value": "\"-\""
+    },
+    {
+      "id": "nr_cars_on_bridge_a",
+      "attr": "text",
+      "value": "\"-\""
+    },
+    {
+      "id": "nr_cars_on_bridge_c",
+      "attr": "text",
+      "value": "\"-\""
+    },
+    {
+      "id": "nr_cars_on_island_and_bridge",
+      "attr": "text",
+      "value": "FORMAT_TO_STRING(\"~w/~w\",[n,d])"
+    },
+    {
+      "id": "IL",
+      "attr": "stroke-width",
+      "value": "1+(10*n)/d",
+      "not-working-yet-value": "1.0 + 2.0*real(n)/real(d)"  
+    },
+    {
+      "id": "ml_tl",
+      "attr": "fill",
+      "value": "IF ENABLED(\"ML_out\")=TRUE THEN \"green\" ELSE \"red\" END"
+    },
+    {
+      "id": "il_tl",
+      "attr": "fill",
+      "value": "IF ENABLED(\"ML_in\")=TRUE THEN \"green\" ELSE \"red\" END"
+    }
+  ],
+  "events": [
+    {
+      "id": "IL",
+      "event": "ML_out",
+      "hovers": [{ "id": "ml_tl", "attr":"stroke-width", "enter":"6", "leave":"1"},
+                 { "id": "ml_tl", "attr":"opacity", "enter":"0.75", "leave":"1.0"}]
+    },
+    {
+      "id": "ML",
+      "event": "ML_in",
+      "hovers": [{ "id": "il_tl", "attr":"stroke-width", "enter":"6", "leave":"1"},
+                 { "id": "il_tl", "attr":"opacity", "enter":"0.75", "leave":"1.0"}]
+    }
+  ]
+}

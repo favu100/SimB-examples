@@ -1,0 +1,73 @@
+{
+  "description": "",
+  "transitionList": [
+    {
+      "name": "$initialise_machine",
+      "params": null,
+      "results": null,
+      "destState": {
+        "tl_cars": "red",
+        "tl_peds": "red"
+      },
+      "destStateNotChanged": [],
+      "preds": null
+    },
+    {
+      "name": "cars_ry",
+      "params": {},
+      "results": {},
+      "destState": {
+        "tl_cars": "redyellow"
+      },
+      "destStateNotChanged": [
+        "tl_peds"
+      ],
+      "preds": null
+    },
+    {
+      "name": "cars_g",
+      "params": {},
+      "results": {},
+      "destState": {
+        "tl_cars": "green"
+      },
+      "destStateNotChanged": [
+        "tl_peds"
+      ],
+      "preds": null
+    },
+    {
+      "name": "cars_y",
+      "params": {},
+      "results": {},
+      "destState": {
+        "tl_cars": "yellow"
+      },
+      "destStateNotChanged": [
+        "tl_peds"
+      ],
+      "preds": null
+    },
+    {
+      "name": "cars_r",
+      "params": {},
+      "results": {},
+      "destState": {
+        "tl_cars": "red"
+      },
+      "destStateNotChanged": [
+        "tl_peds"
+      ],
+      "preds": null
+    }
+  ],
+  "metadata": {
+    "fileType": "Trace",
+    "formatVersion": 1,
+    "savedAt": "2021-02-11T13:49:28.887976Z",
+    "creator": "User",
+    "proB2KernelVersion": "4.0.0-SNAPSHOT",
+    "proBCliVersion": "1.11.0-nightly",
+    "modelName": "TrafficLight"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "svg": "four_bodies.svg",
+  "items": [
+	{
+	  "for": {"from":1, "to":4},
+      "id": "body%0",
+      "attr": "cx",
+      "value" : "pos(%0)(1) / SCALE100"
+    },
+	{
+	  "for": {"from":1, "to":4},
+      "id": "body%0",
+      "attr": "cy",
+      "value" : "pos(%0)(2) / SCALE100"
+    },
+    
+	{
+	  "for": {"from":1, "to":4},
+      "id": "body%0",
+      "attr": "r",
+      "value" : "2.0+5.0*mass(%0)/MAXMASS"
+    },
+    
+	{
+	  "for": {"from":1, "to":4},
+      "id": "speed%0",
+      "attr": "x1",
+      "value" : "pos(%0)(1) / SCALE100"
+    },
+	{
+	  "for": {"from":1, "to":4},
+      "id": "speed%0",
+      "attr": "y1",
+      "value" : "pos(%0)(2) / SCALE100"
+    },
+	{
+	  "for": {"from":1, "to":4},
+      "id": "speed%0",
+      "attr": "x2",
+      "value" : "(pos(%0)(1)+ SPEED_MULTIPLIER*speed(%0)(1)) / SCALE100"
+    },
+	{
+	  "for": {"from":1, "to":4},
+      "id": "speed%0",
+      "attr": "y2",
+      "value" : "(pos(%0)(2)+ SPEED_MULTIPLIER*speed(%0)(2)) / SCALE100"
+    },
+    
+	{
+	  "for": {"from":1, "to":4},
+      "id": "gravitation%0",
+      "attr": "x1",
+      "value" : "pos(%0)(1) / SCALE100"
+    },
+	{
+	  "for": {"from":1, "to":4},
+      "id": "gravitation%0",
+      "attr": "y1",
+      "value" : "pos(%0)(2) / SCALE100"
+    },
+	{
+	  "for": {"from":1, "to":4},
+      "id": "gravitation%0",
+      "attr": "x2",
+      "value" : "(pos(%0)(1)+ GRAV_MULTIPLIER*gravitation(%0)(1)) / SCALE100"
+    },
+	{
+	  "for": {"from":1, "to":4},
+      "id": "gravitation%0",
+      "attr": "y2",
+      "value" : "(pos(%0)(2)+ GRAV_MULTIPLIER*gravitation(%0)(2)) / SCALE100"
+    }
+  ],
+  "events": [
+    {
+	  "for": {"from":1, "to":4},
+      "id": "body%0",
+      "event": "Move",
+      "hovers": [{ "attr":"stroke-width", "enter":"6", "leave":"1"},
+                 { "attr":"opacity", "enter":"0.8", "leave":"1.0"}]
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+    "activations": [
+        {
+            "id": "$setup_constants",
+            "execute": "$setup_constants",
+            "fixedVariables": {
+                "groundf": "-1",
+                "topf": "2"
+            }
+        },
+        {
+          "id": "$initialise_machine",
+          "execute": "$initialise_machine",
+          "activating": ["push_inside_button", "push_call_button"]
+        },
+        {
+            "id": "push_inside_button",
+            "execute": "push_inside_button",
+            "after": 25000,
+            "probabilisticVariables": "uniform",
+            "activating": ["push_inside_button", "move_up_1", "move_down_1", "reverse_lift_up_1", "reverse_lift_down_1", "open_door_1", "close_door_1"],
+            "priority": 1
+        },
+        {
+            "id": "push_call_button",
+            "execute": "push_call_button",
+            "after": 30000,
+            "probabilisticVariables": "uniform",
+            "activating": ["push_call_button", "move_up_1", "move_down_1", "reverse_lift_up_1", "reverse_lift_down_1", "open_door_1", "close_door_1"],
+            "priority": 1
+        },
+        {
+            "id": "move_up_1",
+            "execute": "move_up",
+            "activationKind": "single",
+            "additionalGuards": "direction_up = TRUE & card(call_buttons \\/ inside_buttons) > 0 & max(call_buttons \\/ inside_buttons) > cur_floor",
+            "after": 5000,
+            "activating": ["move_up_2", "open_door_2"],
+            "priority": 4
+        },
+        {
+            "id": "move_up_2",
+            "execute": "move_up",
+            "activationKind": "single:max",
+            "additionalGuards": "direction_up = TRUE & card(call_buttons \\/ inside_buttons) > 0 & max(call_buttons \\/ inside_buttons) > cur_floor",
+            "after": 5000,
+            "activating": ["move_up_2", "open_door_2"],
+            "priority": 4
+        },
+        {
+            "id": "move_down_1",
+            "execute": "move_down",
+            "activationKind": "single",
+            "additionalGuards": "direction_up = FALSE & card(call_buttons \\/ inside_buttons) > 0 & min(call_buttons \\/ inside_buttons) < cur_floor",
+            "after": 5000,
+            "activating": ["move_down_2", "open_door_2"],
+            "priority": 4
+        },
+        {
+            "id": "move_down_2",
+            "execute": "move_down",
+            "activationKind": "single:max",
+            "additionalGuards": "direction_up = FALSE & card(call_buttons \\/ inside_buttons) > 0 & min(call_buttons \\/ inside_buttons) < cur_floor",
+            "after": 5000,
+            "activating": ["move_down_2", "open_door_2"],
+            "priority": 4
+        },
+        {
+            "id": "reverse_lift_up_1",
+            "execute": "reverse_lift_up",
+            "activationKind": "single",
+            "additionalGuards": "card(call_buttons \\/ inside_buttons) > 0 & min(call_buttons \\/ inside_buttons) > cur_floor",
+            "after": 500,
+            "activating": "move_up_2",
+            "priority": 3
+        },
+        {
+            "id": "reverse_lift_up_2",
+            "execute": "reverse_lift_up",
+            "activationKind": "single:max",
+            "additionalGuards": "card(call_buttons \\/ inside_buttons) > 0 & min(call_buttons \\/ inside_buttons) > cur_floor",
+            "after": 500,
+            "activating": "move_up_2",
+            "priority": 3
+        },
+        {
+            "id": "reverse_lift_down_1",
+            "execute": "reverse_lift_down",
+            "activationKind": "single:max",
+            "additionalGuards": "card(call_buttons \\/ inside_buttons) > 0 & max(call_buttons \\/ inside_buttons) < cur_floor",
+            "after": 500,
+            "activating": "move_down_2",
+            "priority": 3
+        },
+        {
+            "id": "reverse_lift_down_2",
+            "execute": "reverse_lift_down",
+            "activationKind": "single",
+            "additionalGuards": "card(call_buttons \\/ inside_buttons) > 0 & max(call_buttons \\/ inside_buttons) < cur_floor",
+            "after": 500,
+            "activating": "move_down_2",
+            "priority": 3
+        },
+        {
+            "id": "open_door_1",
+            "execute": "open_door",
+            "activationKind": "single",
+            "additionalGuards": "cur_floor : call_buttons \\/ inside_buttons",
+            "after": 5000,
+            "activating": "close_door_2",
+            "priority": 2
+        },
+        {
+            "id": "open_door_2",
+            "execute": "open_door",
+            "activationKind": "single:max",
+            "additionalGuards": "cur_floor : call_buttons \\/ inside_buttons",
+            "after": 5000,
+            "activating": "close_door_2",
+            "priority": 2
+        },
+        {
+            "id": "close_door_1",
+            "execute": "close_door",
+            "activationKind": "single",
+            "additionalGuards": "cur_floor : call_buttons \\/ inside_buttons",
+            "after": 5000,
+            "activating": ["reverse_lift_up_2", "reverse_lift_down_2", "move_up_2", "move_down_2"],
+            "priority": 2
+        },
+        {
+            "id": "close_door_2",
+            "execute": "close_door",
+            "activationKind": "single:max",
+            "additionalGuards": "cur_floor : call_buttons \\/ inside_buttons",
+            "after": 5000,
+            "activating": ["reverse_lift_up_2", "reverse_lift_down_2", "move_up_2", "move_down_2"],
+            "priority": 2
+        }
+    ]
+}

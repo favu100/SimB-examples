@@ -1,0 +1,29 @@
+{
+    "activations": [
+        {
+            "id": "$setup_constants",
+            "execute": "$setup_constants",
+            "fixedVariables": {"numberCowboys": "100"},
+            "activating": "shoots"
+        },
+        {
+            "id": "$initialise_machine",
+            "execute": "$initialise_machine"
+        },
+        {
+            "id": "shoots",
+            "execute": "shoots",
+            "after": 500,
+            "activationKind": "single",
+            "probabilisticVariables": {"numberAliveCowboys": {"numberAliveCowboys - 1": "0.8", "numberAliveCowboys": "0.2"}},
+            "activating": ["shoots", "survives"]
+        },
+        {
+            "id": "survives",
+            "execute": "survives",
+            "activationKind": "single",
+            "after": 500,
+            "activating": "survives"
+        }
+    ]
+}

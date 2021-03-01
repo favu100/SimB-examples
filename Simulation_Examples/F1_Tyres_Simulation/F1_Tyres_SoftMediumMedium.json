@@ -1,0 +1,88 @@
+{
+    "activations": [
+        {
+          "id": "$setup_constants",
+          "execute": "$setup_constants",
+          "fixedVariables": {"NrRaceLaps": "60"}
+        },
+        {
+          "id": "$initialise_machine",
+          "execute": "$initialise_machine",
+          "activating": ["nextLap", "EndRace"],
+          "fixedVariables": {
+              "TyresChoice": "SOFT",
+              "Strategy": "{(1 |-> SOFT)}",
+              "TyresWear": "8.0"
+          }
+        },
+        {
+            "id": "dnf_activation",
+            "execute": "DoNotFinished",
+            "after": 1000,
+            "priority": 1
+        },
+        {
+            "id": "tyres_explode_activation",
+            "execute": "TyresExplode",
+            "after": 1000,
+            "activating": "change_tyres_activation",
+            "priority": 2
+        },
+        {
+            "id": "change_tyres_activation",
+            "execute": "ChangeTyre",
+            "after": 1000,
+            "fixedVariables": {"NewTyre": "MEDIUM", "NewTyresWear": "0.0"},
+            "activating": "run_lap_activation_2",
+            "priority": 3
+        },
+        {
+            "id": "run_lap_activation_1",
+            "execute": "RunLap",
+            "after": 1000,
+            "probabilisticVariables": {"LapTyresWear": {"IF TyresChoice = SOFT THEN 8.0 ELSIF TyresChoice = MEDIUM THEN 6.0 ELSE 4.0 END": "0.33",
+                                             "IF TyresChoice = SOFT THEN 7.0 ELSIF TyresChoice = MEDIUM THEN 5.0 ELSE 3.0 END": "0.34",
+                                             "IF TyresChoice = SOFT THEN 6.0 ELSIF TyresChoice = MEDIUM THEN 4.0 ELSE 2.0 END": "0.33"},
+                            "LapTime": {"(IF TyresChoice = SOFT THEN 80.3 ELSIF TyresChoice = MEDIUM THEN 81.0 ELSE 81.7 END) + 0.03 * TyresWear + (IF TyresChangedInThisLap = TRUE THEN 20.0 ELSE 0.0 END)": "0.33",
+                                        "(IF TyresChoice = SOFT THEN 80.8 ELSIF TyresChoice = MEDIUM THEN 81.5 ELSE 82.2 END) + 0.03 * TyresWear + (IF TyresChangedInThisLap = TRUE THEN 20.0 ELSE 0.0 END)": "0.34",
+                                        "(IF TyresChoice = SOFT THEN 81.4 ELSIF TyresChoice = MEDIUM THEN 82.1 ELSE 82.9 END) + 0.03 * TyresWear + (IF TyresChangedInThisLap = TRUE THEN 20.0 ELSE 0.0 END)": "0.34"}},
+            "activating": ["nextLap", "EndRace"],
+            "priority": 4
+        },
+        {
+            "id": "run_lap_activation_2",
+            "execute": "RunLap",
+            "after": 0,
+            "probabilisticVariables": {"LapTyresWear": {"IF TyresChoice = SOFT THEN 8.0 ELSIF TyresChoice = MEDIUM THEN 6.0 ELSE 4.0 END": "0.33",
+                                             "IF TyresChoice = SOFT THEN 7.0 ELSIF TyresChoice = MEDIUM THEN 5.0 ELSE 3.0 END": "0.34",
+                                             "IF TyresChoice = SOFT THEN 6.0 ELSIF TyresChoice = MEDIUM THEN 4.0 ELSE 2.0 END": "0.33"},
+                            "LapTime": {"(IF TyresChoice = SOFT THEN 80.3 ELSIF TyresChoice = MEDIUM THEN 81.0 ELSE 81.7 END) + 0.03 * TyresWear + (IF TyresChangedInThisLap = TRUE THEN 20.0 ELSE 0.0 END)": "0.33",
+                                        "(IF TyresChoice = SOFT THEN 80.8 ELSIF TyresChoice = MEDIUM THEN 81.5 ELSE 82.2 END) + 0.03 * TyresWear + (IF TyresChangedInThisLap = TRUE THEN 20.0 ELSE 0.0 END)": "0.34",
+                                        "(IF TyresChoice = SOFT THEN 81.4 ELSIF TyresChoice = MEDIUM THEN 82.1 ELSE 82.9 END) + 0.03 * TyresWear + (IF TyresChangedInThisLap = TRUE THEN 20.0 ELSE 0.0 END)": "0.34"}},
+            "activating": ["nextLap", "EndRace"],
+            "priority": 4
+        },
+        {
+            "id": "EndRace",
+            "execute": "EndRace",
+            "after": 1000,
+            "priority": 0
+        },
+        {
+          "id": "run_lap_or_change_tyre",
+          "chooseActivation": {"change_tyres_activation": "IF TyresChangedInThisLap = FALSE & TyresWear > 70.0 THEN 1.0 ELSE 0.0 END",
+            "run_lap_activation_1": "1.0 - IF TyresChangedInThisLap = FALSE & TyresWear > 70.0 THEN 1.0 ELSE 0.0 END"}
+        },
+        {
+          "id": "tyres_explode_or_continue",
+          "chooseActivation": {"tyres_explode_activation":  "IF TyresWear >= 0.0 & TyresWear <= 49.0 THEN 0.0 ELSIF TyresWear >= 50.0 & TyresWear <= 75.0 THEN 0.02 ELSIF TyresWear >= 76.0 & TyresWear >= 80.0 THEN 0.3 ELSIF TyresWear >= 81.0 & TyresWear <= 85.0 THEN 0.8 ELSE 1.0 END",
+            "run_lap_or_change_tyre":  "1.0 - IF TyresWear >= 0.0 & TyresWear <= 49.0 THEN 0.0 ELSIF TyresWear >= 50.0 & TyresWear <= 75.0 THEN 0.02 ELSIF TyresWear >= 76.0 & TyresWear >= 80.0 THEN 0.3 ELSIF TyresWear >= 81.0 & TyresWear <= 85.0 THEN 0.8 ELSE 1.0 END"}
+        },
+        {
+          "id": "nextLap",
+          "chooseActivation": {"dnf_activation": "IF TyresWear = 100.0 THEN 0.1 ELSE 0.0 END",
+            "tyres_explode_or_continue": "1.0 - IF TyresWear = 100.0 THEN 0.1 ELSE 0.0 END"}
+        }
+    ]
+}
+

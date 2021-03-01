@@ -1,0 +1,120 @@
+{
+  "description": "Trace succeeds, but fails for simulation",
+  "transitionList": [
+    {
+      "name": "$setup_constants",
+      "params": null,
+      "results": null,
+      "destState": {
+        "groundf": "0",
+        "topf": "1"
+      },
+      "destStateNotChanged": [],
+      "preds": null
+    },
+    {
+      "name": "$initialise_machine",
+      "params": null,
+      "results": null,
+      "destState": {
+        "direction_up": "TRUE",
+        "door_open": "FALSE",
+        "call_buttons": "∅",
+        "cur_floor": "0",
+        "inside_buttons": "∅"
+      },
+      "destStateNotChanged": [],
+      "preds": null
+    },
+    {
+      "name": "move_up",
+      "params": {},
+      "results": {},
+      "destState": {
+        "cur_floor": "1"
+      },
+      "destStateNotChanged": [
+        "direction_up",
+        "door_open",
+        "call_buttons",
+        "inside_buttons"
+      ],
+      "preds": null
+    },
+    {
+      "name": "reverse_lift_down",
+      "params": {},
+      "results": {},
+      "destState": {
+        "direction_up": "FALSE"
+      },
+      "destStateNotChanged": [
+        "door_open",
+        "call_buttons",
+        "cur_floor",
+        "inside_buttons"
+      ],
+      "preds": null
+    },
+    {
+      "name": "push_inside_button",
+      "params": {
+        "b": "0"
+      },
+      "results": {},
+      "destState": {
+        "inside_buttons": "{0}"
+      },
+      "destStateNotChanged": [
+        "direction_up",
+        "door_open",
+        "call_buttons",
+        "cur_floor"
+      ],
+      "preds": null
+    },
+    {
+      "name": "push_call_button",
+      "params": {
+        "b": "0"
+      },
+      "results": {},
+      "destState": {
+        "call_buttons": "{0}"
+      },
+      "destStateNotChanged": [
+        "direction_up",
+        "door_open",
+        "cur_floor",
+        "inside_buttons"
+      ],
+      "preds": null
+    },
+    {
+      "name": "push_call_button",
+      "params": {
+        "b": "1"
+      },
+      "results": {},
+      "destState": {
+        "call_buttons": "{0,1}"
+      },
+      "destStateNotChanged": [
+        "direction_up",
+        "door_open",
+        "cur_floor",
+        "inside_buttons"
+      ],
+      "preds": null
+    }
+  ],
+  "metadata": {
+    "fileType": "Trace",
+    "formatVersion": 1,
+    "savedAt": "2020-12-21T12:33:56.864330Z",
+    "creator": "User",
+    "proB2KernelVersion": "4.0.0-SNAPSHOT",
+    "proBCliVersion": "1.10.1-nightly",
+    "modelName": "Lift (2)"
+  }
+}

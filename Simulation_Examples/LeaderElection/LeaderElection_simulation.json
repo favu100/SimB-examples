@@ -1,0 +1,32 @@
+{
+    "activations": [
+        {
+            "id": "$setup_constants",
+            "execute": "$setup_constants"
+        },
+        {
+            "id": "$initialise_machine",
+            "execute": "$initialise_machine",
+            "activating": "progress"
+        },
+        {
+            "id": "progress",
+            "execute": "progress",
+            "after": 500,
+            "probabilisticVariables": "uniform",
+            "activating": ["progress", "elect"]
+        },
+        {
+            "id": "elect",
+            "execute": "elect",
+            "after": 500,
+            "activating": "final"
+        },
+        {
+            "id": "final",
+            "execute": "final",
+            "after": 500,
+            "activating": "final"
+        }
+    ]
+}

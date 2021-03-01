@@ -1,0 +1,44 @@
+{
+    "activations": [
+        {
+            "id": "$setup_constants",
+            "execute": "$setup_constants"
+        },
+        {
+            "id": "$initialise_machine",
+            "execute": "$initialise_machine",
+            "activating" : "chooses"
+        },
+        {
+            "id": "chooses",
+            "execute": "chooses",
+            "after": 500,
+            "probabilisticVariables": "uniform",
+            "activating": "shoots"
+        },
+        {
+            "id": "shoots",
+            "chooseActivation": {"shoots_fail": "0.2", "shoots_hit": "0.8"}
+        },
+        {
+            "id": "shoots_fail",
+            "execute": "shoots_fail",
+            "after": 500,
+            "probabilisticVariables": "uniform",
+            "activating": ["chooses", "survives"]
+        },
+        {
+            "id": "shoots_hit",
+            "execute": "shoots_hit",
+            "after": 500,
+            "probabilisticVariables": "uniform",
+            "activating": ["chooses", "survives"]
+        },
+        {
+            "id": "survives",
+            "execute": "survives",
+            "after": 500,
+            "activating": "survives"
+        }
+    ]
+}

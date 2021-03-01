@@ -1,0 +1,31 @@
+{
+    "activations": [
+        {
+            "id": "$setup_constants",
+            "execute": "$setup_constants"
+        },
+        {
+            "id": "$initialise_machine",
+            "execute": "$initialise_machine",
+            "activating": "arrive"
+        },
+        {
+            "id": "car_arrives",
+            "execute": "car_arrives",
+            "after": 1000,
+            "probabilisticVariables": {"n": {"1": "0.1", "2": "0.2", "3":"0.4", "4": "0.1","5": "0.2"}},
+            "activating": "arrive"
+        },
+        {
+            "id": "bus_arrives",
+            "execute": "bus_arrives",
+            "after": 1000,
+            "probabilisticVariables": "uniform",
+            "activating": "arrive"
+        },
+        {
+            "id": "arrive",
+            "chooseActivation": {"car_arrives": "0.9", "bus_arrives": "0.1"}
+        }
+    ]
+}

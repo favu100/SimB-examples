@@ -1,0 +1,79 @@
+{
+  "activating": [
+    {
+      "execute": "$initialise_machine",
+      "after": "0",
+      "priority": 0,
+      "additionalGuards": null,
+      "activationKind": null,
+      "fixedVariables": {
+        "tl_cars": "red",
+        "tl_peds": "red"
+      },
+      "probabilisticVariables": null,
+      "activating": [
+        "cars_ry_1"
+      ],
+      "id": "$initialise_machine"
+    },
+    {
+      "execute": "cars_ry",
+      "after": "500",
+      "priority": 0,
+      "additionalGuards": null,
+      "activationKind": null,
+      "fixedVariables": null,
+      "probabilisticVariables": null,
+      "activating": [
+        "cars_g_2"
+      ],
+      "id": "cars_ry_1"
+    },
+    {
+      "execute": "cars_g",
+      "after": "500",
+      "priority": 0,
+      "additionalGuards": null,
+      "activationKind": null,
+      "fixedVariables": null,
+      "probabilisticVariables": null,
+      "activating": [
+        "cars_y_3"
+      ],
+      "id": "cars_g_2"
+    },
+    {
+      "execute": "cars_y",
+      "after": "5000",
+      "priority": 0,
+      "additionalGuards": null,
+      "activationKind": null,
+      "fixedVariables": null,
+      "probabilisticVariables": null,
+      "activating": [
+        "cars_r_4"
+      ],
+      "id": "cars_y_3"
+    },
+    {
+      "execute": "cars_r",
+      "after": "500",
+      "priority": 0,
+      "additionalGuards": null,
+      "activationKind": null,
+      "fixedVariables": null,
+      "probabilisticVariables": null,
+      "activating": null,
+      "id": "cars_r_4"
+    }
+  ],
+  "metadata": {
+    "fileType": "Timed_Trace",
+    "formatVersion": 1,
+    "savedAt": "2021-02-11T13:55:14.747678Z",
+    "creator": "User",
+    "proB2KernelVersion": "4.0.0-SNAPSHOT",
+    "proBCliVersion": null,
+    "modelName": null
+  }
+}

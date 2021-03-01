@@ -1,0 +1,32 @@
+{
+    "activations": [
+        {
+            "id": "$initialise_machine",
+            "execute": "$initialise_machine",
+            "activating": ["activate_c1_or_c2", "inc_c3"]
+        },
+        {
+            "id": "inc_c1",
+            "execute": "inc_c1",
+            "after": 2000,
+            "probabilisticVariables": {"n": {"1": "0.6", "2": "0.4"}},
+            "activating": "activate_c1_or_c2"
+        },
+        {
+            "id": "inc_c2",
+            "execute": "inc_c2",
+            "after": 2000,
+            "activating": "activate_c1_or_c2"
+        },
+        {
+            "id": "inc_c3",
+            "execute": "inc_c3",
+            "after": 1000,
+            "activating": "inc_c3"
+        },
+        {
+            "id": "activate_c1_or_c2",
+            "chooseActivation": {"inc_c1": "0.9", "inc_c2": "0.1"}
+        }
+    ]
+}

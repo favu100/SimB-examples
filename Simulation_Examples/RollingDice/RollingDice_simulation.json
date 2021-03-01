@@ -1,0 +1,16 @@
+{
+    "activations": [
+        {
+            "id": "$initialise_machine",
+            "execute": "$initialise_machine",
+            "activating": "roll"
+        },
+        {
+            "id": "roll",
+            "execute": "roll",
+            "after": 500,
+            "probabilisticVariables": "uniform",
+            "activating": "roll"
+        }
+    ]
+}

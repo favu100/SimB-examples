@@ -1,0 +1,1737 @@
+{
+  "description": "",
+  "transitionList": [
+    {
+      "name": "$setup_constants",
+      "params": null,
+      "results": null,
+      "destState": {
+        "NrRaceLaps": "60"
+      },
+      "destStateNotChanged": [],
+      "preds": null
+    },
+    {
+      "name": "$initialise_machine",
+      "params": null,
+      "results": null,
+      "destState": {
+        "Finished": "FALSE",
+        "TyresChangedInThisLap": "FALSE",
+        "after": "0.0",
+        "RainingInformationThisLap": "TRUE",
+        "TyresInformationThisLap": "TRUE",
+        "IsRaining": "FALSE",
+        "LapToTime": "∅",
+        "Accident": "FALSE",
+        "Strategy": "{(1↦SOFT)}",
+        "Lap": "1",
+        "TyresWear": "8.0",
+        "TyresChoice": "SOFT",
+        "HasRained": "FALSE"
+      },
+      "destStateNotChanged": [],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "80.53999999999999",
+        "LapTyresWear": "6.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "80.53999999999999",
+        "RainingInformationThisLap": "FALSE",
+        "TyresInformationThisLap": "FALSE",
+        "LapToTime": "{(1↦80.53999999999999)}",
+        "Lap": "2",
+        "TyresWear": "14.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "TyresChoice",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "81.82000000000001",
+        "LapTyresWear": "6.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "162.36",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001)}",
+        "Lap": "3",
+        "TyresWear": "20.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "80.89999999999999",
+        "LapTyresWear": "7.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "243.26",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999)}",
+        "Lap": "4",
+        "TyresWear": "27.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "81.11",
+        "LapTyresWear": "8.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "324.37",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11)}",
+        "Lap": "5",
+        "TyresWear": "35.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "81.35",
+        "LapTyresWear": "8.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "405.72",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35)}",
+        "Lap": "6",
+        "TyresWear": "43.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "82.09",
+        "LapTyresWear": "8.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "487.81000000000006",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09)}",
+        "Lap": "7",
+        "TyresWear": "51.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "82.33",
+        "LapTyresWear": "6.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "570.1400000000001",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33)}",
+        "Lap": "8",
+        "TyresWear": "57.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "82.50999999999999",
+        "LapTyresWear": "8.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "652.6500000000001",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999)}",
+        "Lap": "9",
+        "TyresWear": "65.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "83.35000000000001",
+        "LapTyresWear": "6.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "736.0000000000001",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001)}",
+        "Lap": "10",
+        "TyresWear": "71.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "ChangeTyre",
+      "params": {
+        "NewTyresWear": "0.0",
+        "NewTyre": "MEDIUM"
+      },
+      "results": {},
+      "destState": {
+        "TyresChangedInThisLap": "TRUE",
+        "TyresInformationThisLap": "TRUE",
+        "Strategy": "{(1↦SOFT),(10↦MEDIUM)}",
+        "TyresWear": "0.0",
+        "TyresChoice": "MEDIUM"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "LapToTime",
+        "Accident",
+        "Lap",
+        "after",
+        "RainingInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "101.0",
+        "LapTyresWear": "4.0"
+      },
+      "results": {},
+      "destState": {
+        "TyresChangedInThisLap": "FALSE",
+        "after": "837.0000000000001",
+        "TyresInformationThisLap": "FALSE",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0)}",
+        "Lap": "11",
+        "TyresWear": "4.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "81.62",
+        "LapTyresWear": "6.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "918.6200000000001",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62)}",
+        "Lap": "12",
+        "TyresWear": "10.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "81.8",
+        "LapTyresWear": "5.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "1000.4200000000001",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8)}",
+        "Lap": "13",
+        "TyresWear": "15.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "81.45",
+        "LapTyresWear": "6.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "1081.8700000000001",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45)}",
+        "Lap": "14",
+        "TyresWear": "21.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "82.13",
+        "LapTyresWear": "5.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "1164.0",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13)}",
+        "Lap": "15",
+        "TyresWear": "26.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "82.88",
+        "LapTyresWear": "5.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "1246.88",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88)}",
+        "Lap": "16",
+        "TyresWear": "31.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "82.43",
+        "LapTyresWear": "6.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "1329.3100000000002",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43)}",
+        "Lap": "17",
+        "TyresWear": "37.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "82.11",
+        "LapTyresWear": "6.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "1411.42",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11)}",
+        "Lap": "18",
+        "TyresWear": "43.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "82.79",
+        "LapTyresWear": "5.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "1494.21",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79)}",
+        "Lap": "19",
+        "TyresWear": "48.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "82.44",
+        "LapTyresWear": "5.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "1576.65",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44)}",
+        "Lap": "20",
+        "TyresWear": "53.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "82.59",
+        "LapTyresWear": "5.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "1659.24",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59)}",
+        "Lap": "21",
+        "TyresWear": "58.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "83.83999999999999",
+        "LapTyresWear": "5.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "1743.08",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999)}",
+        "Lap": "22",
+        "TyresWear": "63.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "82.89",
+        "LapTyresWear": "4.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "1825.97",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89)}",
+        "Lap": "23",
+        "TyresWear": "67.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "83.01",
+        "LapTyresWear": "5.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "1908.98",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89),(23↦83.01)}",
+        "Lap": "24",
+        "TyresWear": "72.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "ChangeTyre",
+      "params": {
+        "NewTyresWear": "0.0",
+        "NewTyre": "MEDIUM"
+      },
+      "results": {},
+      "destState": {
+        "TyresChangedInThisLap": "TRUE",
+        "TyresInformationThisLap": "TRUE",
+        "Strategy": "{(1↦SOFT),(10↦MEDIUM),(24↦MEDIUM)}",
+        "TyresWear": "0.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "LapToTime",
+        "Accident",
+        "Lap",
+        "after",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "101.0",
+        "LapTyresWear": "5.0"
+      },
+      "results": {},
+      "destState": {
+        "TyresChangedInThisLap": "FALSE",
+        "after": "2009.98",
+        "TyresInformationThisLap": "FALSE",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89),(23↦83.01),(24↦101.0)}",
+        "Lap": "25",
+        "TyresWear": "5.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "81.15",
+        "LapTyresWear": "4.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "2091.13",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89),(23↦83.01),(24↦101.0),(25↦81.15)}",
+        "Lap": "26",
+        "TyresWear": "9.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "81.77",
+        "LapTyresWear": "5.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "2172.9",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89),(23↦83.01),(24↦101.0),(25↦81.15),(26↦81.77)}",
+        "Lap": "27",
+        "TyresWear": "14.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "81.42",
+        "LapTyresWear": "4.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "2254.32",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89),(23↦83.01),(24↦101.0),(25↦81.15),(26↦81.77),(27↦81.42)}",
+        "Lap": "28",
+        "TyresWear": "18.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "81.54",
+        "LapTyresWear": "5.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "2335.86",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89),(23↦83.01),(24↦101.0),(25↦81.15),(26↦81.77),(27↦81.42),(28↦81.54)}",
+        "Lap": "29",
+        "TyresWear": "23.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "82.19",
+        "LapTyresWear": "4.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "2418.05",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89),(23↦83.01),(24↦101.0),(25↦81.15),(26↦81.77),(27↦81.42),(28↦81.54),(29↦82.19)}",
+        "Lap": "30",
+        "TyresWear": "27.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "81.81",
+        "LapTyresWear": "5.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "2499.86",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89),(23↦83.01),(24↦101.0),(25↦81.15),(26↦81.77),(27↦81.42),(28↦81.54),(29↦82.19),(30↦81.81)}",
+        "Lap": "31",
+        "TyresWear": "32.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "83.05999999999999",
+        "LapTyresWear": "5.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "2582.92",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89),(23↦83.01),(24↦101.0),(25↦81.15),(26↦81.77),(27↦81.42),(28↦81.54),(29↦82.19),(30↦81.81),(31↦83.05999999999999)}",
+        "Lap": "32",
+        "TyresWear": "37.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "83.21",
+        "LapTyresWear": "6.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "2666.13",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89),(23↦83.01),(24↦101.0),(25↦81.15),(26↦81.77),(27↦81.42),(28↦81.54),(29↦82.19),(30↦81.81),(31↦83.05999999999999),(32↦83.21)}",
+        "Lap": "33",
+        "TyresWear": "43.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "82.79",
+        "LapTyresWear": "4.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "2748.92",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89),(23↦83.01),(24↦101.0),(25↦81.15),(26↦81.77),(27↦81.42),(28↦81.54),(29↦82.19),(30↦81.81),(31↦83.05999999999999),(32↦83.21),(33↦82.79)}",
+        "Lap": "34",
+        "TyresWear": "47.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "83.50999999999999",
+        "LapTyresWear": "4.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "2832.4300000000003",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89),(23↦83.01),(24↦101.0),(25↦81.15),(26↦81.77),(27↦81.42),(28↦81.54),(29↦82.19),(30↦81.81),(31↦83.05999999999999),(32↦83.21),(33↦82.79),(34↦83.50999999999999)}",
+        "Lap": "35",
+        "TyresWear": "51.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "82.53",
+        "LapTyresWear": "5.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "2914.9600000000005",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89),(23↦83.01),(24↦101.0),(25↦81.15),(26↦81.77),(27↦81.42),(28↦81.54),(29↦82.19),(30↦81.81),(31↦83.05999999999999),(32↦83.21),(33↦82.79),(34↦83.50999999999999),(35↦82.53)}",
+        "Lap": "36",
+        "TyresWear": "56.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "83.18",
+        "LapTyresWear": "5.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "2998.1400000000003",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89),(23↦83.01),(24↦101.0),(25↦81.15),(26↦81.77),(27↦81.42),(28↦81.54),(29↦82.19),(30↦81.81),(31↦83.05999999999999),(32↦83.21),(33↦82.79),(34↦83.50999999999999),(35↦82.53),(36↦83.18)}",
+        "Lap": "37",
+        "TyresWear": "61.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "83.33",
+        "LapTyresWear": "6.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "3081.4700000000003",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89),(23↦83.01),(24↦101.0),(25↦81.15),(26↦81.77),(27↦81.42),(28↦81.54),(29↦82.19),(30↦81.81),(31↦83.05999999999999),(32↦83.21),(33↦82.79),(34↦83.50999999999999),(35↦82.53),(36↦83.18),(37↦83.33)}",
+        "Lap": "38",
+        "TyresWear": "67.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "83.01",
+        "LapTyresWear": "6.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "3164.4800000000005",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89),(23↦83.01),(24↦101.0),(25↦81.15),(26↦81.77),(27↦81.42),(28↦81.54),(29↦82.19),(30↦81.81),(31↦83.05999999999999),(32↦83.21),(33↦82.79),(34↦83.50999999999999),(35↦82.53),(36↦83.18),(37↦83.33),(38↦83.01)}",
+        "Lap": "39",
+        "TyresWear": "73.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "ChangeTyre",
+      "params": {
+        "NewTyresWear": "0.0",
+        "NewTyre": "MEDIUM"
+      },
+      "results": {},
+      "destState": {
+        "TyresChangedInThisLap": "TRUE",
+        "TyresInformationThisLap": "TRUE",
+        "Strategy": "{(1↦SOFT),(10↦MEDIUM),(24↦MEDIUM),(39↦MEDIUM)}",
+        "TyresWear": "0.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "LapToTime",
+        "Accident",
+        "Lap",
+        "after",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "101.0",
+        "LapTyresWear": "5.0"
+      },
+      "results": {},
+      "destState": {
+        "TyresChangedInThisLap": "FALSE",
+        "after": "3265.4800000000005",
+        "TyresInformationThisLap": "FALSE",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89),(23↦83.01),(24↦101.0),(25↦81.15),(26↦81.77),(27↦81.42),(28↦81.54),(29↦82.19),(30↦81.81),(31↦83.05999999999999),(32↦83.21),(33↦82.79),(34↦83.50999999999999),(35↦82.53),(36↦83.18),(37↦83.33),(38↦83.01),(39↦101.0)}",
+        "Lap": "40",
+        "TyresWear": "5.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "81.65",
+        "LapTyresWear": "6.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "3347.1300000000006",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89),(23↦83.01),(24↦101.0),(25↦81.15),(26↦81.77),(27↦81.42),(28↦81.54),(29↦82.19),(30↦81.81),(31↦83.05999999999999),(32↦83.21),(33↦82.79),(34↦83.50999999999999),(35↦82.53),(36↦83.18),(37↦83.33),(38↦83.01),(39↦101.0),(40↦81.65)}",
+        "Lap": "41",
+        "TyresWear": "11.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "81.33",
+        "LapTyresWear": "5.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "3428.4600000000005",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89),(23↦83.01),(24↦101.0),(25↦81.15),(26↦81.77),(27↦81.42),(28↦81.54),(29↦82.19),(30↦81.81),(31↦83.05999999999999),(32↦83.21),(33↦82.79),(34↦83.50999999999999),(35↦82.53),(36↦83.18),(37↦83.33),(38↦83.01),(39↦101.0),(40↦81.65),(41↦81.33)}",
+        "Lap": "42",
+        "TyresWear": "16.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "81.48",
+        "LapTyresWear": "5.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "3509.9400000000005",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89),(23↦83.01),(24↦101.0),(25↦81.15),(26↦81.77),(27↦81.42),(28↦81.54),(29↦82.19),(30↦81.81),(31↦83.05999999999999),(32↦83.21),(33↦82.79),(34↦83.50999999999999),(35↦82.53),(36↦83.18),(37↦83.33),(38↦83.01),(39↦101.0),(40↦81.65),(41↦81.33),(42↦81.48)}",
+        "Lap": "43",
+        "TyresWear": "21.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "82.72999999999999",
+        "LapTyresWear": "4.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "3592.6700000000005",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89),(23↦83.01),(24↦101.0),(25↦81.15),(26↦81.77),(27↦81.42),(28↦81.54),(29↦82.19),(30↦81.81),(31↦83.05999999999999),(32↦83.21),(33↦82.79),(34↦83.50999999999999),(35↦82.53),(36↦83.18),(37↦83.33),(38↦83.01),(39↦101.0),(40↦81.65),(41↦81.33),(42↦81.48),(43↦82.72999999999999)}",
+        "Lap": "44",
+        "TyresWear": "25.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "82.25",
+        "LapTyresWear": "5.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "3674.9200000000005",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89),(23↦83.01),(24↦101.0),(25↦81.15),(26↦81.77),(27↦81.42),(28↦81.54),(29↦82.19),(30↦81.81),(31↦83.05999999999999),(32↦83.21),(33↦82.79),(34↦83.50999999999999),(35↦82.53),(36↦83.18),(37↦83.33),(38↦83.01),(39↦101.0),(40↦81.65),(41↦81.33),(42↦81.48),(43↦82.72999999999999),(44↦82.25)}",
+        "Lap": "45",
+        "TyresWear": "30.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "82.4",
+        "LapTyresWear": "6.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "3757.3200000000006",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89),(23↦83.01),(24↦101.0),(25↦81.15),(26↦81.77),(27↦81.42),(28↦81.54),(29↦82.19),(30↦81.81),(31↦83.05999999999999),(32↦83.21),(33↦82.79),(34↦83.50999999999999),(35↦82.53),(36↦83.18),(37↦83.33),(38↦83.01),(39↦101.0),(40↦81.65),(41↦81.33),(42↦81.48),(43↦82.72999999999999),(44↦82.25),(45↦82.4)}",
+        "Lap": "46",
+        "TyresWear": "36.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "83.17999999999999",
+        "LapTyresWear": "6.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "3840.5000000000005",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89),(23↦83.01),(24↦101.0),(25↦81.15),(26↦81.77),(27↦81.42),(28↦81.54),(29↦82.19),(30↦81.81),(31↦83.05999999999999),(32↦83.21),(33↦82.79),(34↦83.50999999999999),(35↦82.53),(36↦83.18),(37↦83.33),(38↦83.01),(39↦101.0),(40↦81.65),(41↦81.33),(42↦81.48),(43↦82.72999999999999),(44↦82.25),(45↦82.4),(46↦83.17999999999999)}",
+        "Lap": "47",
+        "TyresWear": "42.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "83.36",
+        "LapTyresWear": "4.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "3923.8600000000006",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89),(23↦83.01),(24↦101.0),(25↦81.15),(26↦81.77),(27↦81.42),(28↦81.54),(29↦82.19),(30↦81.81),(31↦83.05999999999999),(32↦83.21),(33↦82.79),(34↦83.50999999999999),(35↦82.53),(36↦83.18),(37↦83.33),(38↦83.01),(39↦101.0),(40↦81.65),(41↦81.33),(42↦81.48),(43↦82.72999999999999),(44↦82.25),(45↦82.4),(46↦83.17999999999999),(47↦83.36)}",
+        "Lap": "48",
+        "TyresWear": "46.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "82.38",
+        "LapTyresWear": "4.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "4006.2400000000007",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89),(23↦83.01),(24↦101.0),(25↦81.15),(26↦81.77),(27↦81.42),(28↦81.54),(29↦82.19),(30↦81.81),(31↦83.05999999999999),(32↦83.21),(33↦82.79),(34↦83.50999999999999),(35↦82.53),(36↦83.18),(37↦83.33),(38↦83.01),(39↦101.0),(40↦81.65),(41↦81.33),(42↦81.48),(43↦82.72999999999999),(44↦82.25),(45↦82.4),(46↦83.17999999999999),(47↦83.36),(48↦82.38)}",
+        "Lap": "49",
+        "TyresWear": "50.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "83.6",
+        "LapTyresWear": "5.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "4089.8400000000006",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89),(23↦83.01),(24↦101.0),(25↦81.15),(26↦81.77),(27↦81.42),(28↦81.54),(29↦82.19),(30↦81.81),(31↦83.05999999999999),(32↦83.21),(33↦82.79),(34↦83.50999999999999),(35↦82.53),(36↦83.18),(37↦83.33),(38↦83.01),(39↦101.0),(40↦81.65),(41↦81.33),(42↦81.48),(43↦82.72999999999999),(44↦82.25),(45↦82.4),(46↦83.17999999999999),(47↦83.36),(48↦82.38),(49↦83.6)}",
+        "Lap": "50",
+        "TyresWear": "55.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "83.15",
+        "LapTyresWear": "6.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "4172.990000000001",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89),(23↦83.01),(24↦101.0),(25↦81.15),(26↦81.77),(27↦81.42),(28↦81.54),(29↦82.19),(30↦81.81),(31↦83.05999999999999),(32↦83.21),(33↦82.79),(34↦83.50999999999999),(35↦82.53),(36↦83.18),(37↦83.33),(38↦83.01),(39↦101.0),(40↦81.65),(41↦81.33),(42↦81.48),(43↦82.72999999999999),(44↦82.25),(45↦82.4),(46↦83.17999999999999),(47↦83.36),(48↦82.38),(49↦83.6),(50↦83.15)}",
+        "Lap": "51",
+        "TyresWear": "61.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "83.33",
+        "LapTyresWear": "6.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "4256.320000000001",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89),(23↦83.01),(24↦101.0),(25↦81.15),(26↦81.77),(27↦81.42),(28↦81.54),(29↦82.19),(30↦81.81),(31↦83.05999999999999),(32↦83.21),(33↦82.79),(34↦83.50999999999999),(35↦82.53),(36↦83.18),(37↦83.33),(38↦83.01),(39↦101.0),(40↦81.65),(41↦81.33),(42↦81.48),(43↦82.72999999999999),(44↦82.25),(45↦82.4),(46↦83.17999999999999),(47↦83.36),(48↦82.38),(49↦83.6),(50↦83.15),(51↦83.33)}",
+        "Lap": "52",
+        "TyresWear": "67.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "83.01",
+        "LapTyresWear": "6.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "4339.330000000001",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89),(23↦83.01),(24↦101.0),(25↦81.15),(26↦81.77),(27↦81.42),(28↦81.54),(29↦82.19),(30↦81.81),(31↦83.05999999999999),(32↦83.21),(33↦82.79),(34↦83.50999999999999),(35↦82.53),(36↦83.18),(37↦83.33),(38↦83.01),(39↦101.0),(40↦81.65),(41↦81.33),(42↦81.48),(43↦82.72999999999999),(44↦82.25),(45↦82.4),(46↦83.17999999999999),(47↦83.36),(48↦82.38),(49↦83.6),(50↦83.15),(51↦83.33),(52↦83.01)}",
+        "Lap": "53",
+        "TyresWear": "73.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "ChangeTyre",
+      "params": {
+        "NewTyresWear": "0.0",
+        "NewTyre": "MEDIUM"
+      },
+      "results": {},
+      "destState": {
+        "TyresChangedInThisLap": "TRUE",
+        "TyresInformationThisLap": "TRUE",
+        "Strategy": "{(1↦SOFT),(10↦MEDIUM),(24↦MEDIUM),(39↦MEDIUM),(53↦MEDIUM)}",
+        "TyresWear": "0.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "LapToTime",
+        "Accident",
+        "Lap",
+        "after",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "101.0",
+        "LapTyresWear": "4.0"
+      },
+      "results": {},
+      "destState": {
+        "TyresChangedInThisLap": "FALSE",
+        "after": "4440.330000000001",
+        "TyresInformationThisLap": "FALSE",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89),(23↦83.01),(24↦101.0),(25↦81.15),(26↦81.77),(27↦81.42),(28↦81.54),(29↦82.19),(30↦81.81),(31↦83.05999999999999),(32↦83.21),(33↦82.79),(34↦83.50999999999999),(35↦82.53),(36↦83.18),(37↦83.33),(38↦83.01),(39↦101.0),(40↦81.65),(41↦81.33),(42↦81.48),(43↦82.72999999999999),(44↦82.25),(45↦82.4),(46↦83.17999999999999),(47↦83.36),(48↦82.38),(49↦83.6),(50↦83.15),(51↦83.33),(52↦83.01),(53↦101.0)}",
+        "Lap": "54",
+        "TyresWear": "4.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "81.12",
+        "LapTyresWear": "4.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "4521.450000000001",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89),(23↦83.01),(24↦101.0),(25↦81.15),(26↦81.77),(27↦81.42),(28↦81.54),(29↦82.19),(30↦81.81),(31↦83.05999999999999),(32↦83.21),(33↦82.79),(34↦83.50999999999999),(35↦82.53),(36↦83.18),(37↦83.33),(38↦83.01),(39↦101.0),(40↦81.65),(41↦81.33),(42↦81.48),(43↦82.72999999999999),(44↦82.25),(45↦82.4),(46↦83.17999999999999),(47↦83.36),(48↦82.38),(49↦83.6),(50↦83.15),(51↦83.33),(52↦83.01),(53↦101.0),(54↦81.12)}",
+        "Lap": "55",
+        "TyresWear": "8.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "82.33999999999999",
+        "LapTyresWear": "6.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "4603.790000000001",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89),(23↦83.01),(24↦101.0),(25↦81.15),(26↦81.77),(27↦81.42),(28↦81.54),(29↦82.19),(30↦81.81),(31↦83.05999999999999),(32↦83.21),(33↦82.79),(34↦83.50999999999999),(35↦82.53),(36↦83.18),(37↦83.33),(38↦83.01),(39↦101.0),(40↦81.65),(41↦81.33),(42↦81.48),(43↦82.72999999999999),(44↦82.25),(45↦82.4),(46↦83.17999999999999),(47↦83.36),(48↦82.38),(49↦83.6),(50↦83.15),(51↦83.33),(52↦83.01),(53↦101.0),(54↦81.12),(55↦82.33999999999999)}",
+        "Lap": "56",
+        "TyresWear": "14.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "82.52",
+        "LapTyresWear": "6.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "4686.310000000001",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89),(23↦83.01),(24↦101.0),(25↦81.15),(26↦81.77),(27↦81.42),(28↦81.54),(29↦82.19),(30↦81.81),(31↦83.05999999999999),(32↦83.21),(33↦82.79),(34↦83.50999999999999),(35↦82.53),(36↦83.18),(37↦83.33),(38↦83.01),(39↦101.0),(40↦81.65),(41↦81.33),(42↦81.48),(43↦82.72999999999999),(44↦82.25),(45↦82.4),(46↦83.17999999999999),(47↦83.36),(48↦82.38),(49↦83.6),(50↦83.15),(51↦83.33),(52↦83.01),(53↦101.0),(54↦81.12),(55↦82.33999999999999),(56↦82.52)}",
+        "Lap": "57",
+        "TyresWear": "20.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "82.69999999999999",
+        "LapTyresWear": "6.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "4769.010000000001",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89),(23↦83.01),(24↦101.0),(25↦81.15),(26↦81.77),(27↦81.42),(28↦81.54),(29↦82.19),(30↦81.81),(31↦83.05999999999999),(32↦83.21),(33↦82.79),(34↦83.50999999999999),(35↦82.53),(36↦83.18),(37↦83.33),(38↦83.01),(39↦101.0),(40↦81.65),(41↦81.33),(42↦81.48),(43↦82.72999999999999),(44↦82.25),(45↦82.4),(46↦83.17999999999999),(47↦83.36),(48↦82.38),(49↦83.6),(50↦83.15),(51↦83.33),(52↦83.01),(53↦101.0),(54↦81.12),(55↦82.33999999999999),(56↦82.52),(57↦82.69999999999999)}",
+        "Lap": "58",
+        "TyresWear": "26.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "82.88",
+        "LapTyresWear": "6.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "4851.890000000001",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89),(23↦83.01),(24↦101.0),(25↦81.15),(26↦81.77),(27↦81.42),(28↦81.54),(29↦82.19),(30↦81.81),(31↦83.05999999999999),(32↦83.21),(33↦82.79),(34↦83.50999999999999),(35↦82.53),(36↦83.18),(37↦83.33),(38↦83.01),(39↦101.0),(40↦81.65),(41↦81.33),(42↦81.48),(43↦82.72999999999999),(44↦82.25),(45↦82.4),(46↦83.17999999999999),(47↦83.36),(48↦82.38),(49↦83.6),(50↦83.15),(51↦83.33),(52↦83.01),(53↦101.0),(54↦81.12),(55↦82.33999999999999),(56↦82.52),(57↦82.69999999999999),(58↦82.88)}",
+        "Lap": "59",
+        "TyresWear": "32.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "83.05999999999999",
+        "LapTyresWear": "6.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "4934.950000000002",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89),(23↦83.01),(24↦101.0),(25↦81.15),(26↦81.77),(27↦81.42),(28↦81.54),(29↦82.19),(30↦81.81),(31↦83.05999999999999),(32↦83.21),(33↦82.79),(34↦83.50999999999999),(35↦82.53),(36↦83.18),(37↦83.33),(38↦83.01),(39↦101.0),(40↦81.65),(41↦81.33),(42↦81.48),(43↦82.72999999999999),(44↦82.25),(45↦82.4),(46↦83.17999999999999),(47↦83.36),(48↦82.38),(49↦83.6),(50↦83.15),(51↦83.33),(52↦83.01),(53↦101.0),(54↦81.12),(55↦82.33999999999999),(56↦82.52),(57↦82.69999999999999),(58↦82.88),(59↦83.05999999999999)}",
+        "Lap": "60",
+        "TyresWear": "38.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "RunLap",
+      "params": {
+        "LapTime": "83.24",
+        "LapTyresWear": "5.0"
+      },
+      "results": {},
+      "destState": {
+        "after": "5018.190000000001",
+        "LapToTime": "{(1↦80.53999999999999),(2↦81.82000000000001),(3↦80.89999999999999),(4↦81.11),(5↦81.35),(6↦82.09),(7↦82.33),(8↦82.50999999999999),(9↦83.35000000000001),(10↦101.0),(11↦81.62),(12↦81.8),(13↦81.45),(14↦82.13),(15↦82.88),(16↦82.43),(17↦82.11),(18↦82.79),(19↦82.44),(20↦82.59),(21↦83.83999999999999),(22↦82.89),(23↦83.01),(24↦101.0),(25↦81.15),(26↦81.77),(27↦81.42),(28↦81.54),(29↦82.19),(30↦81.81),(31↦83.05999999999999),(32↦83.21),(33↦82.79),(34↦83.50999999999999),(35↦82.53),(36↦83.18),(37↦83.33),(38↦83.01),(39↦101.0),(40↦81.65),(41↦81.33),(42↦81.48),(43↦82.72999999999999),(44↦82.25),(45↦82.4),(46↦83.17999999999999),(47↦83.36),(48↦82.38),(49↦83.6),(50↦83.15),(51↦83.33),(52↦83.01),(53↦101.0),(54↦81.12),(55↦82.33999999999999),(56↦82.52),(57↦82.69999999999999),(58↦82.88),(59↦83.05999999999999),(60↦83.24)}",
+        "Lap": "61",
+        "TyresWear": "43.0"
+      },
+      "destStateNotChanged": [
+        "Finished",
+        "TyresChangedInThisLap",
+        "Accident",
+        "Strategy",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    },
+    {
+      "name": "EndRace",
+      "params": {},
+      "results": {
+        "Seconds": "38",
+        "Milliseconds": "190",
+        "Minutes": "83"
+      },
+      "destState": {
+        "Finished": "TRUE"
+      },
+      "destStateNotChanged": [
+        "TyresChangedInThisLap",
+        "LapToTime",
+        "Accident",
+        "Strategy",
+        "Lap",
+        "after",
+        "TyresWear",
+        "RainingInformationThisLap",
+        "TyresChoice",
+        "TyresInformationThisLap",
+        "HasRained",
+        "IsRaining"
+      ],
+      "preds": null
+    }
+  ],
+  "metadata": {
+    "fileType": "Trace",
+    "formatVersion": 1,
+    "savedAt": "2021-01-07T10:46:19.739868Z",
+    "creator": "User",
+    "proB2KernelVersion": "4.0.0-SNAPSHOT",
+    "proBCliVersion": "1.10.1-nightly",
+    "modelName": "F1_Tyres_Simulation"
+  }
+}
