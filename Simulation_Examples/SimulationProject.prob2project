@@ -17,7 +17,7 @@
           "information": {
             "ENDING_PREDICATE": "cur_floor = 2",
             "PROBABILITY": 0.9999999,
-            "FAULT_TOLERANCE": 0.001,
+            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 1000000,
             "TIME": 10000,
             "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
@@ -29,7 +29,7 @@
           "information": {
             "ENDING_PREDICATE": "cur_floor = 2",
             "PROBABILITY": 0.9999999,
-            "FAULT_TOLERANCE": 0.001,
+            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 1000000,
             "TIME": 20000,
             "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
@@ -40,7 +40,7 @@
           "type": "ESTIMATION",
           "information": {
             "ENDING_PREDICATE": "cur_floor = 2",
-            "FAULT_TOLERANCE": 0.001,
+            "EPSILON": 0.001,
             "EXECUTIONS": 1000000,
             "ESTIMATION_TYPE": "MEAN",
             "TIME": 10000,
@@ -52,7 +52,7 @@
           "type": "ESTIMATION",
           "information": {
             "ENDING_PREDICATE": "cur_floor = 2",
-            "FAULT_TOLERANCE": 0.001,
+            "EPSILON": 0.001,
             "EXECUTIONS": 1000000,
             "ESTIMATION_TYPE": "MEAN",
             "TIME": 20000,
@@ -99,7 +99,7 @@
           "information": {
             "ENDING_PREDICATE": "tl_cars = green",
             "PROBABILITY": 0.999999,
-            "FAULT_TOLERANCE": 0.001,
+            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 1000000,
             "TIME": 500,
             "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
@@ -111,7 +111,7 @@
           "information": {
             "ENDING_PREDICATE": "tl_cars = green",
             "PROBABILITY": 0.9999999,
-            "FAULT_TOLERANCE": 0.001,
+            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 1000000,
             "TIME": 1000,
             "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
@@ -122,7 +122,7 @@
           "type": "ESTIMATION",
           "information": {
             "ENDING_PREDICATE": "tl_cars = green",
-            "FAULT_TOLERANCE": 0.001,
+            "EPSILON": 0.001,
             "EXECUTIONS": 1000000,
             "ESTIMATION_TYPE": "MEAN",
             "TIME": 500,
@@ -134,7 +134,7 @@
           "type": "ESTIMATION",
           "information": {
             "ENDING_PREDICATE": "tl_cars = green",
-            "FAULT_TOLERANCE": 0.001,
+            "EPSILON": 0.001,
             "EXECUTIONS": 1000000,
             "ESTIMATION_TYPE": "MEAN",
             "TIME": 1000,
@@ -164,7 +164,7 @@
           "type": "HYPOTHESIS_TEST",
           "information": {
             "PROBABILITY": 0.9999999999,
-            "FAULT_TOLERANCE": 0.01,
+            "SIGNIFICANCE": 0.01,
             "EXECUTIONS": 100,
             "PREDICATE": "card(AliveCowboys) = 1",
             "STEPS_PER_EXECUTION": 252,
@@ -176,7 +176,7 @@
           "type": "HYPOTHESIS_TEST",
           "information": {
             "PROBABILITY": 0.9999999999,
-            "FAULT_TOLERANCE": 0.01,
+            "SIGNIFICANCE": 0.01,
             "EXECUTIONS": 100,
             "PREDICATE": "card(AliveCowboys) = 1",
             "STEPS_PER_EXECUTION": 502,
@@ -187,7 +187,7 @@
         {
           "type": "ESTIMATION",
           "information": {
-            "FAULT_TOLERANCE": 0.01,
+            "EPSILON": 0.01,
             "EXECUTIONS": 100,
             "PREDICATE": "card(AliveCowboys) = 1",
             "ESTIMATION_TYPE": "MEAN",
@@ -199,7 +199,7 @@
         {
           "type": "ESTIMATION",
           "information": {
-            "FAULT_TOLERANCE": 0.01,
+            "EPSILON": 0.01,
             "EXECUTIONS": 100,
             "PREDICATE": "card(AliveCowboys) = 1",
             "ESTIMATION_TYPE": "MEAN",
@@ -228,7 +228,7 @@
           "type": "HYPOTHESIS_TEST",
           "information": {
             "PROBABILITY": 0.9999999999,
-            "FAULT_TOLERANCE": 0.001,
+            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 1000,
             "PREDICATE": "lastToss = {Heads}",
             "STEPS_PER_EXECUTION": 11,
@@ -240,7 +240,7 @@
           "type": "HYPOTHESIS_TEST",
           "information": {
             "PROBABILITY": 0.999999999,
-            "FAULT_TOLERANCE": 0.001,
+            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 1000,
             "PREDICATE": "lastToss = {Tails}",
             "STEPS_PER_EXECUTION": 11,
@@ -252,7 +252,7 @@
           "type": "HYPOTHESIS_TEST",
           "information": {
             "PROBABILITY": 0.9999999999,
-            "FAULT_TOLERANCE": 0.001,
+            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 1000,
             "PREDICATE": "lastToss = {Heads}",
             "STEPS_PER_EXECUTION": 101,
@@ -264,7 +264,7 @@
           "type": "HYPOTHESIS_TEST",
           "information": {
             "PROBABILITY": 0.999999999,
-            "FAULT_TOLERANCE": 0.001,
+            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 1000,
             "PREDICATE": "lastToss = {Tails}",
             "STEPS_PER_EXECUTION": 101,
@@ -276,7 +276,7 @@
           "type": "HYPOTHESIS_TEST",
           "information": {
             "PROBABILITY": 0.5,
-            "FAULT_TOLERANCE": 0.001,
+            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 1000000,
             "PREDICATE": "lastToss = {Heads}",
             "STEPS_PER_EXECUTION": 2,
@@ -288,7 +288,7 @@
           "type": "HYPOTHESIS_TEST",
           "information": {
             "PROBABILITY": 0.8,
-            "FAULT_TOLERANCE": 0.001,
+            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 1000000,
             "PREDICATE": "lastToss = {Heads}",
             "STEPS_PER_EXECUTION": 2,
@@ -316,7 +316,7 @@
           "type": "HYPOTHESIS_TEST",
           "information": {
             "PROBABILITY": 0.99999999,
-            "FAULT_TOLERANCE": 0.001,
+            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "lastNumber = {6}",
             "STEPS_PER_EXECUTION": 11,
@@ -328,7 +328,7 @@
           "type": "HYPOTHESIS_TEST",
           "information": {
             "PROBABILITY": 0.99999999,
-            "FAULT_TOLERANCE": 0.001,
+            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "lastNumber = {6}",
             "STEPS_PER_EXECUTION": 101,
@@ -340,7 +340,7 @@
           "type": "HYPOTHESIS_TEST",
           "information": {
             "PROBABILITY": 0.1667,
-            "FAULT_TOLERANCE": 0.001,
+            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 1000000,
             "PREDICATE": "lastNumber = {6}",
             "STEPS_PER_EXECUTION": 2,
@@ -351,7 +351,7 @@
         {
           "type": "ESTIMATION",
           "information": {
-            "FAULT_TOLERANCE": 0.001,
+            "EPSILON": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "lastNumber = {6}",
             "ESTIMATION_TYPE": "MEAN",
@@ -363,7 +363,7 @@
         {
           "type": "ESTIMATION",
           "information": {
-            "FAULT_TOLERANCE": 0.001,
+            "EPSILON": 0.001,
             "EXECUTIONS": 1000000,
             "PREDICATE": "lastNumber = {6}",
             "ESTIMATION_TYPE": "MEAN",
@@ -392,7 +392,7 @@
           "type": "HYPOTHESIS_TEST",
           "information": {
             "PROBABILITY": 0.999999999,
-            "FAULT_TOLERANCE": 0.001,
+            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "numberAliveCowboys = 1",
             "STEPS_PER_EXECUTION": 252,
@@ -404,7 +404,7 @@
           "type": "HYPOTHESIS_TEST",
           "information": {
             "PROBABILITY": 0.999999999,
-            "FAULT_TOLERANCE": 0.001,
+            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "numberAliveCowboys = 1",
             "STEPS_PER_EXECUTION": 127,
@@ -415,7 +415,7 @@
         {
           "type": "ESTIMATION",
           "information": {
-            "FAULT_TOLERANCE": 0.001,
+            "EPSILON": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "numberAliveCowboys = 1",
             "ESTIMATION_TYPE": "MEAN",
@@ -427,7 +427,7 @@
         {
           "type": "ESTIMATION",
           "information": {
-            "FAULT_TOLERANCE": 0.001,
+            "EPSILON": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "numberAliveCowboys = 1",
             "ESTIMATION_TYPE": "MEAN",
@@ -456,7 +456,7 @@
           "type": "HYPOTHESIS_TEST",
           "information": {
             "PROBABILITY": 0.999999999,
-            "FAULT_TOLERANCE": 0.001,
+            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 1000,
             "PREDICATE": "li = Tourists or ri = Tourists",
             "STEPS_PER_EXECUTION": 252,
@@ -484,7 +484,7 @@
           "type": "HYPOTHESIS_TEST",
           "information": {
             "PROBABILITY": 0.999999,
-            "FAULT_TOLERANCE": 0.001,
+            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 100,
             "PREDICATE": "li = Tourists or ri = Tourists",
             "STEPS_PER_EXECUTION": 253,
@@ -496,7 +496,7 @@
           "type": "HYPOTHESIS_TEST",
           "information": {
             "PROBABILITY": 0.999999,
-            "FAULT_TOLERANCE": 0.001,
+            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 100,
             "PREDICATE": "li = Tourists or ri = Tourists",
             "STEPS_PER_EXECUTION": 603,
@@ -508,7 +508,7 @@
           "type": "ESTIMATION",
           "information": {
             "DESIRED_VALUE": 0.999999,
-            "FAULT_TOLERANCE": 0.001,
+            "EPSILON": 0.001,
             "EXECUTIONS": 100,
             "PREDICATE": "li = Tourists or ri = Tourists",
             "STEPS_PER_EXECUTION": 253,
@@ -520,7 +520,7 @@
           "type": "ESTIMATION",
           "information": {
             "PROBABILITY": 0.999999,
-            "FAULT_TOLERANCE": 0.001,
+            "EPSILON": 0.001,
             "EXECUTIONS": 100,
             "PREDICATE": "li = Tourists or ri = Tourists",
             "STEPS_PER_EXECUTION": 603,
@@ -548,7 +548,7 @@
           "type": "HYPOTHESIS_TEST",
           "information": {
             "PROBABILITY": 0.9999999999,
-            "FAULT_TOLERANCE": 0.001,
+            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "finished = TRUE",
             "STEPS_PER_EXECUTION": 252,
@@ -560,7 +560,7 @@
           "type": "HYPOTHESIS_TEST",
           "information": {
             "PROBABILITY": 0.99999999,
-            "FAULT_TOLERANCE": 0.001,
+            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "finished = TRUE",
             "STEPS_PER_EXECUTION": 502,
@@ -572,7 +572,7 @@
           "type": "HYPOTHESIS_TEST",
           "information": {
             "PROBABILITY": 0.99999999,
-            "FAULT_TOLERANCE": 0.001,
+            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "finished = TRUE",
             "STEPS_PER_EXECUTION": 5002,
@@ -584,7 +584,7 @@
           "type": "ESTIMATION",
           "information": {
             "DESIRED_VALUE": 0.9999999999,
-            "FAULT_TOLERANCE": 0.001,
+            "EPSILON": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "finished = TRUE",
             "STEPS_PER_EXECUTION": 252,
@@ -596,7 +596,7 @@
           "type": "ESTIMATION",
           "information": {
             "DESIRED_VALUE": 0.99999999,
-            "FAULT_TOLERANCE": 0.001,
+            "EPSILON": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "finished = TRUE",
             "STEPS_PER_EXECUTION": 502,
@@ -608,7 +608,7 @@
           "type": "ESTIMATION",
           "information": {
             "DESIRED_VALUE": 0.99999999,
-            "FAULT_TOLERANCE": 0.001,
+            "EPSILON": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "finished = TRUE",
             "STEPS_PER_EXECUTION": 5002,
@@ -666,7 +666,7 @@
           "type": "HYPOTHESIS_TEST",
           "information": {
             "PROBABILITY": 0.9999999999,
-            "FAULT_TOLERANCE": 0.001,
+            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 1000,
             "PREDICATE": "lastToss = {Heads}",
             "STEPS_PER_EXECUTION": 11,
@@ -678,7 +678,7 @@
           "type": "HYPOTHESIS_TEST",
           "information": {
             "PROBABILITY": 0.999999999,
-            "FAULT_TOLERANCE": 0.001,
+            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 1000,
             "PREDICATE": "lastToss = {Tails}",
             "STEPS_PER_EXECUTION": 11,
@@ -690,7 +690,7 @@
           "type": "HYPOTHESIS_TEST",
           "information": {
             "PROBABILITY": 0.9999999999,
-            "FAULT_TOLERANCE": 0.001,
+            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 1000,
             "PREDICATE": "lastToss = {Heads}",
             "STEPS_PER_EXECUTION": 101,
@@ -702,7 +702,7 @@
           "type": "HYPOTHESIS_TEST",
           "information": {
             "PROBABILITY": 0.999999999,
-            "FAULT_TOLERANCE": 0.001,
+            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 1000,
             "PREDICATE": "lastToss = {Tails}",
             "STEPS_PER_EXECUTION": 101,
@@ -714,7 +714,7 @@
           "type": "HYPOTHESIS_TEST",
           "information": {
             "PROBABILITY": 0.5,
-            "FAULT_TOLERANCE": 0.001,
+            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 1000000,
             "PREDICATE": "lastToss = {Heads}",
             "STEPS_PER_EXECUTION": 2,
@@ -726,7 +726,7 @@
           "type": "HYPOTHESIS_TEST",
           "information": {
             "PROBABILITY": 0.8,
-            "FAULT_TOLERANCE": 0.001,
+            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 1000000,
             "PREDICATE": "lastToss = {Heads}",
             "STEPS_PER_EXECUTION": 2,
@@ -736,7 +736,7 @@
         {
             "type": "ESTIMATION",
             "information": {
-              "FAULT_TOLERANCE": 0.001,
+              "EPSILON": 0.001,
               "EXECUTIONS": 10000,
               "PREDICATE": "lastToss = {Heads}",
               "ESTIMATION_TYPE": "MEAN",
@@ -748,7 +748,7 @@
         {
           "type": "ESTIMATION",
           "information": {
-            "FAULT_TOLERANCE": 0.001,
+            "EPSILON": 0.001,
             "EXECUTIONS": 1000000,
             "PREDICATE": "lastToss = {Heads}",
             "ESTIMATION_TYPE": "MEAN",
@@ -777,7 +777,7 @@
           "information": {
             "PROBABILITY": 0.999999,
             "STARTING_PREDICATE": "active_blinkers = {left_blink}",
-            "FAULT_TOLERANCE": 0.001,
+            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "blinkLeft = 100",
             "ENDING_TIME": 100,
@@ -790,7 +790,7 @@
           "information": {
             "PROBABILITY": 0.999999,
             "STARTING_PREDICATE": "active_blinkers = {left_blink}",
-            "FAULT_TOLERANCE": 0.001,
+            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "blinkLeft = 100",
             "ENDING_TIME": 500,
@@ -803,7 +803,7 @@
           "information": {
             "PROBABILITY": 0.999999,
             "STARTING_PREDICATE": "active_blinkers = {left_blink}",
-            "FAULT_TOLERANCE": 0.001,
+            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "blinkLeft = 100",
             "ENDING_TIME": 500,
@@ -833,7 +833,7 @@
             "ENDING_PREDICATE": "card(active_blinkers) > 0",
             "PROBABILITY": 0.99999,
             "STARTING_PREDICATE": "engineOn = TRUE",
-            "FAULT_TOLERANCE": 0.001,
+            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "blinkLeft = 0 & blinkRight = 0",
             "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
@@ -876,7 +876,7 @@
           "information": {
             "PROBABILITY": 0.999999,
             "STARTING_PREDICATE": "active_blinkers = {left_blink}",
-            "FAULT_TOLERANCE": 0.001,
+            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "blinkLeft = 100",
             "ENDING_TIME": 100,
@@ -889,7 +889,7 @@
           "information": {
             "PROBABILITY": 0.999999,
             "STARTING_PREDICATE": "active_blinkers = {left_blink}",
-            "FAULT_TOLERANCE": 0.001,
+            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "blinkLeft = 100",
             "ENDING_TIME": 500,
@@ -919,7 +919,7 @@
             "ENDING_PREDICATE": "card(active_blinkers) > 0",
             "PROBABILITY": 0.99999,
             "STARTING_PREDICATE": "engineOn = TRUE",
-            "FAULT_TOLERANCE": 0.001,
+            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "blinkLeft = 0 & blinkRight = 0",
             "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
@@ -930,7 +930,7 @@
           "type": "ESTIMATION",
           "information": {
             "STARTING_PREDICATE": "active_blinkers = {left_blink}",
-            "FAULT_TOLERANCE": 0.001,
+            "EPSILON": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "blinkLeft = 100",
             "ESTIMATION_TYPE": "MEAN",
@@ -943,7 +943,7 @@
           "type": "ESTIMATION",
           "information": {
             "STARTING_PREDICATE": "active_blinkers = {left_blink}",
-            "FAULT_TOLERANCE": 0.001,
+            "EPSILON": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "blinkLeft = 100",
             "ESTIMATION_TYPE": "MEAN",
@@ -957,7 +957,7 @@
           "information": {
             "ENDING_PREDICATE": "card(active_blinkers) > 0",
             "STARTING_PREDICATE": "engineOn = TRUE",
-            "FAULT_TOLERANCE": 0.001,
+            "EPSILON": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "blinkLeft = 0 & blinkRight = 0",
             "ESTIMATION_TYPE": "MEAN",
