@@ -1,11 +1,17 @@
 # SimB Examples
 
 SimB is a simulator built on top of ProB. 
+
 The modeler can write SimB annotations for a formal model to simulate it.
+
 Furthermore, it is then possible to validate probabilistic and timing properties with statistical validation techniques such as hypothesis testing and estimation.
+
 This repository contains formal methods with corresponding SimB annotations.
+
 ProB2-UI (https://github.com/hhu-stups/prob2_ui) is required to use it.
+
 Furthermore, this repository contains two ProB2-UI project files (Project.prob2project and SimulationProject.prob2project).
+
 While Project.prob2project contains all examples presented in this repository, SimulationProject.prob2project focuses on the repository only.
 
 
