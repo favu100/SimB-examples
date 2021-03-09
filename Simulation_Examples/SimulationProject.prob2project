@@ -732,6 +732,7 @@
             "STEPS_PER_EXECUTION": 2,
             "HYPOTHESIS_CHECKING_TYPE": "TWO_TAILED",
             "CHECKING_TYPE": "PREDICATE_FINAL"
+           }
         },
         {
             "type": "ESTIMATION",
@@ -755,6 +756,7 @@
             "STEPS_PER_EXECUTION": 2,
             "DESIRED_VALUE": 0.5,
             "CHECKING_TYPE": "PREDICATE_FINAL"
+          }
         }
       ],
       "testCases": [],
