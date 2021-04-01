@@ -13,6 +13,9 @@ While Project.prob2project contains all examples presented in this repository, S
 
 ## Application of Statistical Validation Techniques
 
+ProB2-UI and SimB examples were used in the Git versions \emph{1.1.1-SNAPSHOT (ad2f2684fb4086f758a507eaf43ebdf362a56f1c)} and \emph{(11f927c0e9aadf59f4bc7af3e045d803abd037ac)} respectively.
+
+
 | Model                                                    | Simulation                                           | Property                                     | Runs  | VS    | ET        | Result      |
 |----------------------------------------------------------|------------------------------------------------------|----------------------------------------------|-------|-------|-----------|-------------|
 | Coin Toss (CoinToss2.mch)                                | Fair Tosses (CoinToss2_simulation.json)              | Heads in 50% of all Tosses                   | 1 Mio | 4     | 7         | OK (49.93%) |
