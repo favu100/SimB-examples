@@ -452,35 +452,6 @@
       "name": "Tourist",
       "description": "",
       "location": "Tourist/Tourist.mch",
-      "lastUsedPreferenceName": "default",
-      "ltlFormulas": [],
-      "ltlPatterns": [],
-      "symbolicCheckingFormulas": [],
-      "symbolicAnimationFormulas": [],
-      "simulationItems": [
-        {
-          "type": "HYPOTHESIS_TEST",
-          "information": {
-            "SIGNIFICANCE": 0.001,
-            "PROBABILITY": 0.999999999,
-            "EXECUTIONS": 1000,
-            "PREDICATE": "li = Tourists or ri = Tourists",
-            "STEPS_PER_EXECUTION": 252,
-            "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
-            "CHECKING_TYPE": "PREDICATE_FINAL"
-          }
-        }
-      ],
-      "testCases": [],
-      "traces": [],
-      "modelcheckingItems": [],
-      "simulation": null,
-      "visBVisualisation": null
-    },
-    {
-      "name": "AbstractTourist",
-      "description": "",
-      "location": "AbstractTourist/AbstractTourist.mch",
       "lastUsedPreferenceName": "DEFERRED_SET_100",
       "ltlFormulas": [],
       "ltlPatterns": [],
