@@ -33,7 +33,7 @@ ProB2-UI and SimB examples were used in the Git versions 1.1.1-SNAPSHOT (ad2f268
 | Leader Election (LeaderElection.mch)                     | 100 Nodes                                            | Termination in 5000 Steps                    | -     | -     | -         | -           |
 |                                                          | (Preference: LeaderElection_PREF_2)                  |                                              |       |       |           |             |
 | Traffic Light (TL, TrafficLight.mch)                     | Cars TL from Red to Green                            | Red to Green in 0.5s for Cars                | 1 Mio | 4     | 5         | KO (0%)     |
-|                                                          | (TrafficLight_simulation.json)                       | Red to Green in 1s for Cars                  | 1 Mio | 4     | 5         | OK (100%)   |
+|                                                          | (TrafficLight_simulation_cars.json)                  | Red to Green in 1s for Cars                  | 1 Mio | 4     | 5         | OK (100%)   |
 | Lift (Lift.mch)                                          | Basement to 2nd floor                                | Reaching 2nd floor in 10s                    | 1 Mio | 7     | 47        | KO (0%)     |
 |                                                          | (lift_simulation2_bottom_to_top.json)                | Reaching 2nd floor in 20s                    | 1 Mio | 7     | 47        | OK (100%)   |
 | Lift (Lift.mch)                                          | Basement to 2nd floor with stop at 1st floor         | Reaching 2nd floor in 20s                    | 1 Mio | 10    | 70        | KO (0%)     |
