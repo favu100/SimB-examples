@@ -16,8 +16,8 @@
           "type": "HYPOTHESIS_TEST",
           "information": {
             "ENDING_PREDICATE": "cur_floor = 2",
-            "PROBABILITY": 0.9999999,
             "SIGNIFICANCE": 0.001,
+            "PROBABILITY": 0.9999999,
             "EXECUTIONS": 1000000,
             "TIME": 10000,
             "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
@@ -28,8 +28,8 @@
           "type": "HYPOTHESIS_TEST",
           "information": {
             "ENDING_PREDICATE": "cur_floor = 2",
-            "PROBABILITY": 0.9999999,
             "SIGNIFICANCE": 0.001,
+            "PROBABILITY": 0.9999999,
             "EXECUTIONS": 1000000,
             "TIME": 20000,
             "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
@@ -40,24 +40,24 @@
           "type": "ESTIMATION",
           "information": {
             "ENDING_PREDICATE": "cur_floor = 2",
-            "EPSILON": 0.001,
             "EXECUTIONS": 1000000,
             "ESTIMATION_TYPE": "MEAN",
             "TIME": 10000,
             "DESIRED_VALUE": 0.9999999,
-            "CHECKING_TYPE": "TIMING"
+            "CHECKING_TYPE": "TIMING",
+            "EPSILON": 0.001
           }
         },
         {
           "type": "ESTIMATION",
           "information": {
             "ENDING_PREDICATE": "cur_floor = 2",
-            "EPSILON": 0.001,
             "EXECUTIONS": 1000000,
             "ESTIMATION_TYPE": "MEAN",
             "TIME": 20000,
             "DESIRED_VALUE": 0.9999999,
-            "CHECKING_TYPE": "TIMING"
+            "CHECKING_TYPE": "TIMING",
+            "EPSILON": 0.001
           }
         }
       ],
@@ -68,6 +68,7 @@
         "Lift/lift_trace2.prob2trace"
       ],
       "modelcheckingItems": [],
+      "simulation": "Lift/lift_simulation2_bottom_to_top_with_stop.json",
       "visBVisualisation": "Lift/VisB/lift.json"
     },
     {
@@ -98,8 +99,8 @@
           "type": "HYPOTHESIS_TEST",
           "information": {
             "ENDING_PREDICATE": "tl_cars = green",
-            "PROBABILITY": 0.999999,
             "SIGNIFICANCE": 0.001,
+            "PROBABILITY": 0.999999,
             "EXECUTIONS": 1000000,
             "TIME": 500,
             "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
@@ -110,8 +111,8 @@
           "type": "HYPOTHESIS_TEST",
           "information": {
             "ENDING_PREDICATE": "tl_cars = green",
-            "PROBABILITY": 0.9999999,
             "SIGNIFICANCE": 0.001,
+            "PROBABILITY": 0.9999999,
             "EXECUTIONS": 1000000,
             "TIME": 1000,
             "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
@@ -122,24 +123,24 @@
           "type": "ESTIMATION",
           "information": {
             "ENDING_PREDICATE": "tl_cars = green",
-            "EPSILON": 0.001,
             "EXECUTIONS": 1000000,
             "ESTIMATION_TYPE": "MEAN",
             "TIME": 500,
             "DESIRED_VALUE": 0.9999999,
-            "CHECKING_TYPE": "TIMING"
+            "CHECKING_TYPE": "TIMING",
+            "EPSILON": 0.001
           }
         },
         {
           "type": "ESTIMATION",
           "information": {
             "ENDING_PREDICATE": "tl_cars = green",
-            "EPSILON": 0.001,
             "EXECUTIONS": 1000000,
             "ESTIMATION_TYPE": "MEAN",
             "TIME": 1000,
             "DESIRED_VALUE": 0.9999999,
-            "CHECKING_TYPE": "TIMING"
+            "CHECKING_TYPE": "TIMING",
+            "EPSILON": 0.001
           }
         }
       ],
@@ -148,6 +149,7 @@
         "TrafficLight/TrafficLight_trace1.prob2trace"
       ],
       "modelcheckingItems": [],
+      "simulation": "TrafficLight/TrafficLight_simulation_cars.json",
       "visBVisualisation": "TrafficLight/VisB/traffic_light.json"
     },
     {
@@ -163,8 +165,8 @@
         {
           "type": "HYPOTHESIS_TEST",
           "information": {
-            "PROBABILITY": 0.9999999999,
             "SIGNIFICANCE": 0.01,
+            "PROBABILITY": 0.9999999999,
             "EXECUTIONS": 100,
             "PREDICATE": "card(AliveCowboys) = 1",
             "STEPS_PER_EXECUTION": 252,
@@ -175,8 +177,8 @@
         {
           "type": "HYPOTHESIS_TEST",
           "information": {
-            "PROBABILITY": 0.9999999999,
             "SIGNIFICANCE": 0.01,
+            "PROBABILITY": 0.9999999999,
             "EXECUTIONS": 100,
             "PREDICATE": "card(AliveCowboys) = 1",
             "STEPS_PER_EXECUTION": 502,
@@ -187,31 +189,32 @@
         {
           "type": "ESTIMATION",
           "information": {
-            "EPSILON": 0.01,
             "EXECUTIONS": 100,
             "PREDICATE": "card(AliveCowboys) = 1",
             "ESTIMATION_TYPE": "MEAN",
             "STEPS_PER_EXECUTION": 252,
             "DESIRED_VALUE": 0.999999999,
-            "CHECKING_TYPE": "PREDICATE_FINAL"
+            "CHECKING_TYPE": "PREDICATE_FINAL",
+            "EPSILON": 0.01
           }
         },
         {
           "type": "ESTIMATION",
           "information": {
-            "EPSILON": 0.01,
             "EXECUTIONS": 100,
             "PREDICATE": "card(AliveCowboys) = 1",
             "ESTIMATION_TYPE": "MEAN",
             "STEPS_PER_EXECUTION": 502,
             "DESIRED_VALUE": 0.999999999,
-            "CHECKING_TYPE": "PREDICATE_FINAL"
+            "CHECKING_TYPE": "PREDICATE_FINAL",
+            "EPSILON": 0.01
           }
         }
       ],
       "testCases": [],
       "traces": [],
       "modelcheckingItems": [],
+      "simulation": null,
       "visBVisualisation": null
     },
     {
@@ -227,8 +230,8 @@
         {
           "type": "HYPOTHESIS_TEST",
           "information": {
-            "PROBABILITY": 0.9999999999,
             "SIGNIFICANCE": 0.001,
+            "PROBABILITY": 0.9999999999,
             "EXECUTIONS": 1000,
             "PREDICATE": "lastToss = {Heads}",
             "STEPS_PER_EXECUTION": 11,
@@ -239,8 +242,8 @@
         {
           "type": "HYPOTHESIS_TEST",
           "information": {
-            "PROBABILITY": 0.999999999,
             "SIGNIFICANCE": 0.001,
+            "PROBABILITY": 0.999999999,
             "EXECUTIONS": 1000,
             "PREDICATE": "lastToss = {Tails}",
             "STEPS_PER_EXECUTION": 11,
@@ -251,8 +254,8 @@
         {
           "type": "HYPOTHESIS_TEST",
           "information": {
-            "PROBABILITY": 0.9999999999,
             "SIGNIFICANCE": 0.001,
+            "PROBABILITY": 0.9999999999,
             "EXECUTIONS": 1000,
             "PREDICATE": "lastToss = {Heads}",
             "STEPS_PER_EXECUTION": 101,
@@ -263,8 +266,8 @@
         {
           "type": "HYPOTHESIS_TEST",
           "information": {
-            "PROBABILITY": 0.999999999,
             "SIGNIFICANCE": 0.001,
+            "PROBABILITY": 0.999999999,
             "EXECUTIONS": 1000,
             "PREDICATE": "lastToss = {Tails}",
             "STEPS_PER_EXECUTION": 101,
@@ -275,8 +278,8 @@
         {
           "type": "HYPOTHESIS_TEST",
           "information": {
+            "SIGNIFICANCE": 0.001,
             "PROBABILITY": 0.5,
-            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 1000000,
             "PREDICATE": "lastToss = {Heads}",
             "STEPS_PER_EXECUTION": 2,
@@ -287,8 +290,8 @@
         {
           "type": "HYPOTHESIS_TEST",
           "information": {
-            "PROBABILITY": 0.8,
             "SIGNIFICANCE": 0.001,
+            "PROBABILITY": 0.8,
             "EXECUTIONS": 1000000,
             "PREDICATE": "lastToss = {Heads}",
             "STEPS_PER_EXECUTION": 2,
@@ -300,6 +303,7 @@
       "testCases": [],
       "traces": [],
       "modelcheckingItems": [],
+      "simulation": null,
       "visBVisualisation": null
     },
     {
@@ -315,8 +319,8 @@
         {
           "type": "HYPOTHESIS_TEST",
           "information": {
-            "PROBABILITY": 0.99999999,
             "SIGNIFICANCE": 0.001,
+            "PROBABILITY": 0.99999999,
             "EXECUTIONS": 10000,
             "PREDICATE": "lastNumber = {6}",
             "STEPS_PER_EXECUTION": 11,
@@ -327,8 +331,8 @@
         {
           "type": "HYPOTHESIS_TEST",
           "information": {
-            "PROBABILITY": 0.99999999,
             "SIGNIFICANCE": 0.001,
+            "PROBABILITY": 0.99999999,
             "EXECUTIONS": 10000,
             "PREDICATE": "lastNumber = {6}",
             "STEPS_PER_EXECUTION": 101,
@@ -339,8 +343,8 @@
         {
           "type": "HYPOTHESIS_TEST",
           "information": {
-            "PROBABILITY": 0.1667,
             "SIGNIFICANCE": 0.001,
+            "PROBABILITY": 0.1667,
             "EXECUTIONS": 1000000,
             "PREDICATE": "lastNumber = {6}",
             "STEPS_PER_EXECUTION": 2,
@@ -351,31 +355,32 @@
         {
           "type": "ESTIMATION",
           "information": {
-            "EPSILON": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "lastNumber = {6}",
             "ESTIMATION_TYPE": "MEAN",
             "STEPS_PER_EXECUTION": 101,
             "DESIRED_VALUE": 0.9999999,
-            "CHECKING_TYPE": "PREDICATE_EVENTUALLY"
+            "CHECKING_TYPE": "PREDICATE_EVENTUALLY",
+            "EPSILON": 0.001
           }
         },
         {
           "type": "ESTIMATION",
           "information": {
-            "EPSILON": 0.001,
             "EXECUTIONS": 1000000,
             "PREDICATE": "lastNumber = {6}",
             "ESTIMATION_TYPE": "MEAN",
             "STEPS_PER_EXECUTION": 2,
             "DESIRED_VALUE": 0.1667,
-            "CHECKING_TYPE": "PREDICATE_FINAL"
+            "CHECKING_TYPE": "PREDICATE_FINAL",
+            "EPSILON": 0.001
           }
         }
       ],
       "testCases": [],
       "traces": [],
       "modelcheckingItems": [],
+      "simulation": "RollingDice/RollingDice_simulation.json",
       "visBVisualisation": null
     },
     {
@@ -391,8 +396,8 @@
         {
           "type": "HYPOTHESIS_TEST",
           "information": {
-            "PROBABILITY": 0.999999999,
             "SIGNIFICANCE": 0.001,
+            "PROBABILITY": 0.999999999,
             "EXECUTIONS": 10000,
             "PREDICATE": "numberAliveCowboys = 1",
             "STEPS_PER_EXECUTION": 252,
@@ -403,8 +408,8 @@
         {
           "type": "HYPOTHESIS_TEST",
           "information": {
-            "PROBABILITY": 0.999999999,
             "SIGNIFICANCE": 0.001,
+            "PROBABILITY": 0.999999999,
             "EXECUTIONS": 10000,
             "PREDICATE": "numberAliveCowboys = 1",
             "STEPS_PER_EXECUTION": 127,
@@ -415,31 +420,32 @@
         {
           "type": "ESTIMATION",
           "information": {
-            "EPSILON": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "numberAliveCowboys = 1",
             "ESTIMATION_TYPE": "MEAN",
             "STEPS_PER_EXECUTION": 252,
             "DESIRED_VALUE": 0.99999999,
-            "CHECKING_TYPE": "PREDICATE_FINAL"
+            "CHECKING_TYPE": "PREDICATE_FINAL",
+            "EPSILON": 0.001
           }
         },
         {
           "type": "ESTIMATION",
           "information": {
-            "EPSILON": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "numberAliveCowboys = 1",
             "ESTIMATION_TYPE": "MEAN",
             "STEPS_PER_EXECUTION": 127,
             "DESIRED_VALUE": 0.9999999,
-            "CHECKING_TYPE": "PREDICATE_FINAL"
+            "CHECKING_TYPE": "PREDICATE_FINAL",
+            "EPSILON": 0.001
           }
         }
       ],
       "testCases": [],
       "traces": [],
       "modelcheckingItems": [],
+      "simulation": "AbstractCowboys/AbstractDuellingCowboys_simulation.json",
       "visBVisualisation": null
     },
     {
@@ -455,8 +461,8 @@
         {
           "type": "HYPOTHESIS_TEST",
           "information": {
-            "PROBABILITY": 0.999999999,
             "SIGNIFICANCE": 0.001,
+            "PROBABILITY": 0.999999999,
             "EXECUTIONS": 1000,
             "PREDICATE": "li = Tourists or ri = Tourists",
             "STEPS_PER_EXECUTION": 252,
@@ -468,6 +474,7 @@
       "testCases": [],
       "traces": [],
       "modelcheckingItems": [],
+      "simulation": null,
       "visBVisualisation": null
     },
     {
@@ -483,8 +490,8 @@
         {
           "type": "HYPOTHESIS_TEST",
           "information": {
-            "PROBABILITY": 0.999999,
             "SIGNIFICANCE": 0.001,
+            "PROBABILITY": 0.999999,
             "EXECUTIONS": 100,
             "PREDICATE": "li = Tourists or ri = Tourists",
             "STEPS_PER_EXECUTION": 253,
@@ -495,8 +502,8 @@
         {
           "type": "HYPOTHESIS_TEST",
           "information": {
-            "PROBABILITY": 0.999999,
             "SIGNIFICANCE": 0.001,
+            "PROBABILITY": 0.999999,
             "EXECUTIONS": 100,
             "PREDICATE": "li = Tourists or ri = Tourists",
             "STEPS_PER_EXECUTION": 603,
@@ -507,31 +514,32 @@
         {
           "type": "ESTIMATION",
           "information": {
-            "DESIRED_VALUE": 0.999999,
-            "EPSILON": 0.001,
             "EXECUTIONS": 100,
             "PREDICATE": "li = Tourists or ri = Tourists",
-            "STEPS_PER_EXECUTION": 253,
             "ESTIMATION_TYPE": "MEAN",
-            "CHECKING_TYPE": "PREDICATE_FINAL"
+            "STEPS_PER_EXECUTION": 253,
+            "DESIRED_VALUE": 0.999999,
+            "CHECKING_TYPE": "PREDICATE_FINAL",
+            "EPSILON": 0.001
           }
         },
         {
           "type": "ESTIMATION",
           "information": {
             "PROBABILITY": 0.999999,
-            "EPSILON": 0.001,
             "EXECUTIONS": 100,
             "PREDICATE": "li = Tourists or ri = Tourists",
-            "STEPS_PER_EXECUTION": 603,
             "ESTIMATION_TYPE": "MEAN",
-            "CHECKING_TYPE": "PREDICATE_FINAL"
+            "STEPS_PER_EXECUTION": 603,
+            "CHECKING_TYPE": "PREDICATE_FINAL",
+            "EPSILON": 0.001
           }
         }
       ],
       "testCases": [],
       "traces": [],
       "modelcheckingItems": [],
+      "simulation": null,
       "visBVisualisation": null
     },
     {
@@ -547,8 +555,8 @@
         {
           "type": "HYPOTHESIS_TEST",
           "information": {
+            "SIGNIFICANCE": 0.001,
             "PROBABILITY": 0.9999999999,
-            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "finished = TRUE",
             "STEPS_PER_EXECUTION": 252,
@@ -559,8 +567,8 @@
         {
           "type": "HYPOTHESIS_TEST",
           "information": {
-            "PROBABILITY": 0.99999999,
             "SIGNIFICANCE": 0.001,
+            "PROBABILITY": 0.99999999,
             "EXECUTIONS": 10000,
             "PREDICATE": "finished = TRUE",
             "STEPS_PER_EXECUTION": 502,
@@ -571,8 +579,8 @@
         {
           "type": "HYPOTHESIS_TEST",
           "information": {
-            "PROBABILITY": 0.99999999,
             "SIGNIFICANCE": 0.001,
+            "PROBABILITY": 0.99999999,
             "EXECUTIONS": 10000,
             "PREDICATE": "finished = TRUE",
             "STEPS_PER_EXECUTION": 5002,
@@ -583,43 +591,44 @@
         {
           "type": "ESTIMATION",
           "information": {
+            "EXECUTIONS": 10000,
+            "PREDICATE": "finished = TRUE",
+            "ESTIMATION_TYPE": "MEAN",
+            "STEPS_PER_EXECUTION": 252,
             "DESIRED_VALUE": 0.9999999999,
-            "EPSILON": 0.001,
-            "EXECUTIONS": 10000,
-            "PREDICATE": "finished = TRUE",
-            "STEPS_PER_EXECUTION": 252,
-            "ESTIMATION_TYPE": "MEAN",
-            "CHECKING_TYPE": "PREDICATE_FINAL"
+            "CHECKING_TYPE": "PREDICATE_FINAL",
+            "EPSILON": 0.001
           }
         },
         {
           "type": "ESTIMATION",
           "information": {
-            "DESIRED_VALUE": 0.99999999,
-            "EPSILON": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "finished = TRUE",
+            "ESTIMATION_TYPE": "MEAN",
             "STEPS_PER_EXECUTION": 502,
-            "ESTIMATION_TYPE": "MEAN",
-            "CHECKING_TYPE": "PREDICATE_FINAL"
+            "DESIRED_VALUE": 0.99999999,
+            "CHECKING_TYPE": "PREDICATE_FINAL",
+            "EPSILON": 0.001
           }
         },
         {
           "type": "ESTIMATION",
           "information": {
-            "DESIRED_VALUE": 0.99999999,
-            "EPSILON": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "finished = TRUE",
-            "STEPS_PER_EXECUTION": 5002,
             "ESTIMATION_TYPE": "MEAN",
-            "CHECKING_TYPE": "PREDICATE_FINAL"
+            "STEPS_PER_EXECUTION": 5002,
+            "DESIRED_VALUE": 0.99999999,
+            "CHECKING_TYPE": "PREDICATE_FINAL",
+            "EPSILON": 0.001
           }
         }
       ],
       "testCases": [],
       "traces": [],
       "modelcheckingItems": [],
+      "simulation": "LeaderElection/LeaderElection_simulation.json",
       "visBVisualisation": null
     },
     {
@@ -635,6 +644,7 @@
       "testCases": [],
       "traces": [],
       "modelcheckingItems": [],
+      "simulation": null,
       "visBVisualisation": null
     },
     {
@@ -650,6 +660,7 @@
       "testCases": [],
       "traces": [],
       "modelcheckingItems": [],
+      "simulation": null,
       "visBVisualisation": null
     },
     {
@@ -665,8 +676,8 @@
         {
           "type": "HYPOTHESIS_TEST",
           "information": {
-            "PROBABILITY": 0.9999999999,
             "SIGNIFICANCE": 0.001,
+            "PROBABILITY": 0.9999999999,
             "EXECUTIONS": 1000,
             "PREDICATE": "lastToss = {Heads}",
             "STEPS_PER_EXECUTION": 11,
@@ -677,9 +688,9 @@
         {
           "type": "HYPOTHESIS_TEST",
           "information": {
-            "PROBABILITY": 0.999999999,
             "SIGNIFICANCE": 0.001,
-            "EXECUTIONS": 1000,
+            "PROBABILITY": 0.999999999,
+            "EXECUTIONS": 10000,
             "PREDICATE": "lastToss = {Tails}",
             "STEPS_PER_EXECUTION": 11,
             "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
@@ -689,9 +700,9 @@
         {
           "type": "HYPOTHESIS_TEST",
           "information": {
-            "PROBABILITY": 0.9999999999,
             "SIGNIFICANCE": 0.001,
-            "EXECUTIONS": 1000,
+            "PROBABILITY": 0.9999999999,
+            "EXECUTIONS": 10000,
             "PREDICATE": "lastToss = {Heads}",
             "STEPS_PER_EXECUTION": 101,
             "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
@@ -701,9 +712,9 @@
         {
           "type": "HYPOTHESIS_TEST",
           "information": {
-            "PROBABILITY": 0.999999999,
             "SIGNIFICANCE": 0.001,
-            "EXECUTIONS": 1000,
+            "PROBABILITY": 0.999999999,
+            "EXECUTIONS": 10000,
             "PREDICATE": "lastToss = {Tails}",
             "STEPS_PER_EXECUTION": 101,
             "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
@@ -713,8 +724,8 @@
         {
           "type": "HYPOTHESIS_TEST",
           "information": {
+            "SIGNIFICANCE": 0.001,
             "PROBABILITY": 0.5,
-            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 1000000,
             "PREDICATE": "lastToss = {Heads}",
             "STEPS_PER_EXECUTION": 2,
@@ -725,36 +736,48 @@
         {
           "type": "HYPOTHESIS_TEST",
           "information": {
-            "PROBABILITY": 0.8,
             "SIGNIFICANCE": 0.001,
+            "PROBABILITY": 0.8,
             "EXECUTIONS": 1000000,
             "PREDICATE": "lastToss = {Heads}",
             "STEPS_PER_EXECUTION": 2,
             "HYPOTHESIS_CHECKING_TYPE": "TWO_TAILED",
             "CHECKING_TYPE": "PREDICATE_FINAL"
-           }
-        },
-        {
-            "type": "ESTIMATION",
-            "information": {
-              "EPSILON": 0.001,
-              "EXECUTIONS": 10000,
-              "PREDICATE": "lastToss = {Heads}",
-              "ESTIMATION_TYPE": "MEAN",
-              "STEPS_PER_EXECUTION": 101,
-              "DESIRED_VALUE": 0.9999999,
-              "CHECKING_TYPE": "PREDICATE_EVENTUALLY"
-            }
+          }
         },
         {
           "type": "ESTIMATION",
           "information": {
-            "EPSILON": 0.001,
+            "EXECUTIONS": 10000,
+            "PREDICATE": "lastToss = {Heads}",
+            "ESTIMATION_TYPE": "MEAN",
+            "STEPS_PER_EXECUTION": 101,
+            "DESIRED_VALUE": 0.9999999,
+            "CHECKING_TYPE": "PREDICATE_EVENTUALLY",
+            "EPSILON": 0.001
+          }
+        },
+        {
+          "type": "ESTIMATION",
+          "information": {
             "EXECUTIONS": 1000000,
             "PREDICATE": "lastToss = {Heads}",
             "ESTIMATION_TYPE": "MEAN",
             "STEPS_PER_EXECUTION": 2,
             "DESIRED_VALUE": 0.5,
+            "CHECKING_TYPE": "PREDICATE_FINAL",
+            "EPSILON": 0.001
+          }
+        },
+        {
+          "type": "HYPOTHESIS_TEST",
+          "information": {
+            "SIGNIFICANCE": 0.001,
+            "PROBABILITY": 0.5,
+            "EXECUTIONS": 10,
+            "PREDICATE": "lastToss = {Heads}",
+            "STEPS_PER_EXECUTION": 2,
+            "HYPOTHESIS_CHECKING_TYPE": "TWO_TAILED",
             "CHECKING_TYPE": "PREDICATE_FINAL"
           }
         }
@@ -762,6 +785,7 @@
       "testCases": [],
       "traces": [],
       "modelcheckingItems": [],
+      "simulation": "CoinToss2/CoinToss2_simulation.json",
       "visBVisualisation": null
     },
     {
@@ -777,9 +801,9 @@
         {
           "type": "HYPOTHESIS_TEST",
           "information": {
+            "SIGNIFICANCE": 0.001,
             "PROBABILITY": 0.999999,
             "STARTING_PREDICATE": "active_blinkers = {left_blink}",
-            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "blinkLeft = 100",
             "ENDING_TIME": 100,
@@ -790,9 +814,9 @@
         {
           "type": "HYPOTHESIS_TEST",
           "information": {
+            "SIGNIFICANCE": 0.001,
             "PROBABILITY": 0.999999,
             "STARTING_PREDICATE": "active_blinkers = {left_blink}",
-            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "blinkLeft = 100",
             "ENDING_TIME": 500,
@@ -803,9 +827,9 @@
         {
           "type": "HYPOTHESIS_TEST",
           "information": {
+            "SIGNIFICANCE": 0.001,
             "PROBABILITY": 0.999999,
             "STARTING_PREDICATE": "active_blinkers = {left_blink}",
-            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "blinkLeft = 100",
             "ENDING_TIME": 500,
@@ -833,9 +857,9 @@
           "type": "HYPOTHESIS_TEST",
           "information": {
             "ENDING_PREDICATE": "card(active_blinkers) > 0",
+            "SIGNIFICANCE": 0.001,
             "PROBABILITY": 0.99999,
             "STARTING_PREDICATE": "engineOn = TRUE",
-            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "blinkLeft = 0 & blinkRight = 0",
             "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
@@ -846,6 +870,7 @@
       "testCases": [],
       "traces": [],
       "modelcheckingItems": [],
+      "simulation": null,
       "visBVisualisation": "LightModel/Visualisation/blinking_visb_v4.json"
     },
     {
@@ -861,6 +886,7 @@
       "testCases": [],
       "traces": [],
       "modelcheckingItems": [],
+      "simulation": null,
       "visBVisualisation": null
     },
     {
@@ -876,9 +902,9 @@
         {
           "type": "HYPOTHESIS_TEST",
           "information": {
+            "SIGNIFICANCE": 0.001,
             "PROBABILITY": 0.999999,
             "STARTING_PREDICATE": "active_blinkers = {left_blink}",
-            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "blinkLeft = 100",
             "ENDING_TIME": 100,
@@ -889,9 +915,9 @@
         {
           "type": "HYPOTHESIS_TEST",
           "information": {
+            "SIGNIFICANCE": 0.001,
             "PROBABILITY": 0.999999,
             "STARTING_PREDICATE": "active_blinkers = {left_blink}",
-            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "blinkLeft = 100",
             "ENDING_TIME": 500,
@@ -919,9 +945,9 @@
           "type": "HYPOTHESIS_TEST",
           "information": {
             "ENDING_PREDICATE": "card(active_blinkers) > 0",
+            "SIGNIFICANCE": 0.001,
             "PROBABILITY": 0.99999,
             "STARTING_PREDICATE": "engineOn = TRUE",
-            "SIGNIFICANCE": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "blinkLeft = 0 & blinkRight = 0",
             "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
@@ -932,26 +958,26 @@
           "type": "ESTIMATION",
           "information": {
             "STARTING_PREDICATE": "active_blinkers = {left_blink}",
-            "EPSILON": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "blinkLeft = 100",
             "ESTIMATION_TYPE": "MEAN",
             "ENDING_TIME": 100,
             "DESIRED_VALUE": 0.999999,
-            "CHECKING_TYPE": "PREDICATE_EVENTUALLY"
+            "CHECKING_TYPE": "PREDICATE_EVENTUALLY",
+            "EPSILON": 0.001
           }
         },
         {
           "type": "ESTIMATION",
           "information": {
             "STARTING_PREDICATE": "active_blinkers = {left_blink}",
-            "EPSILON": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "blinkLeft = 100",
             "ESTIMATION_TYPE": "MEAN",
             "ENDING_TIME": 500,
             "DESIRED_VALUE": 0.999999,
-            "CHECKING_TYPE": "PREDICATE_EVENTUALLY"
+            "CHECKING_TYPE": "PREDICATE_EVENTUALLY",
+            "EPSILON": 0.001
           }
         },
         {
@@ -959,18 +985,19 @@
           "information": {
             "ENDING_PREDICATE": "card(active_blinkers) > 0",
             "STARTING_PREDICATE": "engineOn = TRUE",
-            "EPSILON": 0.001,
             "EXECUTIONS": 10000,
             "PREDICATE": "blinkLeft = 0 & blinkRight = 0",
             "ESTIMATION_TYPE": "MEAN",
             "DESIRED_VALUE": 0.999999,
-            "CHECKING_TYPE": "PREDICATE_INVARIANT"
+            "CHECKING_TYPE": "PREDICATE_INVARIANT",
+            "EPSILON": 0.001
           }
         }
       ],
       "testCases": [],
       "traces": [],
       "modelcheckingItems": [],
+      "simulation": "LightModel/Simulation_MC/PitmanController_v4_simulation.json",
       "visBVisualisation": "LightModel/Visualisation/blinking_visb_v4.json"
     }
   ],
@@ -1021,8 +1048,8 @@
   ],
   "metadata": {
     "fileType": "Project",
-    "formatVersion": 10,
-    "savedAt": "2021-02-21T11:14:18.338963Z",
+    "formatVersion": 12,
+    "savedAt": "2021-04-09T11:15:41.124999Z",
     "creator": "User",
     "proB2KernelVersion": "4.0.0-SNAPSHOT",
     "proBCliVersion": null,
