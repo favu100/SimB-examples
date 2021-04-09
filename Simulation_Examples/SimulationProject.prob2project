@@ -452,7 +452,7 @@
       "name": "Tourist",
       "description": "",
       "location": "Tourist/Tourist.mch",
-      "lastUsedPreferenceName": "DEFERRED_SET_100",
+      "lastUsedPreferenceName": "default",
       "ltlFormulas": [],
       "ltlPatterns": [],
       "symbolicCheckingFormulas": [],
@@ -510,7 +510,7 @@
       "testCases": [],
       "traces": [],
       "modelcheckingItems": [],
-      "simulation": null,
+      "simulation": "../../IVOIRE/Simulation/Simulation_Examples/Tourist/Tourist_simulation.json",
       "visBVisualisation": null
     },
     {
@@ -1020,7 +1020,7 @@
   "metadata": {
     "fileType": "Project",
     "formatVersion": 12,
-    "savedAt": "2021-04-09T11:15:41.124999Z",
+    "savedAt": "2021-04-09T12:31:57.123263Z",
     "creator": "User",
     "proB2KernelVersion": "4.0.0-SNAPSHOT",
     "proBCliVersion": null,
