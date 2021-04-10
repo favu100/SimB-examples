@@ -214,7 +214,7 @@
       "testCases": [],
       "traces": [],
       "modelcheckingItems": [],
-      "simulation": null,
+      "simulation": "Cowboys/DuellingCowboys_simulation.json",
       "visBVisualisation": null
     },
     {
@@ -461,7 +461,7 @@
         {
           "type": "HYPOTHESIS_TEST",
           "information": {
-            "SIGNIFICANCE": 0.001,
+            "SIGNIFICANCE": 0.01,
             "PROBABILITY": 0.999999,
             "EXECUTIONS": 100,
             "PREDICATE": "li = Tourists or ri = Tourists",
@@ -473,7 +473,7 @@
         {
           "type": "HYPOTHESIS_TEST",
           "information": {
-            "SIGNIFICANCE": 0.001,
+            "SIGNIFICANCE": 0.01,
             "PROBABILITY": 0.999999,
             "EXECUTIONS": 100,
             "PREDICATE": "li = Tourists or ri = Tourists",
@@ -491,7 +491,7 @@
             "STEPS_PER_EXECUTION": 253,
             "DESIRED_VALUE": 0.999999,
             "CHECKING_TYPE": "PREDICATE_FINAL",
-            "EPSILON": 0.001
+            "EPSILON": 0.01
           }
         },
         {
@@ -503,14 +503,14 @@
             "ESTIMATION_TYPE": "MEAN",
             "STEPS_PER_EXECUTION": 603,
             "CHECKING_TYPE": "PREDICATE_FINAL",
-            "EPSILON": 0.001
+            "EPSILON": 0.01
           }
         }
       ],
       "testCases": [],
       "traces": [],
       "modelcheckingItems": [],
-      "simulation": "../../IVOIRE/Simulation/Simulation_Examples/Tourist/Tourist_simulation.json",
+      "simulation": "Tourist/Tourist_simulation.json",
       "visBVisualisation": null
     },
     {
@@ -1020,7 +1020,7 @@
   "metadata": {
     "fileType": "Project",
     "formatVersion": 12,
-    "savedAt": "2021-04-09T12:31:57.123263Z",
+    "savedAt": "2021-04-10T21:53:49.357885Z",
     "creator": "User",
     "proB2KernelVersion": "4.0.0-SNAPSHOT",
     "proBCliVersion": null,
