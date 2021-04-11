@@ -628,7 +628,7 @@
             "SIGNIFICANCE": 0.01,
             "EXECUTIONS": 100,
             "PREDICATE": "li = Tourists or ri = Tourists",
-            "STEPS_PER_EXECUTION": 603,
+            "STEPS_PER_EXECUTION": 503,
             "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
             "CHECKING_TYPE": "PREDICATE_FINAL"
           }
@@ -653,7 +653,7 @@
             "EXECUTIONS": 100,
             "PREDICATE": "li = Tourists or ri = Tourists",
             "ESTIMATION_TYPE": "MEAN",
-            "STEPS_PER_EXECUTION": 603,
+            "STEPS_PER_EXECUTION": 503,
             "CHECKING_TYPE": "PREDICATE_FINAL"
           }
         }
