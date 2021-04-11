@@ -27,7 +27,7 @@ ProB2-UI and SimB examples were used in the Git versions 1.1.1-SNAPSHOT (ad2f268
 | Duelling Cowboys (abstract, AbstractDuellingCowboys.mch) | 100 Cowboys, Accuracy: 80%                           | Termination in 125 Shoots                    | 10000 | 102   | 201       | KO (63.13%) |
 |                                                          | (AbstractDuellingCowboys_simulation.json)            | Termination in 250 Shoots                    | 10000 | 102   | 201       | OK (100%)   |
 | Tourists (Tourist.mch)                                   | 100 Tourists                                         | Termination in 125 Steps                     | 100   | 25042 | 956 468   | KO (0%)     |
-|                                                          | (Tourist_simulation.json)                            | Termination in 300 Steps                     | 100   | 34776 | 1 064 964 | OK (99%)    |
+|                                                          | (Tourist_simulation.json)                            | Termination in 250 Steps                     | 100   | 34776 | 1 064 964 | OK (99%)    |
 | Leader Election (LeaderElection.mch)                     | 10 Nodes                                             | Termination in 250 Steps                     | 10000 | 1030  | 37917     | KO (99.46%) |
 |                                                          | (Preference: LeaderElection_PREF)                    | Termination in 500 Steps                     | 10000 | 1029  | 37884     | OK (100%)   |
 | Leader Election (LeaderElection.mch)                     | 100 Nodes                                            | Termination in 5000 Steps                    | -     | -     | -         | -           |
