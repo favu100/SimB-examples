@@ -13,7 +13,7 @@ While Project.prob2project contains all examples presented in this repository, S
 
 ## Application of Statistical Validation Techniques
 
-ProB2-UI and SimB examples were used in the Git versions 1.1.1-SNAPSHOT (ad2f2684fb4086f758a507eaf43ebdf362a56f1c) and (11f927c0e9aadf59f4bc7af3e045d803abd037ac) respectively.
+ProB2-UI and SimB examples were used in the Git versions 1.1.1-SNAPSHOT (dee1414f56ee9e78cd5ff002a812b160d6576f36) and (a4dbb4867cf686302ec45d47c0d757fd387daf27) respectively.
 
 
 | Model                                                    | Simulation                                           | Property                                     | Runs  | VS    | ET        | Result      |
