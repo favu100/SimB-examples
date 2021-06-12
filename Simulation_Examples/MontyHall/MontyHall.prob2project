@@ -1,0 +1,60 @@
+{
+  "name": "MontyHall",
+  "description": "Monty Hall problem",
+  "machines": [
+    {
+      "name": "MontyHall",
+      "description": "",
+      "location": "MontyHall.mch",
+      "lastUsedPreferenceName": "default",
+      "requirements": [],
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "simulationItems": [
+        {
+          "type": "HYPOTHESIS_TEST",
+          "information": {
+            "SIGNIFICANCE": 0.05,
+            "PROBABILITY": 0.33333333,
+            "EXECUTIONS": 10000,
+            "PREDICATE": "car : final",
+            "STEPS_PER_EXECUTION": 4,
+            "HYPOTHESIS_CHECKING_TYPE": "TWO_TAILED",
+            "CHECKING_TYPE": "PREDICATE_FINAL"
+          }
+        },
+        {
+          "type": "HYPOTHESIS_TEST",
+          "information": {
+            "SIGNIFICANCE": 0.05,
+            "PROBABILITY": 0.66666666,
+            "EXECUTIONS": 10000,
+            "PREDICATE": "car : final",
+            "STEPS_PER_EXECUTION": 4,
+            "HYPOTHESIS_CHECKING_TYPE": "TWO_TAILED",
+            "CHECKING_TYPE": "PREDICATE_FINAL"
+          }
+        }
+      ],
+      "testCases": [],
+      "traces": [
+        "MontyHall_keep.prob2trace"
+      ],
+      "modelcheckingItems": [],
+      "simulation": "MontyHall_simulation_switch.json",
+      "visBVisualisation": null
+    }
+  ],
+  "preferences": [],
+  "metadata": {
+    "fileType": "Project",
+    "formatVersion": 17,
+    "savedAt": "2021-06-12T15:05:43.499189Z",
+    "creator": "User",
+    "proB2KernelVersion": "4.0.0-SNAPSHOT",
+    "proBCliVersion": null,
+    "modelName": null
+  }
+}

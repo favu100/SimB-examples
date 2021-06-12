@@ -1,0 +1,28 @@
+{
+    "activations": [
+        {
+            "id": "$initialise_machine",
+            "execute": "$initialise_machine",
+            "activating" : "choose"
+        },
+        {
+            "id": "choose",
+            "execute": "Choose",
+            "after": 500,
+            "probabilisticVariables": {"door": {1: "0.33333333", 2: "0.33333333", 3:"0.33333334"}},
+            "activating" : "reveal"
+        },
+        {
+            "id": "reveal",
+            "execute": "Reveal",
+            "after": 500,
+            "activating" : "keep"
+        },
+        {
+            "id": "keep",
+            "execute": "Keep",
+            "after": 500,
+            "activating" : "keep"
+        }
+    ]
+}
