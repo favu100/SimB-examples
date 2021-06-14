@@ -3,6 +3,7 @@
         {
             "id": "$initialise_machine",
             "execute": "$initialise_machine",
+            "probabilisticVariables": {"car": {1: "0.33333333", 2: "0.33333333", 3:"0.33333334"}},
             "activating" : "choose"
         },
         {
