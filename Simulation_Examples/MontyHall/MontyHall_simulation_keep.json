@@ -22,8 +22,7 @@
         {
             "id": "keep",
             "execute": "Keep",
-            "after": 500,
-            "activating" : "keep"
+            "after": 500
         }
     ]
 }

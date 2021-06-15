@@ -22,8 +22,7 @@
         {
             "id": "switch",
             "execute": "Switch",
-            "after": 500,
-            "activating" : "switch"
+            "after": 500
         }
     ]
 }
