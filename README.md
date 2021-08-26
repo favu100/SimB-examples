@@ -4,6 +4,22 @@ SimB is a simulator built on top of ProB.
 The modeler can write SimB annotations for a formal model to simulate it.
 Furthermore, it is then possible to validate probabilistic and timing properties with statistical validation techniques such as hypothesis testing and estimation.
 
+Paper: https://www.researchgate.net/publication/351802078_Validation_of_Formal_Models_by_Timed_Probabilistic_Simulation
+
+Citation:
+
+```
+@InProceedings{simb,
+  Author    = {Vu, Fabian and Leuschel, Michael and Mashkoor, Atif},
+  Title        = {{Validation of Formal Models by Timed Probabilistic Simulation}},
+  Booktitle    = {Proceedings ABZ},
+  Year        = 2021,
+  Series    = {LNCS},
+  Volume     = {12709},
+  Pages = {81--96}
+}
+```
+
 This repository contains formal methods with corresponding SimB annotations.
 ProB2-UI (https://github.com/hhu-stups/prob2_ui) is required to use it.
 Furthermore, this repository contains two ProB2-UI project files (Project.prob2project and SimulationProject.prob2project).
