@@ -1,0 +1,44 @@
+{
+    "activations": [
+        {
+            "id": "$setup_constants",
+            "execute": "$setup_constants"
+        },
+        {
+            "id": "$initialise_machine",
+            "execute": "$initialise_machine",
+            "activating" : "shoots"
+        },
+        {
+            "id": "chooses",
+            "execute": "chooses",
+            "after": 500,
+            "activating": "shoots"
+        },
+        {
+            "id": "shoots",
+            "chooseActivation": {"shoots_fail": "IF Cowboys1 = ShootingCowboy THEN 0.5 ELSE 0.2 END",
+                                 "shoots_hit": "IF Cowboys1 = ShootingCowboy THEN 0.5 ELSE 0.8 END"}
+        },
+        {
+            "id": "shoots_fail",
+            "execute": "shoots_fail",
+            "after": 500,
+            "probabilisticVariables": "uniform",
+            "activating": ["chooses", "survives"]
+        },
+        {
+            "id": "shoots_hit",
+            "execute": "shoots_hit",
+            "after": 500,
+            "probabilisticVariables": "uniform",
+            "activating": ["chooses", "survives"]
+        },
+        {
+            "id": "survives",
+            "execute": "survives",
+            "after": 500,
+            "activating": "survives"
+        }
+    ]
+}
