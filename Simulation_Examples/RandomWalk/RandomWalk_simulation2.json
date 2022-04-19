@@ -1,0 +1,25 @@
+{
+    "activations": [
+        {
+            "id": "$initialise_machine",
+            "execute": "$initialise_machine",
+            "activating": "move"
+        },
+        {
+            "id": "move",
+            "chooseActivation": {"inc": "0.8", "dec": "0.2"}
+        },
+        {
+            "id": "inc",
+            "execute": "inc",
+            "after": 500,
+            "activating": "move"
+        },
+        {
+            "id": "dec",
+            "execute": "dec",
+            "after": 500,
+            "activating": "move"
+        }
+    ]
+}

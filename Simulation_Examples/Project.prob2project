@@ -1430,6 +1430,52 @@
       "simulation": "Cowboys/ThreeDuellingCowboys_simulation.json",
       "visBVisualisation": null,
       "historyChartItems": []
+    },
+    {
+      "name": "RandomWalk",
+      "description": "",
+      "location": "RandomWalk/RandomWalk.mch",
+      "lastUsedPreferenceName": "default",
+      "validationTasks": [],
+      "validationObligations": [],
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "simulationItems": [
+        {
+          "type": "HYPOTHESIS_TEST",
+          "information": {
+            "ENDING_PREDICATE": "position = 5 or position = -5",
+            "SIGNIFICANCE": 0.05,
+            "PROBABILITY": 0.5,
+            "MAX_STEPS_BEFORE_PROPERTY": 0,
+            "EXECUTIONS": 10000,
+            "PREDICATE": "position = 5",
+            "HYPOTHESIS_CHECKING_TYPE": "TWO_TAILED",
+            "CHECKING_TYPE": "PREDICATE_FINAL"
+          }
+        },
+        {
+          "type": "HYPOTHESIS_TEST",
+          "information": {
+            "ENDING_PREDICATE": "position = 5 or position = -5",
+            "SIGNIFICANCE": 0.05,
+            "PROBABILITY": 0.8,
+            "MAX_STEPS_BEFORE_PROPERTY": 0,
+            "EXECUTIONS": 10000,
+            "PREDICATE": "position = 5",
+            "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
+            "CHECKING_TYPE": "PREDICATE_FINAL"
+          }
+        }
+      ],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "simulation": "RandomWalk/RandomWalk_simulation.json",
+      "visBVisualisation": null,
+      "historyChartItems": []
     }
   ],
   "requirements": [],
@@ -1481,7 +1527,7 @@
   "metadata": {
     "fileType": "Project",
     "formatVersion": 23,
-    "savedAt": "2022-04-19T10:37:13.670859Z",
+    "savedAt": "2022-04-19T12:10:23.040230Z",
     "creator": "User",
     "proB2KernelVersion": "4.0.0-SNAPSHOT",
     "proBCliVersion": null,
