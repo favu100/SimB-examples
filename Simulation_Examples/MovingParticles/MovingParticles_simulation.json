@@ -12,7 +12,7 @@
         {
             "id": "Move",
             "execute": "Move",
-            "after": 100,
+            "after": 10,
             "probabilisticVariables": "uniform",
             "activating": "Move"
         }
