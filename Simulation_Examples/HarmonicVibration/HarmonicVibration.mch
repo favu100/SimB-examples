@@ -5,11 +5,13 @@ DEFINITIONS
 
 CONSTANTS
   amplitude,
-  omega
+  omega,
+  timeStep
 
 PROPERTIES
-  amplitude = 10.0 &
-  omega = 2.0 * RPI / 5.0
+  amplitude = 50.0 &
+  omega = 2.0 * RPI / 5.0 &
+  timeStep = 0.1
 
 VARIABLES s, time
 
@@ -24,7 +26,9 @@ INITIALISATION
 OPERATIONS
     move = BEGIN
       s := amplitude * RSIN(omega * time) ||
-      time := time + 0.1
+      time := IF time + timeStep > 5.0
+              THEN 5.0 - time + timeStep
+              ELSE time + timeStep END
     END
 
 END

@@ -1,0 +1,15 @@
+{
+  "svg": "HarmonicVibration.svg",
+  "items": [
+    {
+      "id": "line2",
+      "attr": "y2",
+      "value" : "s"
+    },
+    {
+      "id": "ball",
+      "attr": "cy",
+      "value" : "s"
+    }
+  ]
+}
