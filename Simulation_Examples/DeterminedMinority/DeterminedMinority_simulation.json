@@ -1,0 +1,21 @@
+{
+    "activations": [
+        {
+            "id": "$setup_constants",
+            "execute": "$setup_constants",
+            "activating": "$initialise_machine"
+        },      
+        {
+            "id": "$initialise_machine",
+            "execute": "$initialise_machine",
+            "activating": "decide"
+        },
+        {
+            "id": "decide",
+            "execute": "decide",
+            "after": 500,
+            "probabilisticVariables" : {"c": {"1": "0.5", "2": "0.5"}},
+            "activating": "decide"
+        }
+    ]
+}

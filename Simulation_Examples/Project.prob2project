@@ -1476,6 +1476,39 @@
       "simulation": "RandomWalk/RandomWalk_simulation.json",
       "visBVisualisation": null,
       "historyChartItems": []
+    },
+    {
+      "name": "DeterminedMinority",
+      "description": "",
+      "location": "DeterminedMinority/DeterminedMinority.mch",
+      "lastUsedPreferenceName": "default",
+      "validationTasks": [],
+      "validationObligations": [],
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "simulationItems": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [
+        {
+          "nodesLimit": "-",
+          "timeLimit": "-",
+          "options": {
+            "options": [
+              "FIND_DEADLOCKS",
+              "FIND_INVARIANT_VIOLATIONS",
+              "INSPECT_EXISTING_NODES"
+            ]
+          },
+          "goal": "-",
+          "shouldExecute": true
+        }
+      ],
+      "simulation": null,
+      "visBVisualisation": null,
+      "historyChartItems": []
     }
   ],
   "requirements": [],
@@ -1527,7 +1560,7 @@
   "metadata": {
     "fileType": "Project",
     "formatVersion": 23,
-    "savedAt": "2022-04-19T12:10:23.040230Z",
+    "savedAt": "2022-04-19T12:24:03.263646Z",
     "creator": "User",
     "proB2KernelVersion": "4.0.0-SNAPSHOT",
     "proBCliVersion": null,
