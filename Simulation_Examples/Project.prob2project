@@ -716,6 +716,31 @@
       "historyChartItems": [
         "s"
       ]
+    },
+    {
+      "name": "NonHarmonicVibration",
+      "description": "",
+      "location": "HarmonicVibration/NonHarmonicVibration.mch",
+      "lastUsedPreferenceName": "default",
+      "validationTasks": [],
+      "validationObligations": [],
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "simulations": [
+        {
+          "path": "/Users/fabian/Documents/SimB-examples/Simulation_Examples/HarmonicVibration/HarmonicVibration_simulation.json",
+          "simulationItems": []
+        }
+      ],
+      "visBVisualisation": "HarmonicVibration/HarmonicVibration_visualization.json",
+      "historyChartItems": [
+        "s"
+      ]
     }
   ],
   "requirements": [],
@@ -767,7 +792,7 @@
   "metadata": {
     "fileType": "Project",
     "formatVersion": 26,
-    "savedAt": "2022-04-25T14:33:41.314042Z",
+    "savedAt": "2022-04-25T15:04:25.280923Z",
     "creator": "User",
     "proB2KernelVersion": "4.0.0-SNAPSHOT",
     "proBCliVersion": null,
