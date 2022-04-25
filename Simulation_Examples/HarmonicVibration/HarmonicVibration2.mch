@@ -6,6 +6,7 @@ DEFINITIONS
 CONSTANTS
   amplitude,
   omega,
+  delta,
   timeStep,
   period
 
@@ -13,6 +14,7 @@ PROPERTIES
   period = 5.0 &
   amplitude = 50.0 &
   omega = 2.0 * RPI / period &
+  delta = 0.1 &
   timeStep = 0.1
 
 VARIABLES s, time
@@ -27,10 +29,8 @@ INITIALISATION
 
 OPERATIONS
     move = BEGIN
-      s := amplitude * RSIN(omega * time) ||
-      time := IF time + timeStep > period
-              THEN 5.0 - time + timeStep
-              ELSE time + timeStep END
+      s := amplitude * REXP(-delta * time) * RSIN(omega * time) ||
+      time := time + timeStep
     END
 
 END

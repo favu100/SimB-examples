@@ -683,12 +683,39 @@
       "modelcheckingItems": [],
       "simulations": [
         {
+          "path": "HarmonicVibration/HarmonicVibration_simulation.json",
+          "simulationItems": []
+        }
+      ],
+      "visBVisualisation": "HarmonicVibration/HarmonicVibration_visualization.json",
+      "historyChartItems": [
+        "s"
+      ]
+    },
+    {
+      "name": "HarmonicVibration2",
+      "description": "",
+      "location": "HarmonicVibration/HarmonicVibration2.mch",
+      "lastUsedPreferenceName": "default",
+      "validationTasks": [],
+      "validationObligations": [],
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "simulations": [
+        {
           "path": "/Users/fabian/Documents/SimB-examples/Simulation_Examples/HarmonicVibration/HarmonicVibration_simulation.json",
           "simulationItems": []
         }
       ],
       "visBVisualisation": "HarmonicVibration/HarmonicVibration_visualization.json",
-      "historyChartItems": []
+      "historyChartItems": [
+        "s"
+      ]
     }
   ],
   "requirements": [],
@@ -739,8 +766,8 @@
   ],
   "metadata": {
     "fileType": "Project",
-    "formatVersion": 25,
-    "savedAt": "2022-04-21T09:38:38.135917Z",
+    "formatVersion": 26,
+    "savedAt": "2022-04-25T14:33:41.314042Z",
     "creator": "User",
     "proB2KernelVersion": "4.0.0-SNAPSHOT",
     "proBCliVersion": null,
