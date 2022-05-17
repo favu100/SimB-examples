@@ -7,78 +7,99 @@
       "description": "",
       "location": "Lift/Lift.mch",
       "lastUsedPreferenceName": "default",
+      "validationTasks": [],
+      "validationObligations": [],
       "ltlFormulas": [],
       "ltlPatterns": [],
       "symbolicCheckingFormulas": [],
       "symbolicAnimationFormulas": [],
-      "simulationItems": [
-        {
-          "type": "HYPOTHESIS_TEST",
-          "information": {
-            "ENDING_PREDICATE": "cur_floor = 2",
-            "SIGNIFICANCE": 0.001,
-            "PROBABILITY": 0.9999999,
-            "EXECUTIONS": 1000000,
-            "TIME": 10000,
-            "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
-            "CHECKING_TYPE": "TIMING"
-          }
-        },
-        {
-          "type": "HYPOTHESIS_TEST",
-          "information": {
-            "ENDING_PREDICATE": "cur_floor = 2",
-            "SIGNIFICANCE": 0.001,
-            "PROBABILITY": 0.9999999,
-            "EXECUTIONS": 1000000,
-            "TIME": 20000,
-            "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
-            "CHECKING_TYPE": "TIMING"
-          }
-        },
-        {
-          "type": "ESTIMATION",
-          "information": {
-            "ENDING_PREDICATE": "cur_floor = 2",
-            "EXECUTIONS": 1000000,
-            "ESTIMATION_TYPE": "MEAN",
-            "TIME": 10000,
-            "DESIRED_VALUE": 0.9999999,
-            "CHECKING_TYPE": "TIMING",
-            "EPSILON": 0.001
-          }
-        },
-        {
-          "type": "ESTIMATION",
-          "information": {
-            "ENDING_PREDICATE": "cur_floor = 2",
-            "EXECUTIONS": 1000000,
-            "ESTIMATION_TYPE": "MEAN",
-            "TIME": 20000,
-            "DESIRED_VALUE": 0.9999999,
-            "CHECKING_TYPE": "TIMING",
-            "EPSILON": 0.001
-          }
-        }
-      ],
       "testCases": [],
       "traces": [
-        "Lift/lift_trace1.prob2trace",
-        "Lift/lift_trace_fail1.prob2trace",
-        "Lift/lift_trace2.prob2trace"
+        {
+          "location": "Lift/lift_trace1.prob2trace",
+          "selected": true
+        },
+        {
+          "location": "Lift/lift_trace_fail1.prob2trace",
+          "selected": true
+        },
+        {
+          "location": "Lift/lift_trace2.prob2trace",
+          "selected": true
+        }
       ],
       "modelcheckingItems": [],
-      "simulation": "Lift/lift_simulation2_bottom_to_top_with_stop.json",
-      "visBVisualisation": "Lift/VisB/lift.json"
+      "simulations": [
+        {
+          "path": "Lift/lift_simulation2_bottom_to_top_with_stop.json",
+          "simulationItems": [
+            {
+              "type": "HYPOTHESIS_TEST",
+              "information": {
+                "ENDING_PREDICATE": "cur_floor = 2",
+                "SIGNIFICANCE": 0.001,
+                "PROBABILITY": 0.9999999,
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 1000000,
+                "TIME": 10000,
+                "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
+                "CHECKING_TYPE": "TIMING"
+              }
+            },
+            {
+              "type": "HYPOTHESIS_TEST",
+              "information": {
+                "ENDING_PREDICATE": "cur_floor = 2",
+                "SIGNIFICANCE": 0.001,
+                "PROBABILITY": 0.9999999,
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 1000000,
+                "TIME": 20000,
+                "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
+                "CHECKING_TYPE": "TIMING"
+              }
+            },
+            {
+              "type": "ESTIMATION",
+              "information": {
+                "ENDING_PREDICATE": "cur_floor = 2",
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 1000000,
+                "ESTIMATION_TYPE": "MEAN",
+                "TIME": 10000,
+                "DESIRED_VALUE": 0.9999999,
+                "CHECKING_TYPE": "TIMING",
+                "EPSILON": 0.001
+              }
+            },
+            {
+              "type": "ESTIMATION",
+              "information": {
+                "ENDING_PREDICATE": "cur_floor = 2",
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 1000000,
+                "ESTIMATION_TYPE": "MEAN",
+                "TIME": 20000,
+                "DESIRED_VALUE": 0.9999999,
+                "CHECKING_TYPE": "TIMING",
+                "EPSILON": 0.001
+              }
+            }
+          ]
+        }
+      ],
+      "visBVisualisation": "Lift/VisB/lift.json",
+      "historyChartItems": []
     },
     {
       "name": "TrafficLight",
       "description": "",
       "location": "TrafficLight/TrafficLight.mch",
       "lastUsedPreferenceName": "default",
+      "validationTasks": [],
+      "validationObligations": [],
       "ltlFormulas": [
         {
-          "name": "G{tl_cars = red or tl_peds = red}",
           "description": "",
           "code": "G{tl_cars = red or tl_peds = red}",
           "selected": true
@@ -87,891 +108,862 @@
       "ltlPatterns": [],
       "symbolicCheckingFormulas": [],
       "symbolicAnimationFormulas": [],
-      "simulationItems": [
-        {
-          "type": "MONTE_CARLO_SIMULATION",
-          "information": {
-            "EXECUTIONS": 10,
-            "ENDING_TIME": 6500
-          }
-        },
-        {
-          "type": "HYPOTHESIS_TEST",
-          "information": {
-            "ENDING_PREDICATE": "tl_cars = green",
-            "SIGNIFICANCE": 0.001,
-            "PROBABILITY": 0.999999,
-            "EXECUTIONS": 1000000,
-            "TIME": 500,
-            "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
-            "CHECKING_TYPE": "TIMING"
-          }
-        },
-        {
-          "type": "HYPOTHESIS_TEST",
-          "information": {
-            "ENDING_PREDICATE": "tl_cars = green",
-            "SIGNIFICANCE": 0.001,
-            "PROBABILITY": 0.9999999,
-            "EXECUTIONS": 1000000,
-            "TIME": 1000,
-            "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
-            "CHECKING_TYPE": "TIMING"
-          }
-        },
-        {
-          "type": "ESTIMATION",
-          "information": {
-            "ENDING_PREDICATE": "tl_cars = green",
-            "EXECUTIONS": 1000000,
-            "ESTIMATION_TYPE": "MEAN",
-            "TIME": 500,
-            "DESIRED_VALUE": 0.9999999,
-            "CHECKING_TYPE": "TIMING",
-            "EPSILON": 0.001
-          }
-        },
-        {
-          "type": "ESTIMATION",
-          "information": {
-            "ENDING_PREDICATE": "tl_cars = green",
-            "EXECUTIONS": 1000000,
-            "ESTIMATION_TYPE": "MEAN",
-            "TIME": 1000,
-            "DESIRED_VALUE": 0.9999999,
-            "CHECKING_TYPE": "TIMING",
-            "EPSILON": 0.001
-          }
-        }
-      ],
       "testCases": [],
       "traces": [
-        "TrafficLight/TrafficLight_trace1.prob2trace"
+        {
+          "location": "TrafficLight/TrafficLight_trace1.prob2trace",
+          "selected": true
+        }
       ],
       "modelcheckingItems": [],
-      "simulation": "TrafficLight/TrafficLight_simulation_cars.json",
-      "visBVisualisation": "TrafficLight/VisB/traffic_light.json"
+      "simulations": [
+        {
+          "path": "TrafficLight/TrafficLight_simulation_cars.json",
+          "simulationItems": [
+            {
+              "type": "MONTE_CARLO_SIMULATION",
+              "information": {
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 10,
+                "ENDING_TIME": 6500
+              }
+            },
+            {
+              "type": "HYPOTHESIS_TEST",
+              "information": {
+                "ENDING_PREDICATE": "tl_cars = green",
+                "SIGNIFICANCE": 0.001,
+                "PROBABILITY": 0.999999,
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 1000000,
+                "TIME": 500,
+                "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
+                "CHECKING_TYPE": "TIMING"
+              }
+            },
+            {
+              "type": "HYPOTHESIS_TEST",
+              "information": {
+                "ENDING_PREDICATE": "tl_cars = green",
+                "SIGNIFICANCE": 0.001,
+                "PROBABILITY": 0.9999999,
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 1000000,
+                "TIME": 1000,
+                "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
+                "CHECKING_TYPE": "TIMING"
+              }
+            },
+            {
+              "type": "ESTIMATION",
+              "information": {
+                "ENDING_PREDICATE": "tl_cars = green",
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 1000000,
+                "ESTIMATION_TYPE": "MEAN",
+                "TIME": 500,
+                "DESIRED_VALUE": 0.9999999,
+                "CHECKING_TYPE": "TIMING",
+                "EPSILON": 0.001
+              }
+            },
+            {
+              "type": "ESTIMATION",
+              "information": {
+                "ENDING_PREDICATE": "tl_cars = green",
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 1000000,
+                "ESTIMATION_TYPE": "MEAN",
+                "TIME": 1000,
+                "DESIRED_VALUE": 0.9999999,
+                "CHECKING_TYPE": "TIMING",
+                "EPSILON": 0.001
+              }
+            }
+          ]
+        }
+      ],
+      "visBVisualisation": "TrafficLight/VisB/traffic_light.json",
+      "historyChartItems": []
     },
     {
       "name": "DuellingCowboys",
       "description": "",
       "location": "Cowboys/DuellingCowboys.mch",
       "lastUsedPreferenceName": "DEFERRED_SET_100",
+      "validationTasks": [],
+      "validationObligations": [],
       "ltlFormulas": [],
       "ltlPatterns": [],
       "symbolicCheckingFormulas": [],
       "symbolicAnimationFormulas": [],
-      "simulationItems": [
-        {
-          "type": "HYPOTHESIS_TEST",
-          "information": {
-            "SIGNIFICANCE": 0.01,
-            "PROBABILITY": 0.9999999999,
-            "EXECUTIONS": 100,
-            "PREDICATE": "card(AliveCowboys) = 1",
-            "STEPS_PER_EXECUTION": 252,
-            "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
-            "CHECKING_TYPE": "PREDICATE_FINAL"
-          }
-        },
-        {
-          "type": "HYPOTHESIS_TEST",
-          "information": {
-            "SIGNIFICANCE": 0.01,
-            "PROBABILITY": 0.9999999999,
-            "EXECUTIONS": 100,
-            "PREDICATE": "card(AliveCowboys) = 1",
-            "STEPS_PER_EXECUTION": 502,
-            "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
-            "CHECKING_TYPE": "PREDICATE_FINAL"
-          }
-        },
-        {
-          "type": "ESTIMATION",
-          "information": {
-            "EXECUTIONS": 100,
-            "PREDICATE": "card(AliveCowboys) = 1",
-            "ESTIMATION_TYPE": "MEAN",
-            "STEPS_PER_EXECUTION": 252,
-            "DESIRED_VALUE": 0.999999999,
-            "CHECKING_TYPE": "PREDICATE_FINAL",
-            "EPSILON": 0.01
-          }
-        },
-        {
-          "type": "ESTIMATION",
-          "information": {
-            "EXECUTIONS": 100,
-            "PREDICATE": "card(AliveCowboys) = 1",
-            "ESTIMATION_TYPE": "MEAN",
-            "STEPS_PER_EXECUTION": 502,
-            "DESIRED_VALUE": 0.999999999,
-            "CHECKING_TYPE": "PREDICATE_FINAL",
-            "EPSILON": 0.01
-          }
-        }
-      ],
       "testCases": [],
       "traces": [],
       "modelcheckingItems": [],
-      "simulation": "Cowboys/DuellingCowboys_simulation.json",
-      "visBVisualisation": null
+      "simulations": [
+        {
+          "path": "Cowboys/DuellingCowboys_simulation.json",
+          "simulationItems": [
+            {
+              "type": "HYPOTHESIS_TEST",
+              "information": {
+                "SIGNIFICANCE": 0.01,
+                "PROBABILITY": 0.9999999999,
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 100,
+                "PREDICATE": "card(AliveCowboys) = 1",
+                "STEPS_PER_EXECUTION": 252,
+                "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
+                "CHECKING_TYPE": "PREDICATE_FINAL"
+              }
+            },
+            {
+              "type": "HYPOTHESIS_TEST",
+              "information": {
+                "SIGNIFICANCE": 0.01,
+                "PROBABILITY": 0.9999999999,
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 100,
+                "PREDICATE": "card(AliveCowboys) = 1",
+                "STEPS_PER_EXECUTION": 502,
+                "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
+                "CHECKING_TYPE": "PREDICATE_FINAL"
+              }
+            },
+            {
+              "type": "ESTIMATION",
+              "information": {
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 100,
+                "PREDICATE": "card(AliveCowboys) = 1",
+                "ESTIMATION_TYPE": "MEAN",
+                "STEPS_PER_EXECUTION": 252,
+                "DESIRED_VALUE": 0.999999999,
+                "CHECKING_TYPE": "PREDICATE_FINAL",
+                "EPSILON": 0.01
+              }
+            },
+            {
+              "type": "ESTIMATION",
+              "information": {
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 100,
+                "PREDICATE": "card(AliveCowboys) = 1",
+                "ESTIMATION_TYPE": "MEAN",
+                "STEPS_PER_EXECUTION": 502,
+                "DESIRED_VALUE": 0.999999999,
+                "CHECKING_TYPE": "PREDICATE_FINAL",
+                "EPSILON": 0.01
+              }
+            }
+          ]
+        }
+      ],
+      "visBVisualisation": null,
+      "historyChartItems": []
     },
     {
       "name": "CoinToss",
       "description": "",
       "location": "CoinToss/CoinToss.mch",
       "lastUsedPreferenceName": "default",
+      "validationTasks": [],
+      "validationObligations": [],
       "ltlFormulas": [],
       "ltlPatterns": [],
       "symbolicCheckingFormulas": [],
       "symbolicAnimationFormulas": [],
-      "simulationItems": [
-        {
-          "type": "HYPOTHESIS_TEST",
-          "information": {
-            "SIGNIFICANCE": 0.001,
-            "PROBABILITY": 0.9999999999,
-            "EXECUTIONS": 1000,
-            "PREDICATE": "lastToss = {Heads}",
-            "STEPS_PER_EXECUTION": 11,
-            "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
-            "CHECKING_TYPE": "PREDICATE_EVENTUALLY"
-          }
-        },
-        {
-          "type": "HYPOTHESIS_TEST",
-          "information": {
-            "SIGNIFICANCE": 0.001,
-            "PROBABILITY": 0.999999999,
-            "EXECUTIONS": 1000,
-            "PREDICATE": "lastToss = {Tails}",
-            "STEPS_PER_EXECUTION": 11,
-            "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
-            "CHECKING_TYPE": "PREDICATE_EVENTUALLY"
-          }
-        },
-        {
-          "type": "HYPOTHESIS_TEST",
-          "information": {
-            "SIGNIFICANCE": 0.001,
-            "PROBABILITY": 0.9999999999,
-            "EXECUTIONS": 1000,
-            "PREDICATE": "lastToss = {Heads}",
-            "STEPS_PER_EXECUTION": 101,
-            "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
-            "CHECKING_TYPE": "PREDICATE_EVENTUALLY"
-          }
-        },
-        {
-          "type": "HYPOTHESIS_TEST",
-          "information": {
-            "SIGNIFICANCE": 0.001,
-            "PROBABILITY": 0.999999999,
-            "EXECUTIONS": 1000,
-            "PREDICATE": "lastToss = {Tails}",
-            "STEPS_PER_EXECUTION": 101,
-            "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
-            "CHECKING_TYPE": "PREDICATE_EVENTUALLY"
-          }
-        },
-        {
-          "type": "HYPOTHESIS_TEST",
-          "information": {
-            "SIGNIFICANCE": 0.001,
-            "PROBABILITY": 0.5,
-            "EXECUTIONS": 1000000,
-            "PREDICATE": "lastToss = {Heads}",
-            "STEPS_PER_EXECUTION": 2,
-            "HYPOTHESIS_CHECKING_TYPE": "TWO_TAILED",
-            "CHECKING_TYPE": "PREDICATE_FINAL"
-          }
-        },
-        {
-          "type": "HYPOTHESIS_TEST",
-          "information": {
-            "SIGNIFICANCE": 0.001,
-            "PROBABILITY": 0.8,
-            "EXECUTIONS": 1000000,
-            "PREDICATE": "lastToss = {Heads}",
-            "STEPS_PER_EXECUTION": 2,
-            "HYPOTHESIS_CHECKING_TYPE": "TWO_TAILED",
-            "CHECKING_TYPE": "PREDICATE_FINAL"
-          }
-        }
-      ],
       "testCases": [],
       "traces": [],
       "modelcheckingItems": [],
-      "simulation": null,
-      "visBVisualisation": null
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": []
     },
     {
       "name": "RollingDice",
       "description": "",
       "location": "RollingDice/RollingDice.mch",
       "lastUsedPreferenceName": "default",
+      "validationTasks": [],
+      "validationObligations": [],
       "ltlFormulas": [],
       "ltlPatterns": [],
       "symbolicCheckingFormulas": [],
       "symbolicAnimationFormulas": [],
-      "simulationItems": [
-        {
-          "type": "HYPOTHESIS_TEST",
-          "information": {
-            "SIGNIFICANCE": 0.001,
-            "PROBABILITY": 0.99999999,
-            "EXECUTIONS": 10000,
-            "PREDICATE": "lastNumber = {6}",
-            "STEPS_PER_EXECUTION": 11,
-            "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
-            "CHECKING_TYPE": "PREDICATE_EVENTUALLY"
-          }
-        },
-        {
-          "type": "HYPOTHESIS_TEST",
-          "information": {
-            "SIGNIFICANCE": 0.001,
-            "PROBABILITY": 0.99999999,
-            "EXECUTIONS": 10000,
-            "PREDICATE": "lastNumber = {6}",
-            "STEPS_PER_EXECUTION": 101,
-            "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
-            "CHECKING_TYPE": "PREDICATE_EVENTUALLY"
-          }
-        },
-        {
-          "type": "HYPOTHESIS_TEST",
-          "information": {
-            "SIGNIFICANCE": 0.001,
-            "PROBABILITY": 0.1667,
-            "EXECUTIONS": 1000000,
-            "PREDICATE": "lastNumber = {6}",
-            "STEPS_PER_EXECUTION": 2,
-            "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
-            "CHECKING_TYPE": "PREDICATE_FINAL"
-          }
-        },
-        {
-          "type": "ESTIMATION",
-          "information": {
-            "EXECUTIONS": 10000,
-            "PREDICATE": "lastNumber = {6}",
-            "ESTIMATION_TYPE": "MEAN",
-            "STEPS_PER_EXECUTION": 101,
-            "DESIRED_VALUE": 0.9999999,
-            "CHECKING_TYPE": "PREDICATE_EVENTUALLY",
-            "EPSILON": 0.001
-          }
-        },
-        {
-          "type": "ESTIMATION",
-          "information": {
-            "EXECUTIONS": 1000000,
-            "PREDICATE": "lastNumber = {6}",
-            "ESTIMATION_TYPE": "MEAN",
-            "STEPS_PER_EXECUTION": 2,
-            "DESIRED_VALUE": 0.1667,
-            "CHECKING_TYPE": "PREDICATE_FINAL",
-            "EPSILON": 0.001
-          }
-        }
-      ],
       "testCases": [],
       "traces": [],
       "modelcheckingItems": [],
-      "simulation": "RollingDice/RollingDice_simulation.json",
-      "visBVisualisation": null
+      "simulations": [
+        {
+          "path": "RollingDice/RollingDice_simulation.json",
+          "simulationItems": [
+            {
+              "type": "HYPOTHESIS_TEST",
+              "information": {
+                "SIGNIFICANCE": 0.001,
+                "PROBABILITY": 0.99999999,
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 10000,
+                "PREDICATE": "lastNumber = {6}",
+                "STEPS_PER_EXECUTION": 11,
+                "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
+                "CHECKING_TYPE": "PREDICATE_EVENTUALLY"
+              }
+            },
+            {
+              "type": "HYPOTHESIS_TEST",
+              "information": {
+                "SIGNIFICANCE": 0.001,
+                "PROBABILITY": 0.99999999,
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 10000,
+                "PREDICATE": "lastNumber = {6}",
+                "STEPS_PER_EXECUTION": 101,
+                "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
+                "CHECKING_TYPE": "PREDICATE_EVENTUALLY"
+              }
+            },
+            {
+              "type": "HYPOTHESIS_TEST",
+              "information": {
+                "SIGNIFICANCE": 0.001,
+                "PROBABILITY": 0.1667,
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 1000000,
+                "PREDICATE": "lastNumber = {6}",
+                "STEPS_PER_EXECUTION": 2,
+                "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
+                "CHECKING_TYPE": "PREDICATE_FINAL"
+              }
+            },
+            {
+              "type": "ESTIMATION",
+              "information": {
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 10000,
+                "PREDICATE": "lastNumber = {6}",
+                "ESTIMATION_TYPE": "MEAN",
+                "STEPS_PER_EXECUTION": 101,
+                "DESIRED_VALUE": 0.9999999,
+                "CHECKING_TYPE": "PREDICATE_EVENTUALLY",
+                "EPSILON": 0.001
+              }
+            },
+            {
+              "type": "ESTIMATION",
+              "information": {
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 1000000,
+                "PREDICATE": "lastNumber = {6}",
+                "ESTIMATION_TYPE": "MEAN",
+                "STEPS_PER_EXECUTION": 2,
+                "DESIRED_VALUE": 0.1667,
+                "CHECKING_TYPE": "PREDICATE_FINAL",
+                "EPSILON": 0.001
+              }
+            }
+          ]
+        }
+      ],
+      "visBVisualisation": null,
+      "historyChartItems": []
     },
     {
       "name": "AbstractDuellingCowboys",
       "description": "",
       "location": "AbstractCowboys/AbstractDuellingCowboys.mch",
       "lastUsedPreferenceName": "default",
+      "validationTasks": [],
+      "validationObligations": [],
       "ltlFormulas": [],
       "ltlPatterns": [],
       "symbolicCheckingFormulas": [],
       "symbolicAnimationFormulas": [],
-      "simulationItems": [
-        {
-          "type": "HYPOTHESIS_TEST",
-          "information": {
-            "SIGNIFICANCE": 0.001,
-            "PROBABILITY": 0.999999999,
-            "EXECUTIONS": 10000,
-            "PREDICATE": "numberAliveCowboys = 1",
-            "STEPS_PER_EXECUTION": 252,
-            "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
-            "CHECKING_TYPE": "PREDICATE_FINAL"
-          }
-        },
-        {
-          "type": "HYPOTHESIS_TEST",
-          "information": {
-            "SIGNIFICANCE": 0.001,
-            "PROBABILITY": 0.999999999,
-            "EXECUTIONS": 10000,
-            "PREDICATE": "numberAliveCowboys = 1",
-            "STEPS_PER_EXECUTION": 127,
-            "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
-            "CHECKING_TYPE": "PREDICATE_FINAL"
-          }
-        },
-        {
-          "type": "ESTIMATION",
-          "information": {
-            "EXECUTIONS": 10000,
-            "PREDICATE": "numberAliveCowboys = 1",
-            "ESTIMATION_TYPE": "MEAN",
-            "STEPS_PER_EXECUTION": 252,
-            "DESIRED_VALUE": 0.99999999,
-            "CHECKING_TYPE": "PREDICATE_FINAL",
-            "EPSILON": 0.001
-          }
-        },
-        {
-          "type": "ESTIMATION",
-          "information": {
-            "EXECUTIONS": 10000,
-            "PREDICATE": "numberAliveCowboys = 1",
-            "ESTIMATION_TYPE": "MEAN",
-            "STEPS_PER_EXECUTION": 127,
-            "DESIRED_VALUE": 0.9999999,
-            "CHECKING_TYPE": "PREDICATE_FINAL",
-            "EPSILON": 0.001
-          }
-        }
-      ],
       "testCases": [],
       "traces": [],
       "modelcheckingItems": [],
-      "simulation": "AbstractCowboys/AbstractDuellingCowboys_simulation.json",
-      "visBVisualisation": null
+      "simulations": [
+        {
+          "path": "AbstractCowboys/AbstractDuellingCowboys_simulation.json",
+          "simulationItems": [
+            {
+              "type": "HYPOTHESIS_TEST",
+              "information": {
+                "SIGNIFICANCE": 0.001,
+                "PROBABILITY": 0.999999999,
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 10000,
+                "PREDICATE": "numberAliveCowboys = 1",
+                "STEPS_PER_EXECUTION": 252,
+                "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
+                "CHECKING_TYPE": "PREDICATE_FINAL"
+              }
+            },
+            {
+              "type": "HYPOTHESIS_TEST",
+              "information": {
+                "SIGNIFICANCE": 0.001,
+                "PROBABILITY": 0.999999999,
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 10000,
+                "PREDICATE": "numberAliveCowboys = 1",
+                "STEPS_PER_EXECUTION": 127,
+                "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
+                "CHECKING_TYPE": "PREDICATE_FINAL"
+              }
+            },
+            {
+              "type": "ESTIMATION",
+              "information": {
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 10000,
+                "PREDICATE": "numberAliveCowboys = 1",
+                "ESTIMATION_TYPE": "MEAN",
+                "STEPS_PER_EXECUTION": 252,
+                "DESIRED_VALUE": 0.99999999,
+                "CHECKING_TYPE": "PREDICATE_FINAL",
+                "EPSILON": 0.001
+              }
+            },
+            {
+              "type": "ESTIMATION",
+              "information": {
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 10000,
+                "PREDICATE": "numberAliveCowboys = 1",
+                "ESTIMATION_TYPE": "MEAN",
+                "STEPS_PER_EXECUTION": 127,
+                "DESIRED_VALUE": 0.9999999,
+                "CHECKING_TYPE": "PREDICATE_FINAL",
+                "EPSILON": 0.001
+              }
+            }
+          ]
+        }
+      ],
+      "visBVisualisation": null,
+      "historyChartItems": []
     },
     {
       "name": "Tourist",
       "description": "",
       "location": "Tourist/Tourist.mch",
       "lastUsedPreferenceName": "default",
+      "validationTasks": [],
+      "validationObligations": [],
       "ltlFormulas": [],
       "ltlPatterns": [],
       "symbolicCheckingFormulas": [],
       "symbolicAnimationFormulas": [],
-      "simulationItems": [
-        {
-          "type": "HYPOTHESIS_TEST",
-          "information": {
-            "SIGNIFICANCE": 0.01,
-            "PROBABILITY": 0.999999,
-            "EXECUTIONS": 100,
-            "PREDICATE": "li = Tourists or ri = Tourists",
-            "STEPS_PER_EXECUTION": 253,
-            "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
-            "CHECKING_TYPE": "PREDICATE_FINAL"
-          }
-        },
-        {
-          "type": "HYPOTHESIS_TEST",
-          "information": {
-            "SIGNIFICANCE": 0.01,
-            "PROBABILITY": 0.999999,
-            "EXECUTIONS": 100,
-            "PREDICATE": "li = Tourists or ri = Tourists",
-            "STEPS_PER_EXECUTION": 603,
-            "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
-            "CHECKING_TYPE": "PREDICATE_FINAL"
-          }
-        },
-        {
-          "type": "ESTIMATION",
-          "information": {
-            "EXECUTIONS": 100,
-            "PREDICATE": "li = Tourists or ri = Tourists",
-            "ESTIMATION_TYPE": "MEAN",
-            "STEPS_PER_EXECUTION": 253,
-            "DESIRED_VALUE": 0.999999,
-            "CHECKING_TYPE": "PREDICATE_FINAL",
-            "EPSILON": 0.01
-          }
-        },
-        {
-          "type": "ESTIMATION",
-          "information": {
-            "PROBABILITY": 0.999999,
-            "EXECUTIONS": 100,
-            "PREDICATE": "li = Tourists or ri = Tourists",
-            "ESTIMATION_TYPE": "MEAN",
-            "STEPS_PER_EXECUTION": 603,
-            "CHECKING_TYPE": "PREDICATE_FINAL",
-            "EPSILON": 0.01
-          }
-        }
-      ],
       "testCases": [],
       "traces": [],
       "modelcheckingItems": [],
-      "simulation": "Tourist/Tourist_simulation.json",
-      "visBVisualisation": null
+      "simulations": [
+        {
+          "path": "Tourist/Tourist_simulation.json",
+          "simulationItems": [
+            {
+              "type": "HYPOTHESIS_TEST",
+              "information": {
+                "SIGNIFICANCE": 0.01,
+                "PROBABILITY": 0.999999,
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 100,
+                "PREDICATE": "li = Tourists or ri = Tourists",
+                "STEPS_PER_EXECUTION": 253,
+                "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
+                "CHECKING_TYPE": "PREDICATE_FINAL"
+              }
+            },
+            {
+              "type": "HYPOTHESIS_TEST",
+              "information": {
+                "SIGNIFICANCE": 0.01,
+                "PROBABILITY": 0.999999,
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 100,
+                "PREDICATE": "li = Tourists or ri = Tourists",
+                "STEPS_PER_EXECUTION": 603,
+                "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
+                "CHECKING_TYPE": "PREDICATE_FINAL"
+              }
+            },
+            {
+              "type": "ESTIMATION",
+              "information": {
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 100,
+                "PREDICATE": "li = Tourists or ri = Tourists",
+                "ESTIMATION_TYPE": "MEAN",
+                "STEPS_PER_EXECUTION": 253,
+                "DESIRED_VALUE": 0.999999,
+                "CHECKING_TYPE": "PREDICATE_FINAL",
+                "EPSILON": 0.01
+              }
+            },
+            {
+              "type": "ESTIMATION",
+              "information": {
+                "PROBABILITY": 0.999999,
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 100,
+                "PREDICATE": "li = Tourists or ri = Tourists",
+                "ESTIMATION_TYPE": "MEAN",
+                "STEPS_PER_EXECUTION": 603,
+                "CHECKING_TYPE": "PREDICATE_FINAL",
+                "EPSILON": 0.01
+              }
+            }
+          ]
+        }
+      ],
+      "visBVisualisation": null,
+      "historyChartItems": []
     },
     {
       "name": "LeaderElection",
       "description": "",
       "location": "LeaderElection/LeaderElection.mch",
       "lastUsedPreferenceName": "LeaderElection_PREF",
+      "validationTasks": [],
+      "validationObligations": [],
       "ltlFormulas": [],
       "ltlPatterns": [],
       "symbolicCheckingFormulas": [],
       "symbolicAnimationFormulas": [],
-      "simulationItems": [
-        {
-          "type": "HYPOTHESIS_TEST",
-          "information": {
-            "SIGNIFICANCE": 0.001,
-            "PROBABILITY": 0.9999999999,
-            "EXECUTIONS": 10000,
-            "PREDICATE": "finished = TRUE",
-            "STEPS_PER_EXECUTION": 252,
-            "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
-            "CHECKING_TYPE": "PREDICATE_FINAL"
-          }
-        },
-        {
-          "type": "HYPOTHESIS_TEST",
-          "information": {
-            "SIGNIFICANCE": 0.001,
-            "PROBABILITY": 0.99999999,
-            "EXECUTIONS": 10000,
-            "PREDICATE": "finished = TRUE",
-            "STEPS_PER_EXECUTION": 502,
-            "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
-            "CHECKING_TYPE": "PREDICATE_FINAL"
-          }
-        },
-        {
-          "type": "HYPOTHESIS_TEST",
-          "information": {
-            "SIGNIFICANCE": 0.001,
-            "PROBABILITY": 0.99999999,
-            "EXECUTIONS": 10000,
-            "PREDICATE": "finished = TRUE",
-            "STEPS_PER_EXECUTION": 5002,
-            "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
-            "CHECKING_TYPE": "PREDICATE_FINAL"
-          }
-        },
-        {
-          "type": "ESTIMATION",
-          "information": {
-            "EXECUTIONS": 10000,
-            "PREDICATE": "finished = TRUE",
-            "ESTIMATION_TYPE": "MEAN",
-            "STEPS_PER_EXECUTION": 252,
-            "DESIRED_VALUE": 0.9999999999,
-            "CHECKING_TYPE": "PREDICATE_FINAL",
-            "EPSILON": 0.001
-          }
-        },
-        {
-          "type": "ESTIMATION",
-          "information": {
-            "EXECUTIONS": 10000,
-            "PREDICATE": "finished = TRUE",
-            "ESTIMATION_TYPE": "MEAN",
-            "STEPS_PER_EXECUTION": 502,
-            "DESIRED_VALUE": 0.99999999,
-            "CHECKING_TYPE": "PREDICATE_FINAL",
-            "EPSILON": 0.001
-          }
-        },
-        {
-          "type": "ESTIMATION",
-          "information": {
-            "EXECUTIONS": 10000,
-            "PREDICATE": "finished = TRUE",
-            "ESTIMATION_TYPE": "MEAN",
-            "STEPS_PER_EXECUTION": 5002,
-            "DESIRED_VALUE": 0.99999999,
-            "CHECKING_TYPE": "PREDICATE_FINAL",
-            "EPSILON": 0.001
-          }
-        }
-      ],
       "testCases": [],
       "traces": [],
       "modelcheckingItems": [],
-      "simulation": "LeaderElection/LeaderElection_simulation.json",
-      "visBVisualisation": null
+      "simulations": [
+        {
+          "path": "LeaderElection/LeaderElection_simulation.json",
+          "simulationItems": [
+            {
+              "type": "HYPOTHESIS_TEST",
+              "information": {
+                "SIGNIFICANCE": 0.001,
+                "PROBABILITY": 0.9999999999,
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 10000,
+                "PREDICATE": "finished = TRUE",
+                "STEPS_PER_EXECUTION": 252,
+                "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
+                "CHECKING_TYPE": "PREDICATE_FINAL"
+              }
+            },
+            {
+              "type": "HYPOTHESIS_TEST",
+              "information": {
+                "SIGNIFICANCE": 0.001,
+                "PROBABILITY": 0.99999999,
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 10000,
+                "PREDICATE": "finished = TRUE",
+                "STEPS_PER_EXECUTION": 502,
+                "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
+                "CHECKING_TYPE": "PREDICATE_FINAL"
+              }
+            },
+            {
+              "type": "HYPOTHESIS_TEST",
+              "information": {
+                "SIGNIFICANCE": 0.001,
+                "PROBABILITY": 0.99999999,
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 10000,
+                "PREDICATE": "finished = TRUE",
+                "STEPS_PER_EXECUTION": 5002,
+                "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
+                "CHECKING_TYPE": "PREDICATE_FINAL"
+              }
+            },
+            {
+              "type": "ESTIMATION",
+              "information": {
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 10000,
+                "PREDICATE": "finished = TRUE",
+                "ESTIMATION_TYPE": "MEAN",
+                "STEPS_PER_EXECUTION": 252,
+                "DESIRED_VALUE": 0.9999999999,
+                "CHECKING_TYPE": "PREDICATE_FINAL",
+                "EPSILON": 0.001
+              }
+            },
+            {
+              "type": "ESTIMATION",
+              "information": {
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 10000,
+                "PREDICATE": "finished = TRUE",
+                "ESTIMATION_TYPE": "MEAN",
+                "STEPS_PER_EXECUTION": 502,
+                "DESIRED_VALUE": 0.99999999,
+                "CHECKING_TYPE": "PREDICATE_FINAL",
+                "EPSILON": 0.001
+              }
+            },
+            {
+              "type": "ESTIMATION",
+              "information": {
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 10000,
+                "PREDICATE": "finished = TRUE",
+                "ESTIMATION_TYPE": "MEAN",
+                "STEPS_PER_EXECUTION": 5002,
+                "DESIRED_VALUE": 0.99999999,
+                "CHECKING_TYPE": "PREDICATE_FINAL",
+                "EPSILON": 0.001
+              }
+            }
+          ]
+        }
+      ],
+      "visBVisualisation": null,
+      "historyChartItems": []
     },
     {
       "name": "SimpleClock",
       "description": "",
       "location": "SimpleClock/SimpleClock.mch",
       "lastUsedPreferenceName": "default",
+      "validationTasks": [],
+      "validationObligations": [],
       "ltlFormulas": [],
       "ltlPatterns": [],
       "symbolicCheckingFormulas": [],
       "symbolicAnimationFormulas": [],
-      "simulationItems": [],
       "testCases": [],
       "traces": [],
       "modelcheckingItems": [],
-      "simulation": null,
-      "visBVisualisation": null
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": []
     },
     {
       "name": "SimpleClock2",
       "description": "",
       "location": "SimpleClock2/SimpleClock2.mch",
       "lastUsedPreferenceName": "default",
+      "validationTasks": [],
+      "validationObligations": [],
       "ltlFormulas": [],
       "ltlPatterns": [],
       "symbolicCheckingFormulas": [],
       "symbolicAnimationFormulas": [],
-      "simulationItems": [],
       "testCases": [],
       "traces": [],
       "modelcheckingItems": [],
-      "simulation": null,
-      "visBVisualisation": null
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": []
     },
     {
       "name": "CoinToss2",
       "description": "",
       "location": "CoinToss2/CoinToss2.mch",
       "lastUsedPreferenceName": "default",
+      "validationTasks": [],
+      "validationObligations": [],
       "ltlFormulas": [],
       "ltlPatterns": [],
       "symbolicCheckingFormulas": [],
       "symbolicAnimationFormulas": [],
-      "simulationItems": [
-        {
-          "type": "HYPOTHESIS_TEST",
-          "information": {
-            "SIGNIFICANCE": 0.001,
-            "PROBABILITY": 0.9999999999,
-            "EXECUTIONS": 1000,
-            "PREDICATE": "lastToss = {Heads}",
-            "STEPS_PER_EXECUTION": 11,
-            "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
-            "CHECKING_TYPE": "PREDICATE_EVENTUALLY"
-          }
-        },
-        {
-          "type": "HYPOTHESIS_TEST",
-          "information": {
-            "SIGNIFICANCE": 0.001,
-            "PROBABILITY": 0.999999999,
-            "EXECUTIONS": 10000,
-            "PREDICATE": "lastToss = {Tails}",
-            "STEPS_PER_EXECUTION": 11,
-            "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
-            "CHECKING_TYPE": "PREDICATE_EVENTUALLY"
-          }
-        },
-        {
-          "type": "HYPOTHESIS_TEST",
-          "information": {
-            "SIGNIFICANCE": 0.001,
-            "PROBABILITY": 0.9999999999,
-            "EXECUTIONS": 10000,
-            "PREDICATE": "lastToss = {Heads}",
-            "STEPS_PER_EXECUTION": 101,
-            "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
-            "CHECKING_TYPE": "PREDICATE_EVENTUALLY"
-          }
-        },
-        {
-          "type": "HYPOTHESIS_TEST",
-          "information": {
-            "SIGNIFICANCE": 0.001,
-            "PROBABILITY": 0.999999999,
-            "EXECUTIONS": 10000,
-            "PREDICATE": "lastToss = {Tails}",
-            "STEPS_PER_EXECUTION": 101,
-            "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
-            "CHECKING_TYPE": "PREDICATE_EVENTUALLY"
-          }
-        },
-        {
-          "type": "HYPOTHESIS_TEST",
-          "information": {
-            "SIGNIFICANCE": 0.001,
-            "PROBABILITY": 0.5,
-            "EXECUTIONS": 1000000,
-            "PREDICATE": "lastToss = {Heads}",
-            "STEPS_PER_EXECUTION": 2,
-            "HYPOTHESIS_CHECKING_TYPE": "TWO_TAILED",
-            "CHECKING_TYPE": "PREDICATE_FINAL"
-          }
-        },
-        {
-          "type": "HYPOTHESIS_TEST",
-          "information": {
-            "SIGNIFICANCE": 0.001,
-            "PROBABILITY": 0.8,
-            "EXECUTIONS": 1000000,
-            "PREDICATE": "lastToss = {Heads}",
-            "STEPS_PER_EXECUTION": 2,
-            "HYPOTHESIS_CHECKING_TYPE": "TWO_TAILED",
-            "CHECKING_TYPE": "PREDICATE_FINAL"
-          }
-        },
-        {
-          "type": "ESTIMATION",
-          "information": {
-            "EXECUTIONS": 10000,
-            "PREDICATE": "lastToss = {Heads}",
-            "ESTIMATION_TYPE": "MEAN",
-            "STEPS_PER_EXECUTION": 101,
-            "DESIRED_VALUE": 0.9999999,
-            "CHECKING_TYPE": "PREDICATE_EVENTUALLY",
-            "EPSILON": 0.001
-          }
-        },
-        {
-          "type": "ESTIMATION",
-          "information": {
-            "EXECUTIONS": 1000000,
-            "PREDICATE": "lastToss = {Heads}",
-            "ESTIMATION_TYPE": "MEAN",
-            "STEPS_PER_EXECUTION": 2,
-            "DESIRED_VALUE": 0.5,
-            "CHECKING_TYPE": "PREDICATE_FINAL",
-            "EPSILON": 0.001
-          }
-        },
-        {
-          "type": "HYPOTHESIS_TEST",
-          "information": {
-            "SIGNIFICANCE": 0.001,
-            "PROBABILITY": 0.5,
-            "EXECUTIONS": 10,
-            "PREDICATE": "lastToss = {Heads}",
-            "STEPS_PER_EXECUTION": 2,
-            "HYPOTHESIS_CHECKING_TYPE": "TWO_TAILED",
-            "CHECKING_TYPE": "PREDICATE_FINAL"
-          }
-        }
-      ],
       "testCases": [],
       "traces": [],
       "modelcheckingItems": [],
-      "simulation": "CoinToss2/CoinToss2_simulation.json",
-      "visBVisualisation": null
+      "simulations": [
+        {
+          "path": "CoinToss2/CoinToss2_simulation.json",
+          "simulationItems": [
+            {
+              "type": "HYPOTHESIS_TEST",
+              "information": {
+                "SIGNIFICANCE": 0.001,
+                "PROBABILITY": 0.9999999999,
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 1000,
+                "PREDICATE": "lastToss = {Heads}",
+                "STEPS_PER_EXECUTION": 11,
+                "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
+                "CHECKING_TYPE": "PREDICATE_EVENTUALLY"
+              }
+            },
+            {
+              "type": "HYPOTHESIS_TEST",
+              "information": {
+                "SIGNIFICANCE": 0.001,
+                "PROBABILITY": 0.999999999,
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 10000,
+                "PREDICATE": "lastToss = {Tails}",
+                "STEPS_PER_EXECUTION": 11,
+                "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
+                "CHECKING_TYPE": "PREDICATE_EVENTUALLY"
+              }
+            },
+            {
+              "type": "HYPOTHESIS_TEST",
+              "information": {
+                "SIGNIFICANCE": 0.001,
+                "PROBABILITY": 0.9999999999,
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 10000,
+                "PREDICATE": "lastToss = {Heads}",
+                "STEPS_PER_EXECUTION": 101,
+                "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
+                "CHECKING_TYPE": "PREDICATE_EVENTUALLY"
+              }
+            },
+            {
+              "type": "HYPOTHESIS_TEST",
+              "information": {
+                "SIGNIFICANCE": 0.001,
+                "PROBABILITY": 0.999999999,
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 10000,
+                "PREDICATE": "lastToss = {Tails}",
+                "STEPS_PER_EXECUTION": 101,
+                "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
+                "CHECKING_TYPE": "PREDICATE_EVENTUALLY"
+              }
+            },
+            {
+              "type": "HYPOTHESIS_TEST",
+              "information": {
+                "SIGNIFICANCE": 0.001,
+                "PROBABILITY": 0.5,
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 1000000,
+                "PREDICATE": "lastToss = {Heads}",
+                "STEPS_PER_EXECUTION": 2,
+                "HYPOTHESIS_CHECKING_TYPE": "TWO_TAILED",
+                "CHECKING_TYPE": "PREDICATE_FINAL"
+              }
+            },
+            {
+              "type": "HYPOTHESIS_TEST",
+              "information": {
+                "SIGNIFICANCE": 0.001,
+                "PROBABILITY": 0.8,
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 1000000,
+                "PREDICATE": "lastToss = {Heads}",
+                "STEPS_PER_EXECUTION": 2,
+                "HYPOTHESIS_CHECKING_TYPE": "TWO_TAILED",
+                "CHECKING_TYPE": "PREDICATE_FINAL"
+              }
+            },
+            {
+              "type": "ESTIMATION",
+              "information": {
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 10000,
+                "PREDICATE": "lastToss = {Heads}",
+                "ESTIMATION_TYPE": "MEAN",
+                "STEPS_PER_EXECUTION": 101,
+                "DESIRED_VALUE": 0.9999999,
+                "CHECKING_TYPE": "PREDICATE_EVENTUALLY",
+                "EPSILON": 0.001
+              }
+            },
+            {
+              "type": "ESTIMATION",
+              "information": {
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 1000000,
+                "PREDICATE": "lastToss = {Heads}",
+                "ESTIMATION_TYPE": "MEAN",
+                "STEPS_PER_EXECUTION": 2,
+                "DESIRED_VALUE": 0.5,
+                "CHECKING_TYPE": "PREDICATE_FINAL",
+                "EPSILON": 0.001
+              }
+            },
+            {
+              "type": "HYPOTHESIS_TEST",
+              "information": {
+                "SIGNIFICANCE": 0.001,
+                "PROBABILITY": 0.5,
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 10,
+                "PREDICATE": "lastToss = {Heads}",
+                "STEPS_PER_EXECUTION": 2,
+                "HYPOTHESIS_CHECKING_TYPE": "TWO_TAILED",
+                "CHECKING_TYPE": "PREDICATE_FINAL"
+              }
+            }
+          ]
+        }
+      ],
+      "visBVisualisation": null,
+      "historyChartItems": []
     },
     {
       "name": "PitmanController_TIME_v4",
       "description": "",
       "location": "LightModel/PitmanController_TIME_v4.mch",
       "lastUsedPreferenceName": "default",
+      "validationTasks": [],
+      "validationObligations": [],
       "ltlFormulas": [],
       "ltlPatterns": [],
       "symbolicCheckingFormulas": [],
       "symbolicAnimationFormulas": [],
-      "simulationItems": [
-        {
-          "type": "HYPOTHESIS_TEST",
-          "information": {
-            "SIGNIFICANCE": 0.001,
-            "PROBABILITY": 0.999999,
-            "STARTING_PREDICATE": "active_blinkers = {left_blink}",
-            "EXECUTIONS": 10000,
-            "PREDICATE": "blinkLeft = 100",
-            "ENDING_TIME": 100,
-            "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
-            "CHECKING_TYPE": "PREDICATE_EVENTUALLY"
-          }
-        },
-        {
-          "type": "HYPOTHESIS_TEST",
-          "information": {
-            "SIGNIFICANCE": 0.001,
-            "PROBABILITY": 0.999999,
-            "STARTING_PREDICATE": "active_blinkers = {left_blink}",
-            "EXECUTIONS": 10000,
-            "PREDICATE": "blinkLeft = 100",
-            "ENDING_TIME": 500,
-            "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
-            "CHECKING_TYPE": "PREDICATE_EVENTUALLY"
-          }
-        },
-        {
-          "type": "HYPOTHESIS_TEST",
-          "information": {
-            "SIGNIFICANCE": 0.001,
-            "PROBABILITY": 0.999999,
-            "STARTING_PREDICATE": "active_blinkers = {left_blink}",
-            "EXECUTIONS": 10000,
-            "PREDICATE": "blinkLeft = 100",
-            "ENDING_TIME": 500,
-            "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
-            "CHECKING_TYPE": "PREDICATE_EVENTUALLY"
-          }
-        },
-        {
-          "type": "MONTE_CARLO_SIMULATION",
-          "information": {
-            "ENDING_PREDICATE": "blinkLeft = 100",
-            "STARTING_PREDICATE": "active_blinkers = {left_blink}",
-            "EXECUTIONS": 2
-          }
-        },
-        {
-          "type": "MONTE_CARLO_SIMULATION",
-          "information": {
-            "STARTING_PREDICATE": "active_blinkers = {left_blink}",
-            "EXECUTIONS": 2,
-            "ENDING_TIME": 100
-          }
-        },
-        {
-          "type": "HYPOTHESIS_TEST",
-          "information": {
-            "ENDING_PREDICATE": "card(active_blinkers) > 0",
-            "SIGNIFICANCE": 0.001,
-            "PROBABILITY": 0.99999,
-            "STARTING_PREDICATE": "engineOn = TRUE",
-            "EXECUTIONS": 10000,
-            "PREDICATE": "blinkLeft = 0 & blinkRight = 0",
-            "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
-            "CHECKING_TYPE": "PREDICATE_INVARIANT"
-          }
-        }
-      ],
       "testCases": [],
       "traces": [],
       "modelcheckingItems": [],
-      "simulation": null,
-      "visBVisualisation": "LightModel/Visualisation/blinking_visb_v4.json"
+      "simulations": [],
+      "visBVisualisation": "LightModel/Visualisation/blinking_visb_v4.json",
+      "historyChartItems": []
     },
     {
       "name": "PitmanController_v6",
       "description": "",
       "location": "LightModel/PitmanController_v6.mch",
       "lastUsedPreferenceName": "default",
+      "validationTasks": [],
+      "validationObligations": [],
       "ltlFormulas": [],
       "ltlPatterns": [],
       "symbolicCheckingFormulas": [],
       "symbolicAnimationFormulas": [],
-      "simulationItems": [],
       "testCases": [],
       "traces": [],
       "modelcheckingItems": [],
-      "simulation": null,
-      "visBVisualisation": null
+      "simulations": [],
+      "visBVisualisation": null,
+      "historyChartItems": []
     },
     {
       "name": "PitmanController_TIME_MC_v4",
       "description": "",
       "location": "LightModel/PitmanController_TIME_MC_v4.mch",
       "lastUsedPreferenceName": "default",
+      "validationTasks": [],
+      "validationObligations": [],
       "ltlFormulas": [],
       "ltlPatterns": [],
       "symbolicCheckingFormulas": [],
       "symbolicAnimationFormulas": [],
-      "simulationItems": [
-        {
-          "type": "HYPOTHESIS_TEST",
-          "information": {
-            "SIGNIFICANCE": 0.001,
-            "PROBABILITY": 0.999999,
-            "STARTING_PREDICATE": "active_blinkers = {left_blink}",
-            "EXECUTIONS": 10000,
-            "PREDICATE": "blinkLeft = 100",
-            "ENDING_TIME": 100,
-            "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
-            "CHECKING_TYPE": "PREDICATE_EVENTUALLY"
-          }
-        },
-        {
-          "type": "HYPOTHESIS_TEST",
-          "information": {
-            "SIGNIFICANCE": 0.001,
-            "PROBABILITY": 0.999999,
-            "STARTING_PREDICATE": "active_blinkers = {left_blink}",
-            "EXECUTIONS": 10000,
-            "PREDICATE": "blinkLeft = 100",
-            "ENDING_TIME": 500,
-            "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
-            "CHECKING_TYPE": "PREDICATE_EVENTUALLY"
-          }
-        },
-        {
-          "type": "MONTE_CARLO_SIMULATION",
-          "information": {
-            "ENDING_PREDICATE": "blinkLeft = 100",
-            "STARTING_PREDICATE": "active_blinkers = {left_blink}",
-            "EXECUTIONS": 2
-          }
-        },
-        {
-          "type": "MONTE_CARLO_SIMULATION",
-          "information": {
-            "STARTING_PREDICATE": "active_blinkers = {left_blink}",
-            "EXECUTIONS": 2,
-            "ENDING_TIME": 100
-          }
-        },
-        {
-          "type": "HYPOTHESIS_TEST",
-          "information": {
-            "ENDING_PREDICATE": "card(active_blinkers) > 0",
-            "SIGNIFICANCE": 0.001,
-            "PROBABILITY": 0.99999,
-            "STARTING_PREDICATE": "engineOn = TRUE",
-            "EXECUTIONS": 10000,
-            "PREDICATE": "blinkLeft = 0 & blinkRight = 0",
-            "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
-            "CHECKING_TYPE": "PREDICATE_INVARIANT"
-          }
-        },
-        {
-          "type": "ESTIMATION",
-          "information": {
-            "STARTING_PREDICATE": "active_blinkers = {left_blink}",
-            "EXECUTIONS": 10000,
-            "PREDICATE": "blinkLeft = 100",
-            "ESTIMATION_TYPE": "MEAN",
-            "ENDING_TIME": 100,
-            "DESIRED_VALUE": 0.999999,
-            "CHECKING_TYPE": "PREDICATE_EVENTUALLY",
-            "EPSILON": 0.001
-          }
-        },
-        {
-          "type": "ESTIMATION",
-          "information": {
-            "STARTING_PREDICATE": "active_blinkers = {left_blink}",
-            "EXECUTIONS": 10000,
-            "PREDICATE": "blinkLeft = 100",
-            "ESTIMATION_TYPE": "MEAN",
-            "ENDING_TIME": 500,
-            "DESIRED_VALUE": 0.999999,
-            "CHECKING_TYPE": "PREDICATE_EVENTUALLY",
-            "EPSILON": 0.001
-          }
-        },
-        {
-          "type": "ESTIMATION",
-          "information": {
-            "ENDING_PREDICATE": "card(active_blinkers) > 0",
-            "STARTING_PREDICATE": "engineOn = TRUE",
-            "EXECUTIONS": 10000,
-            "PREDICATE": "blinkLeft = 0 & blinkRight = 0",
-            "ESTIMATION_TYPE": "MEAN",
-            "DESIRED_VALUE": 0.999999,
-            "CHECKING_TYPE": "PREDICATE_INVARIANT",
-            "EPSILON": 0.001
-          }
-        }
-      ],
       "testCases": [],
       "traces": [],
       "modelcheckingItems": [],
-      "simulation": "LightModel/Simulation_MC/PitmanController_v4_simulation.json",
-      "visBVisualisation": "LightModel/Visualisation/blinking_visb_v4.json"
+      "simulations": [
+        {
+          "path": "LightModel/Simulation_MC/PitmanController_v4_simulation.json",
+          "simulationItems": [
+            {
+              "type": "HYPOTHESIS_TEST",
+              "information": {
+                "SIGNIFICANCE": 0.001,
+                "PROBABILITY": 0.999999,
+                "STARTING_PREDICATE": "active_blinkers = {left_blink}",
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 10000,
+                "PREDICATE": "blinkLeft = 100",
+                "ENDING_TIME": 100,
+                "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
+                "CHECKING_TYPE": "PREDICATE_EVENTUALLY"
+              }
+            },
+            {
+              "type": "HYPOTHESIS_TEST",
+              "information": {
+                "SIGNIFICANCE": 0.001,
+                "PROBABILITY": 0.999999,
+                "STARTING_PREDICATE": "active_blinkers = {left_blink}",
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 10000,
+                "PREDICATE": "blinkLeft = 100",
+                "ENDING_TIME": 500,
+                "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
+                "CHECKING_TYPE": "PREDICATE_EVENTUALLY"
+              }
+            },
+            {
+              "type": "MONTE_CARLO_SIMULATION",
+              "information": {
+                "ENDING_PREDICATE": "blinkLeft = 100",
+                "STARTING_PREDICATE": "active_blinkers = {left_blink}",
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 2
+              }
+            },
+            {
+              "type": "MONTE_CARLO_SIMULATION",
+              "information": {
+                "STARTING_PREDICATE": "active_blinkers = {left_blink}",
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 2,
+                "ENDING_TIME": 100
+              }
+            },
+            {
+              "type": "HYPOTHESIS_TEST",
+              "information": {
+                "ENDING_PREDICATE": "card(active_blinkers) > 0",
+                "SIGNIFICANCE": 0.001,
+                "PROBABILITY": 0.99999,
+                "STARTING_PREDICATE": "engineOn = TRUE",
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 10000,
+                "PREDICATE": "blinkLeft = 0 & blinkRight = 0",
+                "HYPOTHESIS_CHECKING_TYPE": "LEFT_TAILED",
+                "CHECKING_TYPE": "PREDICATE_INVARIANT"
+              }
+            },
+            {
+              "type": "ESTIMATION",
+              "information": {
+                "STARTING_PREDICATE": "active_blinkers = {left_blink}",
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 10000,
+                "PREDICATE": "blinkLeft = 100",
+                "ESTIMATION_TYPE": "MEAN",
+                "ENDING_TIME": 100,
+                "DESIRED_VALUE": 0.999999,
+                "CHECKING_TYPE": "PREDICATE_EVENTUALLY",
+                "EPSILON": 0.001
+              }
+            },
+            {
+              "type": "ESTIMATION",
+              "information": {
+                "STARTING_PREDICATE": "active_blinkers = {left_blink}",
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 10000,
+                "PREDICATE": "blinkLeft = 100",
+                "ESTIMATION_TYPE": "MEAN",
+                "ENDING_TIME": 500,
+                "DESIRED_VALUE": 0.999999,
+                "CHECKING_TYPE": "PREDICATE_EVENTUALLY",
+                "EPSILON": 0.001
+              }
+            },
+            {
+              "type": "ESTIMATION",
+              "information": {
+                "ENDING_PREDICATE": "card(active_blinkers) > 0",
+                "STARTING_PREDICATE": "engineOn = TRUE",
+                "MAX_STEPS_BEFORE_PROPERTY": 0,
+                "EXECUTIONS": 10000,
+                "PREDICATE": "blinkLeft = 0 & blinkRight = 0",
+                "ESTIMATION_TYPE": "MEAN",
+                "DESIRED_VALUE": 0.999999,
+                "CHECKING_TYPE": "PREDICATE_INVARIANT",
+                "EPSILON": 0.001
+              }
+            }
+          ]
+        }
+      ],
+      "visBVisualisation": "LightModel/Visualisation/blinking_visb_v4.json",
+      "historyChartItems": []
     }
   ],
+  "requirements": [],
   "preferences": [
     {
       "name": "REAL_SIM",
@@ -1019,8 +1011,8 @@
   ],
   "metadata": {
     "fileType": "Project",
-    "formatVersion": 12,
-    "savedAt": "2021-04-10T21:53:49.357885Z",
+    "formatVersion": 27,
+    "savedAt": "2022-05-17T09:06:33.481301Z",
     "creator": "User",
     "proB2KernelVersion": "4.0.0-SNAPSHOT",
     "proBCliVersion": null,
