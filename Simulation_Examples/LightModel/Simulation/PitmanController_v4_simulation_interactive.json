@@ -1,0 +1,93 @@
+{
+    "activations": [
+        {
+            "id": "run_step",
+            "chooseActivation": {"time_pass": "IF active_blinkers = {} THEN 1.0 ELSE 0.0 END",
+                                "blinking": "1.0 - IF active_blinkers = {} THEN 1.0 ELSE 0.0 END"}
+        },
+        {
+            "id": "time_pass",
+            "execute": "RTIME_Nothing",
+            "after": "max(ran(curDeadlines))",
+            "fixedVariables": {"delta": "max(ran(curDeadlines))", "newOnCycle" : "FALSE"},
+            "activating" : "run_step"
+        },
+        {
+            "id": "blinking",
+            "chooseActivation": {"blinking_on": "IF onCycle = FALSE THEN 1.0 ELSE 0.0 END",
+                                "blinking_off":  "1.0 - IF onCycle = FALSE THEN 1.0 ELSE 0.0 END"}
+        },
+        {
+            "id": "blinking_on",
+            "execute": "RTIME_BlinkerOn",
+            "fixedVariables": {"delta": "curDeadlines(blink_deadline)"},
+            "after": "curDeadlines(blink_deadline)",
+            "activating" : "run_step"
+        },
+        {
+            "id": "blinking_off",
+            "execute": "RTIME_BlinkerOff",
+            "fixedVariables": {"delta": "curDeadlines(blink_deadline)"},
+            "after": "curDeadlines(blink_deadline)",
+            "activating" : "run_step"
+        },
+
+        {
+            "id": "blinking_first",
+            "chooseActivation": {"blinking_on_first": "IF onCycle = FALSE THEN 1.0 ELSE 0.0 END",
+                                "blinking_off_first": "1.0 - IF onCycle = FALSE THEN 1.0 ELSE 0.0 END"}
+        },
+        {
+            "id": "blinking_on_first",
+            "execute": "RTIME_BlinkerOn",
+            "fixedVariables": {"delta": "curDeadlines(blink_deadline)"},
+            "after": "curDeadlines(blink_deadline)",
+            "activating" : "blinking_off"
+        },
+        {
+            "id": "blinking_off_first",
+            "execute": "RTIME_BlinkerOff",
+            "fixedVariables": {"delta": "curDeadlines(blink_deadline)"},
+            "after": "curDeadlines(blink_deadline)",
+            "activating" : "blinking_on"
+        }
+    ],
+    "listeners": [
+      {
+          "id": "ENV_Turn_EngineOn",
+          "event": "ENV_Turn_EngineOn",
+          "predicate": "1=1",
+          "activating" : "run_step"
+      },
+      {
+          "id": "start_blinking_left",
+          "event": "ENV_Pitman_DirectionBlinking",
+          "predicate": "newPos = Downward7",
+          "activating" : "blinking_first"
+      },
+      {
+          "id": "start_blinking_right",
+          "event": "ENV_Pitman_DirectionBlinking",
+          "predicate": "newPos = Upward7",
+          "activating" : "blinking_first"
+      },
+      {
+          "id": "start_blinking_hazard",
+          "event": "ENV_Hazard_blinking",
+          "predicate": "newSwitchPos = switch_on",
+          "activating" : "blinking_first"
+      },
+      {
+          "id": "end_blinking_1",
+          "event": "ENV_Pitman_Reset_to_Neutral",
+          "predicate": "1=1",
+          "activating": "time_pass"
+      },
+      {
+          "id": "end_blinking_2",
+          "event": "ENV_Hazard_blinking",
+          "predicate": "newSwitchPos = switch_off",
+          "activating": "time_pass"
+      }
+    ]
+}
