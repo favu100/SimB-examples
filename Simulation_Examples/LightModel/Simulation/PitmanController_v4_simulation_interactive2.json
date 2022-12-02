@@ -54,7 +54,6 @@
       {
           "id": "end_blinking",
           "event": "ENV_Pitman_Reset_to_Neutral",
-          "predicate": "1=1",
           "activating": "time_pass"
       }
     ]
