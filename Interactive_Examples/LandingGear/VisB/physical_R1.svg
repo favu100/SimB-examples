@@ -1,0 +1,23 @@
+<svg width="392" height="285" xmlns="http://www.w3.org/2000/svg" id="landinggear" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <metadata id="metadata3467">image/svg+xml</metadata>
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="287" width="394" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="physical">
+   <g id="gear_door_abstract">
+    <g id="door">
+     <image xlink:href="img/door_closed.png" id="door_img" height="95" width="156" y="28.5" x="-1"/>
+     <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="14" id="svg_4" y="17.5" x="43" stroke-width="0" stroke="#000" fill="#000000">Door</text>
+    </g>
+    <g id="gear">
+     <image xlink:href="img/gear_retracted.png" id="gear_img" height="122.27619" width="74" y="157.5" x="32"/>
+     <text xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="14" id="svg_12" y="145.5" x="38" stroke-width="0" stroke="#000" fill="#000000">Gear</text>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

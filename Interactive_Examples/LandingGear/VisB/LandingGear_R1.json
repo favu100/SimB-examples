@@ -1,0 +1,15 @@
+{
+	"svg": "physical R1.svg",
+	"items": [
+		{
+			"id": "door_img",
+			"attr": "xlink:href",
+			"value": "{closed |-> \"img/door_closed.png\", open |-> \"img/door_open.png\", door_moving |-> \"img/door_door_moving.png\"}(door)"
+		},
+		{
+			"id": "gear_img",
+			"attr": "xlink:href",
+			"value": "{extended |-> \"img/gear_extended.png\", retracted |-> \"img/gear_retracted.png\", gear_moving |-> \"img/gear_gear_moving.png\"}(gear)"
+		}
+	]
+}
