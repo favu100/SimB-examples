@@ -1,4 +1,4 @@
-MACHINE HarmonicVibration
+MACHINE HarmonicVibration2
 
 DEFINITIONS
   "LibraryReals.def"
