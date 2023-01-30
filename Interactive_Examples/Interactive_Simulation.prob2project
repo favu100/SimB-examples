@@ -1,0 +1,188 @@
+{
+  "name": "Interactive_Simulation",
+  "description": "",
+  "machines": [
+    {
+      "name": "Lift",
+      "description": "",
+      "location": "Lift/Lift.mch",
+      "lastUsedPreferenceName": "Lift_Pref",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [
+        {
+          "path": "Lift/lift_simulation_interactive.json",
+          "simulationItems": []
+        }
+      ],
+      "visBVisualisation": "Lift/VisB/lift3.json",
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "PitmanController_TIME_MC_v4",
+      "description": "",
+      "location": "LightModel/PitmanController_TIME_MC_v4.mch",
+      "lastUsedPreferenceName": "default",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [
+        {
+          "path": "LightModel/PitmanController_v4_simulation_interactive.json",
+          "simulationItems": []
+        }
+      ],
+      "visBVisualisation": "LightModel/VisB/blinking_visb_v4.json",
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "R6GearsDoorsHandleValvesControllerSwitch",
+      "description": "",
+      "location": "LandingGear/R6GearsDoorsHandleValvesControllerSwitch.bum",
+      "lastUsedPreferenceName": "default",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [
+        {
+          "id": null,
+          "name": "INITIALISATION/r51/INV",
+          "description": "Invariant  establishment",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "con_stimulate_open_door_valve/r51/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "con_stop_stimulate_open_door_valve/r51/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "con_stimulate_close_door_valve/r51/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "con_stop_stimulate_close_door_valve/r51/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "con_stimulate_retract_gear_valve/r51/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "con_stop_stimulate_retract_gear_valve/r51/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "con_stimulate_extend_gear_valve/r51/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "con_stop_stimulate_extend_gear_valve/r51/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "con_stimulate_general_valve/r51/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        },
+        {
+          "id": null,
+          "name": "con_stop_stimulate_general_valve/r51/INV",
+          "description": "Invariant  preservation",
+          "selected": true
+        }
+      ],
+      "simulations": [
+        {
+          "path": "LandingGear/Simulation_R6GearsDoorsHandleValvesControllerSwitch_Fast_Interactive.json",
+          "simulationItems": []
+        }
+      ],
+      "visBVisualisation": null,
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    },
+    {
+      "name": "M9_Push_Mouse_Buttons_vis",
+      "description": "",
+      "location": "AMAN_v6/M9_Push_Mouse_Buttons_vis.bum",
+      "lastUsedPreferenceName": "default",
+      "ltlFormulas": [],
+      "ltlPatterns": [],
+      "symbolicCheckingFormulas": [],
+      "symbolicAnimationFormulas": [],
+      "testCases": [],
+      "traces": [],
+      "modelcheckingItems": [],
+      "proofObligationItems": [],
+      "simulations": [
+        {
+          "path": "AMAN_v6/SimB/AMAN_sim_interactive.json",
+          "simulationItems": []
+        }
+      ],
+      "visBVisualisation": "AMAN_v6/VisB/AMAN_vis_M9.json",
+      "historyChartItems": [],
+      "dotVisualizationItems": {},
+      "tableVisualizationItems": {}
+    }
+  ],
+  "requirements": [],
+  "preferences": [
+    {
+      "name": "Lift_Pref",
+      "preferences": {
+        "MAX_INITIALISATIONS": "224",
+        "MAX_OPERATIONS": "10"
+      }
+    }
+  ],
+  "metadata": {
+    "fileType": "Project",
+    "formatVersion": 34,
+    "savedAt": "2023-01-30T13:46:04.423026Z",
+    "creator": "User",
+    "proB2KernelVersion": "4.0.0-SNAPSHOT",
+    "proBCliVersion": null,
+    "modelName": null
+  }
+}
