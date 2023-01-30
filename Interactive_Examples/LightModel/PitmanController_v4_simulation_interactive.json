@@ -1,0 +1,60 @@
+{
+    "activations": [
+        {
+            "id": "time_pass",
+            "execute": "RTIME_Nothing",
+            "activationKind": "single:max",
+            "after": "max(ran(curDeadlines))",
+            "fixedVariables": {"delta": "max(ran(curDeadlines))", "newOnCycle" : "FALSE"},
+            "activating" : ["time_pass", "blinking_on", "blinking_off"]
+        },
+        {
+            "id": "blinking_on",
+            "execute": "RTIME_BlinkerOn",
+            "activationKind": "single:max",
+            "fixedVariables": {"delta": "curDeadlines(blink_deadline)"},
+            "after": "curDeadlines(blink_deadline)",
+            "activating" : "blinking_off"
+        },
+        {
+            "id": "blinking_off",
+            "execute": "RTIME_BlinkerOff",
+            "activationKind": "single:max",
+            "fixedVariables": {"delta": "curDeadlines(blink_deadline)"},
+            "after": "curDeadlines(blink_deadline)",
+            "activating" : "blinking_on"
+        }
+    ],
+    "listeners": [
+      {
+          "id": "$initialise_machine",
+          "event": "$initialise_machine",
+          "activating": "time_pass"
+      },
+      {
+          "id": "ENV_Turn_EngineOn",
+          "event": "ENV_Turn_EngineOn",
+          "activating" : ["time_pass", "blinking_on", "blinking_off"]
+      },
+      {
+          "id": "ENV_Turn_EngineOff",
+          "event": "ENV_Turn_EngineOff",
+          "activating" : ["time_pass", "blinking_on", "blinking_off"]
+      },
+      {
+          "id": "start_blinking",
+          "event": "ENV_Pitman_DirectionBlinking",
+          "activating" : ["blinking_on", "blinking_off"]
+      },
+      {
+          "id": "blinking_hazard",
+          "event": "ENV_Hazard_blinking",
+          "activating" : ["time_pass", "blinking_on", "blinking_off"]
+      },
+      {
+          "id": "end_blinking",
+          "event": "ENV_Pitman_Reset_to_Neutral",
+          "activating": "time_pass"
+      }
+    ]
+}
