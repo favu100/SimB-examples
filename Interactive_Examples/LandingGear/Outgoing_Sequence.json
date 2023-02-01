@@ -11,8 +11,7 @@
       "probabilisticVariables": null,
       "activating": [
         "user_interaction_0",
-        "user_interaction_1",
-        "user_interaction_2"
+        "user_interaction_1"
       ]
     },
     {
@@ -887,17 +886,6 @@
     },
     {
       "id": "user_interaction_0",
-      "execute": "$initialise_machine",
-      "after": "0",
-      "priority": 0,
-      "additionalGuards": null,
-      "activationKind": null,
-      "fixedVariables": {},
-      "probabilisticVariables": null,
-      "activating": []
-    },
-    {
-      "id": "user_interaction_1",
       "execute": "toggle_handle_up",
       "after": "0",
       "priority": 0,
@@ -911,7 +899,7 @@
       ]
     },
     {
-      "id": "user_interaction_2",
+      "id": "user_interaction_1",
       "execute": "toggle_handle_down",
       "after": "22000",
       "priority": 0,
