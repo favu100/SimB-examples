@@ -1,0 +1,248 @@
+{
+  "activations": [
+    {
+      "id": "$setup_constants",
+      "execute": "$setup_constants",
+      "after": null,
+      "priority": 0,
+      "additionalGuards": null,
+      "activationKind": null,
+      "fixedVariables": null,
+      "probabilisticVariables": null,
+      "activating": []
+    },
+    {
+      "id": "$initialise_machine",
+      "execute": "$initialise_machine",
+      "after": null,
+      "priority": 0,
+      "additionalGuards": null,
+      "activationKind": null,
+      "fixedVariables": null,
+      "probabilisticVariables": null,
+      "activating": [
+        "user_interaction_0",
+        "user_interaction_1",
+        "user_interaction_2"
+      ]
+    },
+    {
+      "id": "move_up_1",
+      "execute": "move_up",
+      "after": "200",
+      "priority": 4,
+      "additionalGuards": "direction_up = TRUE & card(call_buttons \\/ inside_buttons) > 0 & max(call_buttons \\/ inside_buttons) > cur_floor",
+      "activationKind": "SINGLE",
+      "fixedVariables": null,
+      "probabilisticVariables": null,
+      "activating": [
+        "move_up_2",
+        "open_door_2"
+      ]
+    },
+    {
+      "id": "move_up_2",
+      "execute": "move_up",
+      "after": "200",
+      "priority": 4,
+      "additionalGuards": "direction_up = TRUE & card(call_buttons \\/ inside_buttons) > 0 & max(call_buttons \\/ inside_buttons) > cur_floor",
+      "activationKind": "SINGLE_MAX",
+      "fixedVariables": null,
+      "probabilisticVariables": null,
+      "activating": [
+        "move_up_2",
+        "open_door_2"
+      ]
+    },
+    {
+      "id": "move_down_1",
+      "execute": "move_down",
+      "after": "200",
+      "priority": 4,
+      "additionalGuards": "direction_up = FALSE & card(call_buttons \\/ inside_buttons) > 0 & min(call_buttons \\/ inside_buttons) < cur_floor",
+      "activationKind": "SINGLE",
+      "fixedVariables": null,
+      "probabilisticVariables": null,
+      "activating": [
+        "move_down_2",
+        "open_door_2"
+      ]
+    },
+    {
+      "id": "move_down_2",
+      "execute": "move_down",
+      "after": "200",
+      "priority": 4,
+      "additionalGuards": "direction_up = FALSE & card(call_buttons \\/ inside_buttons) > 0 & min(call_buttons \\/ inside_buttons) < cur_floor",
+      "activationKind": "SINGLE_MAX",
+      "fixedVariables": null,
+      "probabilisticVariables": null,
+      "activating": [
+        "move_down_2",
+        "open_door_2"
+      ]
+    },
+    {
+      "id": "reverse_lift_up_1",
+      "execute": "reverse_lift_up",
+      "after": "100",
+      "priority": 3,
+      "additionalGuards": "card(call_buttons \\/ inside_buttons) > 0 & min(call_buttons \\/ inside_buttons) > cur_floor",
+      "activationKind": "SINGLE",
+      "fixedVariables": null,
+      "probabilisticVariables": null,
+      "activating": [
+        "move_up_2"
+      ]
+    },
+    {
+      "id": "reverse_lift_up_2",
+      "execute": "reverse_lift_up",
+      "after": "100",
+      "priority": 3,
+      "additionalGuards": "card(call_buttons \\/ inside_buttons) > 0 & min(call_buttons \\/ inside_buttons) > cur_floor",
+      "activationKind": "SINGLE_MAX",
+      "fixedVariables": null,
+      "probabilisticVariables": null,
+      "activating": [
+        "move_up_2"
+      ]
+    },
+    {
+      "id": "reverse_lift_down_1",
+      "execute": "reverse_lift_down",
+      "after": "100",
+      "priority": 3,
+      "additionalGuards": "card(call_buttons \\/ inside_buttons) > 0 & max(call_buttons \\/ inside_buttons) < cur_floor",
+      "activationKind": "SINGLE_MAX",
+      "fixedVariables": null,
+      "probabilisticVariables": null,
+      "activating": [
+        "move_down_2"
+      ]
+    },
+    {
+      "id": "reverse_lift_down_2",
+      "execute": "reverse_lift_down",
+      "after": "100",
+      "priority": 3,
+      "additionalGuards": "card(call_buttons \\/ inside_buttons) > 0 & max(call_buttons \\/ inside_buttons) < cur_floor",
+      "activationKind": "SINGLE",
+      "fixedVariables": null,
+      "probabilisticVariables": null,
+      "activating": [
+        "move_down_2"
+      ]
+    },
+    {
+      "id": "open_door_1",
+      "execute": "open_door",
+      "after": "200",
+      "priority": 2,
+      "additionalGuards": "cur_floor : call_buttons \\/ inside_buttons",
+      "activationKind": "SINGLE",
+      "fixedVariables": null,
+      "probabilisticVariables": null,
+      "activating": [
+        "close_door_2"
+      ]
+    },
+    {
+      "id": "open_door_2",
+      "execute": "open_door",
+      "after": "200",
+      "priority": 2,
+      "additionalGuards": "cur_floor : call_buttons \\/ inside_buttons",
+      "activationKind": "SINGLE_MAX",
+      "fixedVariables": null,
+      "probabilisticVariables": null,
+      "activating": [
+        "close_door_2"
+      ]
+    },
+    {
+      "id": "close_door_1",
+      "execute": "close_door",
+      "after": "200",
+      "priority": 2,
+      "additionalGuards": "cur_floor : call_buttons \\/ inside_buttons",
+      "activationKind": "SINGLE",
+      "fixedVariables": null,
+      "probabilisticVariables": null,
+      "activating": [
+        "reverse_lift_up_2",
+        "reverse_lift_down_2",
+        "move_up_2",
+        "move_down_2"
+      ]
+    },
+    {
+      "id": "close_door_2",
+      "execute": "close_door",
+      "after": "200",
+      "priority": 2,
+      "additionalGuards": "cur_floor : call_buttons \\/ inside_buttons",
+      "activationKind": "SINGLE_MAX",
+      "fixedVariables": null,
+      "probabilisticVariables": null,
+      "activating": [
+        "reverse_lift_up_2",
+        "reverse_lift_down_2",
+        "move_up_2",
+        "move_down_2"
+      ]
+    },
+    {
+      "id": "user_interaction_0",
+      "execute": "$setup_constants",
+      "after": "0",
+      "priority": 0,
+      "additionalGuards": null,
+      "activationKind": null,
+      "fixedVariables": {},
+      "probabilisticVariables": null,
+      "activating": []
+    },
+    {
+      "id": "user_interaction_1",
+      "execute": "$initialise_machine",
+      "after": "0",
+      "priority": 0,
+      "additionalGuards": null,
+      "activationKind": null,
+      "fixedVariables": {},
+      "probabilisticVariables": null,
+      "activating": []
+    },
+    {
+      "id": "user_interaction_2",
+      "execute": "push_call_button",
+      "after": "0",
+      "priority": 0,
+      "additionalGuards": null,
+      "activationKind": null,
+      "fixedVariables": {
+        "b": "2"
+      },
+      "probabilisticVariables": null,
+      "activating": [
+        "move_up_1",
+        "move_down_1",
+        "reverse_lift_up_1",
+        "reverse_lift_down_1",
+        "open_door_1",
+        "close_door_1"
+      ]
+    }
+  ],
+  "listeners": [],
+  "metadata": {
+    "fileType": "Automatic_Simulation_with_User_Interaction",
+    "formatVersion": 2,
+    "savedAt": "2023-02-01T12:29:17.474409Z",
+    "creator": "User",
+    "proB2KernelVersion": "4.0.0-SNAPSHOT",
+    "proBCliVersion": null,
+    "modelName": null
+  }
+}

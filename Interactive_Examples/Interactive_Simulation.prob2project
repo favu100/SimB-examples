@@ -12,7 +12,18 @@
       "symbolicCheckingFormulas": [],
       "symbolicAnimationFormulas": [],
       "testCases": [],
-      "traces": [],
+      "traces": [
+        {
+          "id": null,
+          "location": "Lift/lift_simulation_to_highest.prob2trace",
+          "selected": true
+        },
+        {
+          "id": null,
+          "location": "Lift/lift_simulation_to_highest_then_lowest.prob2trace",
+          "selected": true
+        }
+      ],
       "modelcheckingItems": [],
       "proofObligationItems": [],
       "simulations": [
@@ -179,7 +190,7 @@
   "metadata": {
     "fileType": "Project",
     "formatVersion": 34,
-    "savedAt": "2023-01-30T13:46:04.423026Z",
+    "savedAt": "2023-02-01T12:30:27.494693Z",
     "creator": "User",
     "proB2KernelVersion": "4.0.0-SNAPSHOT",
     "proBCliVersion": null,

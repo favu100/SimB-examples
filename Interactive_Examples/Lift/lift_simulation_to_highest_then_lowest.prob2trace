@@ -1,0 +1,438 @@
+{
+  "description": "",
+  "transitionList": [
+    {
+      "name": "$setup_constants",
+      "params": {},
+      "results": {},
+      "destState": {
+        "groundf": "-1",
+        "topf": "2"
+      },
+      "destStateNotChanged": [],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "$initialise_machine",
+      "params": {},
+      "results": {},
+      "destState": {
+        "direction_up": "TRUE",
+        "door_open": "FALSE",
+        "cur_floor": "-1",
+        "call_buttons": "∅",
+        "inside_buttons": "∅"
+      },
+      "destStateNotChanged": [],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "push_call_button",
+      "params": {
+        "b": "2"
+      },
+      "results": {},
+      "destState": {
+        "call_buttons": "{2}"
+      },
+      "destStateNotChanged": [
+        "direction_up",
+        "door_open",
+        "cur_floor",
+        "inside_buttons"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "move_up",
+      "params": {},
+      "results": {},
+      "destState": {
+        "cur_floor": "0"
+      },
+      "destStateNotChanged": [
+        "direction_up",
+        "door_open",
+        "call_buttons",
+        "inside_buttons"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "move_up",
+      "params": {},
+      "results": {},
+      "destState": {
+        "cur_floor": "1"
+      },
+      "destStateNotChanged": [
+        "direction_up",
+        "door_open",
+        "call_buttons",
+        "inside_buttons"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "move_up",
+      "params": {},
+      "results": {},
+      "destState": {
+        "cur_floor": "2"
+      },
+      "destStateNotChanged": [
+        "direction_up",
+        "door_open",
+        "call_buttons",
+        "inside_buttons"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "open_door",
+      "params": {},
+      "results": {},
+      "destState": {
+        "door_open": "TRUE"
+      },
+      "destStateNotChanged": [
+        "direction_up",
+        "call_buttons",
+        "cur_floor",
+        "inside_buttons"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "close_door",
+      "params": {},
+      "results": {},
+      "destState": {
+        "door_open": "FALSE",
+        "call_buttons": "∅"
+      },
+      "destStateNotChanged": [
+        "direction_up",
+        "cur_floor",
+        "inside_buttons"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "push_call_button",
+      "params": {
+        "b": "-1"
+      },
+      "results": {},
+      "destState": {
+        "call_buttons": "{-1}"
+      },
+      "destStateNotChanged": [
+        "direction_up",
+        "door_open",
+        "cur_floor",
+        "inside_buttons"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "reverse_lift_down",
+      "params": {},
+      "results": {},
+      "destState": {
+        "direction_up": "FALSE"
+      },
+      "destStateNotChanged": [
+        "door_open",
+        "call_buttons",
+        "cur_floor",
+        "inside_buttons"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "move_down",
+      "params": {},
+      "results": {},
+      "destState": {
+        "cur_floor": "1"
+      },
+      "destStateNotChanged": [
+        "direction_up",
+        "door_open",
+        "call_buttons",
+        "inside_buttons"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "move_down",
+      "params": {},
+      "results": {},
+      "destState": {
+        "cur_floor": "0"
+      },
+      "destStateNotChanged": [
+        "direction_up",
+        "door_open",
+        "call_buttons",
+        "inside_buttons"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "move_down",
+      "params": {},
+      "results": {},
+      "destState": {
+        "cur_floor": "-1"
+      },
+      "destStateNotChanged": [
+        "direction_up",
+        "door_open",
+        "call_buttons",
+        "inside_buttons"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "open_door",
+      "params": {},
+      "results": {},
+      "destState": {
+        "door_open": "TRUE"
+      },
+      "destStateNotChanged": [
+        "direction_up",
+        "call_buttons",
+        "cur_floor",
+        "inside_buttons"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "close_door",
+      "params": {},
+      "results": {},
+      "destState": {
+        "door_open": "FALSE",
+        "call_buttons": "∅"
+      },
+      "destStateNotChanged": [
+        "direction_up",
+        "cur_floor",
+        "inside_buttons"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    }
+  ],
+  "variableNames": [
+    "call_buttons",
+    "cur_floor",
+    "direction_up",
+    "door_open",
+    "inside_buttons"
+  ],
+  "constantNames": [
+    "groundf",
+    "topf"
+  ],
+  "setNames": [],
+  "machineOperationInfos": {
+    "reverse_lift_down": {
+      "operationName": "reverse_lift_down",
+      "parameterNames": [],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "CLASSICAL_B",
+      "readVariables": [
+        "direction_up"
+      ],
+      "writtenVariables": [
+        "direction_up"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {}
+    },
+    "close_door": {
+      "operationName": "close_door",
+      "parameterNames": [],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "CLASSICAL_B",
+      "readVariables": [
+        "call_buttons",
+        "cur_floor",
+        "door_open",
+        "inside_buttons"
+      ],
+      "writtenVariables": [
+        "call_buttons",
+        "door_open",
+        "inside_buttons"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {}
+    },
+    "reverse_lift_up": {
+      "operationName": "reverse_lift_up",
+      "parameterNames": [],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "CLASSICAL_B",
+      "readVariables": [
+        "direction_up"
+      ],
+      "writtenVariables": [
+        "direction_up"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {}
+    },
+    "move_up": {
+      "operationName": "move_up",
+      "parameterNames": [],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "CLASSICAL_B",
+      "readVariables": [
+        "cur_floor",
+        "direction_up",
+        "door_open",
+        "topf"
+      ],
+      "writtenVariables": [
+        "cur_floor"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {}
+    },
+    "open_door": {
+      "operationName": "open_door",
+      "parameterNames": [],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "CLASSICAL_B",
+      "readVariables": [
+        "call_buttons",
+        "cur_floor",
+        "door_open",
+        "inside_buttons"
+      ],
+      "writtenVariables": [
+        "door_open"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {}
+    },
+    "move_down": {
+      "operationName": "move_down",
+      "parameterNames": [],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "CLASSICAL_B",
+      "readVariables": [
+        "cur_floor",
+        "direction_up",
+        "door_open",
+        "groundf"
+      ],
+      "writtenVariables": [
+        "cur_floor"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {}
+    },
+    "push_call_button": {
+      "operationName": "push_call_button",
+      "parameterNames": [
+        "b"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "CLASSICAL_B",
+      "readVariables": [
+        "call_buttons",
+        "groundf",
+        "topf"
+      ],
+      "writtenVariables": [
+        "call_buttons"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "b": "integer"
+      }
+    },
+    "push_inside_button": {
+      "operationName": "push_inside_button",
+      "parameterNames": [
+        "b"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "CLASSICAL_B",
+      "readVariables": [
+        "cur_floor",
+        "groundf",
+        "inside_buttons",
+        "topf"
+      ],
+      "writtenVariables": [
+        "inside_buttons"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "b": "integer"
+      }
+    }
+  },
+  "globalIdentifierTypes": {
+    "direction_up": "boolean",
+    "groundf": "integer",
+    "door_open": "boolean",
+    "topf": "integer",
+    "call_buttons": "set(integer)",
+    "cur_floor": "integer",
+    "inside_buttons": "set(integer)"
+  },
+  "metadata": {
+    "fileType": "Trace",
+    "formatVersion": 5,
+    "savedAt": "2023-02-01T12:30:19.758014Z",
+    "creator": "traceReplay",
+    "proB2KernelVersion": "4.0.0-SNAPSHOT",
+    "proBCliVersion": "1.12.0-nightly",
+    "modelName": "Lift"
+  }
+}
