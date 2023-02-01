@@ -71,7 +71,18 @@
       "symbolicCheckingFormulas": [],
       "symbolicAnimationFormulas": [],
       "testCases": [],
-      "traces": [],
+      "traces": [
+        {
+          "id": null,
+          "location": "LandingGear/Retraction_Sequence.prob2trace",
+          "selected": true
+        },
+        {
+          "id": null,
+          "location": "LandingGear/Outgoing_Sequence.prob2trace",
+          "selected": true
+        }
+      ],
       "modelcheckingItems": [],
       "proofObligationItems": [
         {
@@ -147,7 +158,7 @@
           "simulationItems": []
         }
       ],
-      "visBVisualisation": null,
+      "visBVisualisation": "LandingGear/VisB/LandingGear.json",
       "historyChartItems": [],
       "dotVisualizationItems": {},
       "tableVisualizationItems": {}
@@ -190,7 +201,7 @@
   "metadata": {
     "fileType": "Project",
     "formatVersion": 34,
-    "savedAt": "2023-02-01T12:30:27.494693Z",
+    "savedAt": "2023-02-01T15:09:14.192935Z",
     "creator": "User",
     "proB2KernelVersion": "4.0.0-SNAPSHOT",
     "proBCliVersion": null,

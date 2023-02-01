@@ -1,0 +1,2028 @@
+{
+  "description": "",
+  "transitionList": [
+    {
+      "name": "$initialise_machine",
+      "params": {},
+      "results": {},
+      "destState": {
+        "extend_EV": "FALSE",
+        "valve_open_door": "valve_closed",
+        "door": "closed",
+        "valve_close_door": "valve_closed",
+        "analogical_switch": "switch_open",
+        "handle": "down",
+        "handle_move": "FALSE",
+        "valve_retract_gear": "valve_closed",
+        "doors": "{(`front`↦closed),(`left`↦closed),(`right`↦closed)}",
+        "open_EV": "FALSE",
+        "general_valve": "valve_closed",
+        "shock_absorber": "ground",
+        "close_EV": "FALSE",
+        "general_EV": "FALSE",
+        "retract_EV": "FALSE",
+        "valve_extend_gear": "valve_closed",
+        "gears": "{(`front`↦extended),(`left`↦extended),(`right`↦extended)}",
+        "gear": "extended"
+      },
+      "destStateNotChanged": [],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "toggle_handle_up",
+      "params": {},
+      "results": {},
+      "destState": {
+        "handle": "up",
+        "handle_move": "TRUE"
+      },
+      "destStateNotChanged": [
+        "extend_EV",
+        "valve_open_door",
+        "door",
+        "valve_close_door",
+        "analogical_switch",
+        "valve_retract_gear",
+        "doors",
+        "open_EV",
+        "general_valve",
+        "shock_absorber",
+        "close_EV",
+        "general_EV",
+        "retract_EV",
+        "valve_extend_gear",
+        "gears",
+        "gear"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "begin_flying",
+      "params": {},
+      "results": {},
+      "destState": {
+        "shock_absorber": "flight"
+      },
+      "destStateNotChanged": [
+        "extend_EV",
+        "valve_open_door",
+        "door",
+        "valve_close_door",
+        "analogical_switch",
+        "handle",
+        "handle_move",
+        "valve_retract_gear",
+        "doors",
+        "open_EV",
+        "general_valve",
+        "close_EV",
+        "general_EV",
+        "retract_EV",
+        "valve_extend_gear",
+        "gears",
+        "gear"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "env_close_analogical_switch",
+      "params": {},
+      "results": {},
+      "destState": {
+        "analogical_switch": "switch_closed"
+      },
+      "destStateNotChanged": [
+        "extend_EV",
+        "valve_open_door",
+        "door",
+        "valve_close_door",
+        "handle",
+        "handle_move",
+        "valve_retract_gear",
+        "doors",
+        "open_EV",
+        "general_valve",
+        "shock_absorber",
+        "close_EV",
+        "general_EV",
+        "retract_EV",
+        "valve_extend_gear",
+        "gears",
+        "gear"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "con_stimulate_general_valve",
+      "params": {},
+      "results": {},
+      "destState": {
+        "general_EV": "TRUE"
+      },
+      "destStateNotChanged": [
+        "extend_EV",
+        "valve_open_door",
+        "door",
+        "valve_close_door",
+        "analogical_switch",
+        "handle",
+        "handle_move",
+        "valve_retract_gear",
+        "doors",
+        "open_EV",
+        "general_valve",
+        "shock_absorber",
+        "close_EV",
+        "retract_EV",
+        "valve_extend_gear",
+        "gears",
+        "gear"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "con_stimulate_open_door_valve",
+      "params": {},
+      "results": {},
+      "destState": {
+        "open_EV": "TRUE"
+      },
+      "destStateNotChanged": [
+        "extend_EV",
+        "valve_open_door",
+        "door",
+        "valve_close_door",
+        "analogical_switch",
+        "handle",
+        "handle_move",
+        "valve_retract_gear",
+        "doors",
+        "general_valve",
+        "shock_absorber",
+        "close_EV",
+        "general_EV",
+        "retract_EV",
+        "valve_extend_gear",
+        "gears",
+        "gear"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "evn_open_general_valve",
+      "params": {},
+      "results": {},
+      "destState": {
+        "general_valve": "valve_open"
+      },
+      "destStateNotChanged": [
+        "extend_EV",
+        "valve_open_door",
+        "door",
+        "valve_close_door",
+        "analogical_switch",
+        "handle",
+        "handle_move",
+        "valve_retract_gear",
+        "doors",
+        "open_EV",
+        "shock_absorber",
+        "close_EV",
+        "general_EV",
+        "retract_EV",
+        "valve_extend_gear",
+        "gears",
+        "gear"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "open_valve_door_open",
+      "params": {},
+      "results": {},
+      "destState": {
+        "valve_open_door": "valve_open"
+      },
+      "destStateNotChanged": [
+        "extend_EV",
+        "door",
+        "valve_close_door",
+        "analogical_switch",
+        "handle",
+        "handle_move",
+        "valve_retract_gear",
+        "doors",
+        "open_EV",
+        "general_valve",
+        "shock_absorber",
+        "close_EV",
+        "general_EV",
+        "retract_EV",
+        "valve_extend_gear",
+        "gears",
+        "gear"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "env_start_open_door",
+      "params": {
+        "gr": "`left`"
+      },
+      "results": {},
+      "destState": {
+        "doors": "{(`front`↦closed),(`left`↦door_moving),(`right`↦closed)}",
+        "door": "door_moving"
+      },
+      "destStateNotChanged": [
+        "extend_EV",
+        "valve_open_door",
+        "valve_close_door",
+        "analogical_switch",
+        "handle",
+        "handle_move",
+        "valve_retract_gear",
+        "open_EV",
+        "general_valve",
+        "shock_absorber",
+        "close_EV",
+        "general_EV",
+        "retract_EV",
+        "valve_extend_gear",
+        "gears",
+        "gear"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "env_start_open_door",
+      "params": {
+        "gr": "`right`"
+      },
+      "results": {},
+      "destState": {
+        "doors": "{(`front`↦closed),(`left`↦door_moving),(`right`↦door_moving)}"
+      },
+      "destStateNotChanged": [
+        "extend_EV",
+        "valve_open_door",
+        "door",
+        "valve_close_door",
+        "analogical_switch",
+        "handle",
+        "handle_move",
+        "valve_retract_gear",
+        "open_EV",
+        "general_valve",
+        "shock_absorber",
+        "close_EV",
+        "general_EV",
+        "retract_EV",
+        "valve_extend_gear",
+        "gears",
+        "gear"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "env_start_open_door",
+      "params": {
+        "gr": "`front`"
+      },
+      "results": {},
+      "destState": {
+        "doors": "{(`front`↦door_moving),(`left`↦door_moving),(`right`↦door_moving)}"
+      },
+      "destStateNotChanged": [
+        "extend_EV",
+        "valve_open_door",
+        "door",
+        "valve_close_door",
+        "analogical_switch",
+        "handle",
+        "handle_move",
+        "valve_retract_gear",
+        "open_EV",
+        "general_valve",
+        "shock_absorber",
+        "close_EV",
+        "general_EV",
+        "retract_EV",
+        "valve_extend_gear",
+        "gears",
+        "gear"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "env_open_door_skip",
+      "params": {
+        "gr": "`front`"
+      },
+      "results": {},
+      "destState": {
+        "doors": "{(`front`↦open),(`left`↦door_moving),(`right`↦door_moving)}"
+      },
+      "destStateNotChanged": [
+        "extend_EV",
+        "valve_open_door",
+        "door",
+        "valve_close_door",
+        "analogical_switch",
+        "handle",
+        "handle_move",
+        "valve_retract_gear",
+        "open_EV",
+        "general_valve",
+        "shock_absorber",
+        "close_EV",
+        "general_EV",
+        "retract_EV",
+        "valve_extend_gear",
+        "gears",
+        "gear"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "env_open_door_skip",
+      "params": {
+        "gr": "`left`"
+      },
+      "results": {},
+      "destState": {
+        "doors": "{(`front`↦open),(`left`↦open),(`right`↦door_moving)}"
+      },
+      "destStateNotChanged": [
+        "extend_EV",
+        "valve_open_door",
+        "door",
+        "valve_close_door",
+        "analogical_switch",
+        "handle",
+        "handle_move",
+        "valve_retract_gear",
+        "open_EV",
+        "general_valve",
+        "shock_absorber",
+        "close_EV",
+        "general_EV",
+        "retract_EV",
+        "valve_extend_gear",
+        "gears",
+        "gear"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "env_open_door_last",
+      "params": {
+        "gr": "`right`"
+      },
+      "results": {},
+      "destState": {
+        "doors": "{(`front`↦open),(`left`↦open),(`right`↦open)}",
+        "door": "open"
+      },
+      "destStateNotChanged": [
+        "extend_EV",
+        "valve_open_door",
+        "valve_close_door",
+        "analogical_switch",
+        "handle",
+        "handle_move",
+        "valve_retract_gear",
+        "open_EV",
+        "general_valve",
+        "shock_absorber",
+        "close_EV",
+        "general_EV",
+        "retract_EV",
+        "valve_extend_gear",
+        "gears",
+        "gear"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "con_stimulate_retract_gear_valve",
+      "params": {},
+      "results": {},
+      "destState": {
+        "retract_EV": "TRUE"
+      },
+      "destStateNotChanged": [
+        "extend_EV",
+        "valve_open_door",
+        "door",
+        "valve_close_door",
+        "analogical_switch",
+        "handle",
+        "handle_move",
+        "valve_retract_gear",
+        "doors",
+        "open_EV",
+        "general_valve",
+        "shock_absorber",
+        "close_EV",
+        "general_EV",
+        "valve_extend_gear",
+        "gears",
+        "gear"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "open_valve_retract_gear",
+      "params": {},
+      "results": {},
+      "destState": {
+        "valve_retract_gear": "valve_open"
+      },
+      "destStateNotChanged": [
+        "extend_EV",
+        "valve_open_door",
+        "door",
+        "valve_close_door",
+        "analogical_switch",
+        "handle",
+        "handle_move",
+        "doors",
+        "open_EV",
+        "general_valve",
+        "shock_absorber",
+        "close_EV",
+        "general_EV",
+        "retract_EV",
+        "valve_extend_gear",
+        "gears",
+        "gear"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "env_start_retracting_first",
+      "params": {
+        "gr": "`front`"
+      },
+      "results": {},
+      "destState": {
+        "gears": "{(`front`↦gear_moving),(`left`↦extended),(`right`↦extended)}",
+        "gear": "gear_moving"
+      },
+      "destStateNotChanged": [
+        "extend_EV",
+        "valve_open_door",
+        "door",
+        "valve_close_door",
+        "analogical_switch",
+        "handle",
+        "handle_move",
+        "valve_retract_gear",
+        "doors",
+        "open_EV",
+        "general_valve",
+        "shock_absorber",
+        "close_EV",
+        "general_EV",
+        "retract_EV",
+        "valve_extend_gear"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "env_start_retracting_first",
+      "params": {
+        "gr": "`left`"
+      },
+      "results": {},
+      "destState": {
+        "gears": "{(`front`↦gear_moving),(`left`↦gear_moving),(`right`↦extended)}"
+      },
+      "destStateNotChanged": [
+        "extend_EV",
+        "valve_open_door",
+        "door",
+        "valve_close_door",
+        "analogical_switch",
+        "handle",
+        "handle_move",
+        "valve_retract_gear",
+        "doors",
+        "open_EV",
+        "general_valve",
+        "shock_absorber",
+        "close_EV",
+        "general_EV",
+        "retract_EV",
+        "valve_extend_gear",
+        "gear"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "env_start_retracting_first",
+      "params": {
+        "gr": "`right`"
+      },
+      "results": {},
+      "destState": {
+        "gears": "{(`front`↦gear_moving),(`left`↦gear_moving),(`right`↦gear_moving)}"
+      },
+      "destStateNotChanged": [
+        "extend_EV",
+        "valve_open_door",
+        "door",
+        "valve_close_door",
+        "analogical_switch",
+        "handle",
+        "handle_move",
+        "valve_retract_gear",
+        "doors",
+        "open_EV",
+        "general_valve",
+        "shock_absorber",
+        "close_EV",
+        "general_EV",
+        "retract_EV",
+        "valve_extend_gear",
+        "gear"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "env_retract_gear_skip",
+      "params": {
+        "gr": "`front`"
+      },
+      "results": {},
+      "destState": {
+        "gears": "{(`front`↦retracted),(`left`↦gear_moving),(`right`↦gear_moving)}"
+      },
+      "destStateNotChanged": [
+        "extend_EV",
+        "valve_open_door",
+        "door",
+        "valve_close_door",
+        "analogical_switch",
+        "handle",
+        "handle_move",
+        "valve_retract_gear",
+        "doors",
+        "open_EV",
+        "general_valve",
+        "shock_absorber",
+        "close_EV",
+        "general_EV",
+        "retract_EV",
+        "valve_extend_gear",
+        "gear"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "env_retract_gear_skip",
+      "params": {
+        "gr": "`left`"
+      },
+      "results": {},
+      "destState": {
+        "gears": "{(`front`↦retracted),(`left`↦retracted),(`right`↦gear_moving)}"
+      },
+      "destStateNotChanged": [
+        "extend_EV",
+        "valve_open_door",
+        "door",
+        "valve_close_door",
+        "analogical_switch",
+        "handle",
+        "handle_move",
+        "valve_retract_gear",
+        "doors",
+        "open_EV",
+        "general_valve",
+        "shock_absorber",
+        "close_EV",
+        "general_EV",
+        "retract_EV",
+        "valve_extend_gear",
+        "gear"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "env_retract_gear_last",
+      "params": {
+        "gr": "`right`"
+      },
+      "results": {},
+      "destState": {
+        "gears": "{(`front`↦retracted),(`left`↦retracted),(`right`↦retracted)}",
+        "gear": "retracted"
+      },
+      "destStateNotChanged": [
+        "extend_EV",
+        "valve_open_door",
+        "door",
+        "valve_close_door",
+        "analogical_switch",
+        "handle",
+        "handle_move",
+        "valve_retract_gear",
+        "doors",
+        "open_EV",
+        "general_valve",
+        "shock_absorber",
+        "close_EV",
+        "general_EV",
+        "retract_EV",
+        "valve_extend_gear"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "con_stop_stimulate_retract_gear_valve",
+      "params": {},
+      "results": {},
+      "destState": {
+        "retract_EV": "FALSE"
+      },
+      "destStateNotChanged": [
+        "extend_EV",
+        "valve_open_door",
+        "door",
+        "valve_close_door",
+        "analogical_switch",
+        "handle",
+        "handle_move",
+        "valve_retract_gear",
+        "doors",
+        "open_EV",
+        "general_valve",
+        "shock_absorber",
+        "close_EV",
+        "general_EV",
+        "valve_extend_gear",
+        "gears",
+        "gear"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "con_stop_stimulate_open_door_valve",
+      "params": {},
+      "results": {},
+      "destState": {
+        "open_EV": "FALSE"
+      },
+      "destStateNotChanged": [
+        "extend_EV",
+        "valve_open_door",
+        "door",
+        "valve_close_door",
+        "analogical_switch",
+        "handle",
+        "handle_move",
+        "valve_retract_gear",
+        "doors",
+        "general_valve",
+        "shock_absorber",
+        "close_EV",
+        "general_EV",
+        "retract_EV",
+        "valve_extend_gear",
+        "gears",
+        "gear"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "con_stimulate_close_door_valve",
+      "params": {},
+      "results": {},
+      "destState": {
+        "close_EV": "TRUE"
+      },
+      "destStateNotChanged": [
+        "extend_EV",
+        "valve_open_door",
+        "door",
+        "valve_close_door",
+        "analogical_switch",
+        "handle",
+        "handle_move",
+        "valve_retract_gear",
+        "doors",
+        "open_EV",
+        "general_valve",
+        "shock_absorber",
+        "general_EV",
+        "retract_EV",
+        "valve_extend_gear",
+        "gears",
+        "gear"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "open_valve_door_close",
+      "params": {},
+      "results": {},
+      "destState": {
+        "valve_close_door": "valve_open"
+      },
+      "destStateNotChanged": [
+        "extend_EV",
+        "valve_open_door",
+        "door",
+        "analogical_switch",
+        "handle",
+        "handle_move",
+        "valve_retract_gear",
+        "doors",
+        "open_EV",
+        "general_valve",
+        "shock_absorber",
+        "close_EV",
+        "general_EV",
+        "retract_EV",
+        "valve_extend_gear",
+        "gears",
+        "gear"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "env_start_close_door",
+      "params": {
+        "gr": "`front`"
+      },
+      "results": {},
+      "destState": {
+        "doors": "{(`front`↦door_moving),(`left`↦open),(`right`↦open)}",
+        "door": "door_moving"
+      },
+      "destStateNotChanged": [
+        "extend_EV",
+        "valve_open_door",
+        "valve_close_door",
+        "analogical_switch",
+        "handle",
+        "handle_move",
+        "valve_retract_gear",
+        "open_EV",
+        "general_valve",
+        "shock_absorber",
+        "close_EV",
+        "general_EV",
+        "retract_EV",
+        "valve_extend_gear",
+        "gears",
+        "gear"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "env_close_door_skip",
+      "params": {
+        "gr": "`front`"
+      },
+      "results": {},
+      "destState": {
+        "doors": "{(`front`↦closed),(`left`↦open),(`right`↦open)}"
+      },
+      "destStateNotChanged": [
+        "extend_EV",
+        "valve_open_door",
+        "door",
+        "valve_close_door",
+        "analogical_switch",
+        "handle",
+        "handle_move",
+        "valve_retract_gear",
+        "open_EV",
+        "general_valve",
+        "shock_absorber",
+        "close_EV",
+        "general_EV",
+        "retract_EV",
+        "valve_extend_gear",
+        "gears",
+        "gear"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "env_start_close_door",
+      "params": {
+        "gr": "`left`"
+      },
+      "results": {},
+      "destState": {
+        "doors": "{(`front`↦closed),(`left`↦door_moving),(`right`↦open)}"
+      },
+      "destStateNotChanged": [
+        "extend_EV",
+        "valve_open_door",
+        "door",
+        "valve_close_door",
+        "analogical_switch",
+        "handle",
+        "handle_move",
+        "valve_retract_gear",
+        "open_EV",
+        "general_valve",
+        "shock_absorber",
+        "close_EV",
+        "general_EV",
+        "retract_EV",
+        "valve_extend_gear",
+        "gears",
+        "gear"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "env_start_close_door",
+      "params": {
+        "gr": "`right`"
+      },
+      "results": {},
+      "destState": {
+        "doors": "{(`front`↦closed),(`left`↦door_moving),(`right`↦door_moving)}"
+      },
+      "destStateNotChanged": [
+        "extend_EV",
+        "valve_open_door",
+        "door",
+        "valve_close_door",
+        "analogical_switch",
+        "handle",
+        "handle_move",
+        "valve_retract_gear",
+        "open_EV",
+        "general_valve",
+        "shock_absorber",
+        "close_EV",
+        "general_EV",
+        "retract_EV",
+        "valve_extend_gear",
+        "gears",
+        "gear"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "env_close_door_skip",
+      "params": {
+        "gr": "`left`"
+      },
+      "results": {},
+      "destState": {
+        "doors": "{(`front`↦closed),(`left`↦closed),(`right`↦door_moving)}"
+      },
+      "destStateNotChanged": [
+        "extend_EV",
+        "valve_open_door",
+        "door",
+        "valve_close_door",
+        "analogical_switch",
+        "handle",
+        "handle_move",
+        "valve_retract_gear",
+        "open_EV",
+        "general_valve",
+        "shock_absorber",
+        "close_EV",
+        "general_EV",
+        "retract_EV",
+        "valve_extend_gear",
+        "gears",
+        "gear"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "env_close_door",
+      "params": {
+        "gr": "`right`"
+      },
+      "results": {},
+      "destState": {
+        "doors": "{(`front`↦closed),(`left`↦closed),(`right`↦closed)}",
+        "door": "closed"
+      },
+      "destStateNotChanged": [
+        "extend_EV",
+        "valve_open_door",
+        "valve_close_door",
+        "analogical_switch",
+        "handle",
+        "handle_move",
+        "valve_retract_gear",
+        "open_EV",
+        "general_valve",
+        "shock_absorber",
+        "close_EV",
+        "general_EV",
+        "retract_EV",
+        "valve_extend_gear",
+        "gears",
+        "gear"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "con_stop_stimulate_close_door_valve",
+      "params": {},
+      "results": {},
+      "destState": {
+        "close_EV": "FALSE"
+      },
+      "destStateNotChanged": [
+        "extend_EV",
+        "valve_open_door",
+        "door",
+        "valve_close_door",
+        "analogical_switch",
+        "handle",
+        "handle_move",
+        "valve_retract_gear",
+        "doors",
+        "open_EV",
+        "general_valve",
+        "shock_absorber",
+        "general_EV",
+        "retract_EV",
+        "valve_extend_gear",
+        "gears",
+        "gear"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "con_stop_stimulate_general_valve",
+      "params": {},
+      "results": {},
+      "destState": {
+        "general_EV": "FALSE",
+        "handle_move": "FALSE"
+      },
+      "destStateNotChanged": [
+        "extend_EV",
+        "valve_open_door",
+        "door",
+        "valve_close_door",
+        "analogical_switch",
+        "handle",
+        "valve_retract_gear",
+        "doors",
+        "open_EV",
+        "general_valve",
+        "shock_absorber",
+        "close_EV",
+        "retract_EV",
+        "valve_extend_gear",
+        "gears",
+        "gear"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "close_valve_retract_gear",
+      "params": {},
+      "results": {},
+      "destState": {
+        "valve_retract_gear": "valve_closed"
+      },
+      "destStateNotChanged": [
+        "extend_EV",
+        "valve_open_door",
+        "door",
+        "valve_close_door",
+        "analogical_switch",
+        "handle",
+        "handle_move",
+        "doors",
+        "open_EV",
+        "general_valve",
+        "shock_absorber",
+        "close_EV",
+        "general_EV",
+        "retract_EV",
+        "valve_extend_gear",
+        "gears",
+        "gear"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "close_valve_door_open",
+      "params": {},
+      "results": {},
+      "destState": {
+        "valve_open_door": "valve_closed"
+      },
+      "destStateNotChanged": [
+        "extend_EV",
+        "door",
+        "valve_close_door",
+        "analogical_switch",
+        "handle",
+        "handle_move",
+        "valve_retract_gear",
+        "doors",
+        "open_EV",
+        "general_valve",
+        "shock_absorber",
+        "close_EV",
+        "general_EV",
+        "retract_EV",
+        "valve_extend_gear",
+        "gears",
+        "gear"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "close_valve_door_close",
+      "params": {},
+      "results": {},
+      "destState": {
+        "valve_close_door": "valve_closed"
+      },
+      "destStateNotChanged": [
+        "extend_EV",
+        "valve_open_door",
+        "door",
+        "analogical_switch",
+        "handle",
+        "handle_move",
+        "valve_retract_gear",
+        "doors",
+        "open_EV",
+        "general_valve",
+        "shock_absorber",
+        "close_EV",
+        "general_EV",
+        "retract_EV",
+        "valve_extend_gear",
+        "gears",
+        "gear"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "evn_close_general_valve",
+      "params": {},
+      "results": {},
+      "destState": {
+        "general_valve": "valve_closed"
+      },
+      "destStateNotChanged": [
+        "extend_EV",
+        "valve_open_door",
+        "door",
+        "valve_close_door",
+        "analogical_switch",
+        "handle",
+        "handle_move",
+        "valve_retract_gear",
+        "doors",
+        "open_EV",
+        "shock_absorber",
+        "close_EV",
+        "general_EV",
+        "retract_EV",
+        "valve_extend_gear",
+        "gears",
+        "gear"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "env_open_analogical_switch",
+      "params": {},
+      "results": {},
+      "destState": {
+        "analogical_switch": "switch_open"
+      },
+      "destStateNotChanged": [
+        "extend_EV",
+        "valve_open_door",
+        "door",
+        "valve_close_door",
+        "handle",
+        "handle_move",
+        "valve_retract_gear",
+        "doors",
+        "open_EV",
+        "general_valve",
+        "shock_absorber",
+        "close_EV",
+        "general_EV",
+        "retract_EV",
+        "valve_extend_gear",
+        "gears",
+        "gear"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    }
+  ],
+  "variableNames": [
+    "analogical_switch",
+    "close_EV",
+    "door",
+    "doors",
+    "extend_EV",
+    "gear",
+    "gears",
+    "general_EV",
+    "general_valve",
+    "handle",
+    "handle_move",
+    "open_EV",
+    "retract_EV",
+    "shock_absorber",
+    "valve_close_door",
+    "valve_extend_gear",
+    "valve_open_door",
+    "valve_retract_gear"
+  ],
+  "constantNames": [],
+  "setNames": [
+    "DOOR_STATE",
+    "GEAR_STATE",
+    "HANDLE_STATE",
+    "POSITION",
+    "SWITCH_STATE",
+    "PLANE_STATE",
+    "VALVE_STATE"
+  ],
+  "machineOperationInfos": {
+    "close_valve_door_close": {
+      "operationName": "close_valve_door_close",
+      "parameterNames": [],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "close_EV",
+        "valve_close_door"
+      ],
+      "writtenVariables": [
+        "valve_close_door"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {}
+    },
+    "close_valve_retract_gear": {
+      "operationName": "close_valve_retract_gear",
+      "parameterNames": [],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "retract_EV",
+        "valve_retract_gear"
+      ],
+      "writtenVariables": [
+        "valve_retract_gear"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {}
+    },
+    "con_stimulate_open_door_valve": {
+      "operationName": "con_stimulate_open_door_valve",
+      "parameterNames": [],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "close_EV",
+        "doors",
+        "gears",
+        "general_EV",
+        "handle",
+        "open_EV",
+        "shock_absorber"
+      ],
+      "writtenVariables": [
+        "open_EV"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {}
+    },
+    "env_close_door": {
+      "operationName": "env_close_door",
+      "parameterNames": [
+        "gr"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "door",
+        "doors",
+        "gear",
+        "gears",
+        "general_valve",
+        "handle",
+        "shock_absorber",
+        "valve_close_door"
+      ],
+      "writtenVariables": [
+        "door",
+        "doors"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "gr": "global('POSITION')"
+      }
+    },
+    "env_start_close_door": {
+      "operationName": "env_start_close_door",
+      "parameterNames": [
+        "gr"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "door",
+        "doors",
+        "gear",
+        "gears",
+        "general_valve",
+        "handle",
+        "valve_close_door"
+      ],
+      "writtenVariables": [
+        "door",
+        "doors"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "gr": "global('POSITION')"
+      }
+    },
+    "toggle_handle_up": {
+      "operationName": "toggle_handle_up",
+      "parameterNames": [],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "handle"
+      ],
+      "writtenVariables": [
+        "handle",
+        "handle_move"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {}
+    },
+    "toggle_handle_down": {
+      "operationName": "toggle_handle_down",
+      "parameterNames": [],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "handle"
+      ],
+      "writtenVariables": [
+        "handle",
+        "handle_move"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {}
+    },
+    "open_valve_door_open": {
+      "operationName": "open_valve_door_open",
+      "parameterNames": [],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "open_EV",
+        "valve_open_door"
+      ],
+      "writtenVariables": [
+        "valve_open_door"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {}
+    },
+    "env_retract_gear_last": {
+      "operationName": "env_retract_gear_last",
+      "parameterNames": [
+        "gr"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "door",
+        "doors",
+        "gear",
+        "gears",
+        "general_valve",
+        "handle"
+      ],
+      "writtenVariables": [
+        "gear",
+        "gears"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "gr": "global('POSITION')"
+      }
+    },
+    "env_open_door_last": {
+      "operationName": "env_open_door_last",
+      "parameterNames": [
+        "gr"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "door",
+        "doors",
+        "gear",
+        "gears",
+        "general_valve",
+        "handle",
+        "valve_open_door"
+      ],
+      "writtenVariables": [
+        "door",
+        "doors"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "gr": "global('POSITION')"
+      }
+    },
+    "con_stop_stimulate_retract_gear_valve": {
+      "operationName": "con_stop_stimulate_retract_gear_valve",
+      "parameterNames": [],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "gears",
+        "general_EV",
+        "handle",
+        "retract_EV"
+      ],
+      "writtenVariables": [
+        "retract_EV"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {}
+    },
+    "env_close_door_skip": {
+      "operationName": "env_close_door_skip",
+      "parameterNames": [
+        "gr"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "doors",
+        "gears",
+        "general_valve",
+        "handle",
+        "shock_absorber",
+        "valve_close_door"
+      ],
+      "writtenVariables": [
+        "doors"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "gr": "global('POSITION')"
+      }
+    },
+    "con_stop_stimulate_close_door_valve": {
+      "operationName": "con_stop_stimulate_close_door_valve",
+      "parameterNames": [],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "close_EV",
+        "doors",
+        "gears",
+        "general_EV",
+        "handle",
+        "shock_absorber"
+      ],
+      "writtenVariables": [
+        "close_EV"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {}
+    },
+    "env_open_analogical_switch": {
+      "operationName": "env_open_analogical_switch",
+      "parameterNames": [],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "analogical_switch"
+      ],
+      "writtenVariables": [
+        "analogical_switch"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {}
+    },
+    "con_stop_stimulate_general_valve": {
+      "operationName": "con_stop_stimulate_general_valve",
+      "parameterNames": [],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "close_EV",
+        "doors",
+        "extend_EV",
+        "gears",
+        "general_EV",
+        "handle",
+        "open_EV",
+        "retract_EV"
+      ],
+      "writtenVariables": [
+        "general_EV",
+        "handle_move"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {}
+    },
+    "env_extend_gear_last": {
+      "operationName": "env_extend_gear_last",
+      "parameterNames": [
+        "gr"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "door",
+        "doors",
+        "gear",
+        "gears",
+        "general_valve",
+        "handle"
+      ],
+      "writtenVariables": [
+        "gear",
+        "gears"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "gr": "global('POSITION')"
+      }
+    },
+    "evn_open_general_valve": {
+      "operationName": "evn_open_general_valve",
+      "parameterNames": [],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "analogical_switch",
+        "general_EV",
+        "general_valve"
+      ],
+      "writtenVariables": [
+        "general_valve"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {}
+    },
+    "land_plane": {
+      "operationName": "land_plane",
+      "parameterNames": [],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "shock_absorber"
+      ],
+      "writtenVariables": [
+        "shock_absorber"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {}
+    },
+    "con_stimulate_retract_gear_valve": {
+      "operationName": "con_stimulate_retract_gear_valve",
+      "parameterNames": [],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "doors",
+        "extend_EV",
+        "gears",
+        "general_EV",
+        "handle",
+        "open_EV",
+        "retract_EV",
+        "shock_absorber"
+      ],
+      "writtenVariables": [
+        "retract_EV"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {}
+    },
+    "con_stimulate_general_valve": {
+      "operationName": "con_stimulate_general_valve",
+      "parameterNames": [],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "general_EV",
+        "handle_move"
+      ],
+      "writtenVariables": [
+        "general_EV"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {}
+    },
+    "env_start_retracting_first": {
+      "operationName": "env_start_retracting_first",
+      "parameterNames": [
+        "gr"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "door",
+        "doors",
+        "gear",
+        "gears",
+        "general_valve",
+        "handle",
+        "valve_retract_gear"
+      ],
+      "writtenVariables": [
+        "gear",
+        "gears"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "gr": "global('POSITION')"
+      }
+    },
+    "env_retract_gear_skip": {
+      "operationName": "env_retract_gear_skip",
+      "parameterNames": [
+        "gr"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "doors",
+        "gears",
+        "general_valve",
+        "handle"
+      ],
+      "writtenVariables": [
+        "gears"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "gr": "global('POSITION')"
+      }
+    },
+    "open_valve_extend_gear": {
+      "operationName": "open_valve_extend_gear",
+      "parameterNames": [],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "extend_EV",
+        "valve_extend_gear"
+      ],
+      "writtenVariables": [
+        "valve_extend_gear"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {}
+    },
+    "begin_flying": {
+      "operationName": "begin_flying",
+      "parameterNames": [],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "shock_absorber"
+      ],
+      "writtenVariables": [
+        "shock_absorber"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {}
+    },
+    "open_valve_retract_gear": {
+      "operationName": "open_valve_retract_gear",
+      "parameterNames": [],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "retract_EV",
+        "valve_retract_gear"
+      ],
+      "writtenVariables": [
+        "valve_retract_gear"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {}
+    },
+    "env_close_analogical_switch": {
+      "operationName": "env_close_analogical_switch",
+      "parameterNames": [],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "analogical_switch",
+        "handle_move"
+      ],
+      "writtenVariables": [
+        "analogical_switch"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {}
+    },
+    "env_start_extending": {
+      "operationName": "env_start_extending",
+      "parameterNames": [
+        "gr"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "door",
+        "doors",
+        "gear",
+        "gears",
+        "general_valve",
+        "handle",
+        "valve_extend_gear"
+      ],
+      "writtenVariables": [
+        "gear",
+        "gears"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "gr": "global('POSITION')"
+      }
+    },
+    "open_valve_door_close": {
+      "operationName": "open_valve_door_close",
+      "parameterNames": [],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "close_EV",
+        "valve_close_door"
+      ],
+      "writtenVariables": [
+        "valve_close_door"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {}
+    },
+    "con_stop_stimulate_open_door_valve": {
+      "operationName": "con_stop_stimulate_open_door_valve",
+      "parameterNames": [],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "doors",
+        "extend_EV",
+        "gears",
+        "general_EV",
+        "handle",
+        "open_EV",
+        "retract_EV",
+        "shock_absorber"
+      ],
+      "writtenVariables": [
+        "open_EV"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {}
+    },
+    "con_stop_stimulate_extend_gear_valve": {
+      "operationName": "con_stop_stimulate_extend_gear_valve",
+      "parameterNames": [],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "extend_EV",
+        "gears",
+        "general_EV",
+        "handle"
+      ],
+      "writtenVariables": [
+        "extend_EV"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {}
+    },
+    "evn_close_general_valve": {
+      "operationName": "evn_close_general_valve",
+      "parameterNames": [],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "analogical_switch",
+        "general_EV",
+        "general_valve"
+      ],
+      "writtenVariables": [
+        "general_valve"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {}
+    },
+    "close_valve_extend_gear": {
+      "operationName": "close_valve_extend_gear",
+      "parameterNames": [],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "extend_EV",
+        "valve_extend_gear"
+      ],
+      "writtenVariables": [
+        "valve_extend_gear"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {}
+    },
+    "con_stimulate_extend_gear_valve": {
+      "operationName": "con_stimulate_extend_gear_valve",
+      "parameterNames": [],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "doors",
+        "extend_EV",
+        "gears",
+        "general_EV",
+        "handle",
+        "open_EV",
+        "retract_EV"
+      ],
+      "writtenVariables": [
+        "extend_EV"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {}
+    },
+    "close_valve_door_open": {
+      "operationName": "close_valve_door_open",
+      "parameterNames": [],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "open_EV",
+        "valve_open_door"
+      ],
+      "writtenVariables": [
+        "valve_open_door"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {}
+    },
+    "con_stimulate_close_door_valve": {
+      "operationName": "con_stimulate_close_door_valve",
+      "parameterNames": [],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "close_EV",
+        "doors",
+        "extend_EV",
+        "gears",
+        "general_EV",
+        "handle",
+        "open_EV",
+        "retract_EV",
+        "shock_absorber"
+      ],
+      "writtenVariables": [
+        "close_EV"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {}
+    },
+    "env_extend_gear_skip": {
+      "operationName": "env_extend_gear_skip",
+      "parameterNames": [
+        "gr"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "doors",
+        "gears",
+        "general_valve",
+        "handle"
+      ],
+      "writtenVariables": [
+        "gears"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "gr": "global('POSITION')"
+      }
+    },
+    "env_open_door_skip": {
+      "operationName": "env_open_door_skip",
+      "parameterNames": [
+        "gr"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "doors",
+        "gears",
+        "general_valve",
+        "handle",
+        "valve_open_door"
+      ],
+      "writtenVariables": [
+        "doors"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "gr": "global('POSITION')"
+      }
+    },
+    "env_start_open_door": {
+      "operationName": "env_start_open_door",
+      "parameterNames": [
+        "gr"
+      ],
+      "outputParameterNames": [],
+      "topLevel": true,
+      "type": "EVENTB",
+      "readVariables": [
+        "door",
+        "doors",
+        "gear",
+        "gears",
+        "general_valve",
+        "handle",
+        "valve_open_door"
+      ],
+      "writtenVariables": [
+        "door",
+        "doors"
+      ],
+      "nonDetWrittenVariables": [],
+      "typeMap": {
+        "gr": "global('POSITION')"
+      }
+    }
+  },
+  "globalIdentifierTypes": {
+    "valve_open_door": "global('VALVE_STATE')",
+    "extend_EV": "boolean",
+    "door": "global('DOOR_STATE')",
+    "valve_close_door": "global('VALVE_STATE')",
+    "valve_retract_gear": "global('VALVE_STATE')",
+    "analogical_switch": "global('SWITCH_STATE')",
+    "handle_move": "boolean",
+    "handle": "global('HANDLE_STATE')",
+    "doors": "set(couple(global('POSITION'),global('DOOR_STATE')))",
+    "open_EV": "boolean",
+    "shock_absorber": "global('PLANE_STATE')",
+    "general_valve": "global('VALVE_STATE')",
+    "close_EV": "boolean",
+    "general_EV": "boolean",
+    "retract_EV": "boolean",
+    "valve_extend_gear": "global('VALVE_STATE')",
+    "gears": "set(couple(global('POSITION'),global('GEAR_STATE')))",
+    "gear": "global('GEAR_STATE')"
+  },
+  "metadata": {
+    "fileType": "Trace",
+    "formatVersion": 5,
+    "savedAt": "2023-02-01T15:00:31.405881Z",
+    "creator": "traceReplay",
+    "proB2KernelVersion": "4.0.0-SNAPSHOT",
+    "proBCliVersion": "1.12.0-nightly",
+    "modelName": "R6GearsDoorsHandleValvesControllerSwitch"
+  }
+}
