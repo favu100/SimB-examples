@@ -30,6 +30,14 @@
         {
           "path": "Lift/lift_simulation_interactive.json",
           "simulationItems": []
+        },
+        {
+          "path": "Lift/lift_simulation_to_highest.json",
+          "simulationItems": []
+        },
+        {
+          "path": "Lift/lift_simulation_to_highest_then_lowest.json",
+          "simulationItems": []
         }
       ],
       "visBVisualisation": "Lift/VisB/lift3.json",
@@ -156,6 +164,14 @@
         {
           "path": "LandingGear/Simulation_R6GearsDoorsHandleValvesControllerSwitch_Fast_Interactive.json",
           "simulationItems": []
+        },
+        {
+          "path": "LandingGear/Retraction_Sequence.json",
+          "simulationItems": []
+        },
+        {
+          "path": "LandingGear/Outgoing_Sequence.json",
+          "simulationItems": []
         }
       ],
       "visBVisualisation": "LandingGear/VisB/LandingGear.json",
@@ -201,7 +217,7 @@
   "metadata": {
     "fileType": "Project",
     "formatVersion": 34,
-    "savedAt": "2023-02-01T15:09:14.192935Z",
+    "savedAt": "2023-02-01T15:16:14.260059Z",
     "creator": "User",
     "proB2KernelVersion": "4.0.0-SNAPSHOT",
     "proBCliVersion": null,
