@@ -3,8 +3,7 @@
 SimB is a simulator built on top of ProB.
 The modeler can write SimB annotations for a formal model to simulate it.<br>
 This repository contains formal methods with corresponding SimB annotations.<br>
-ProB2-UI (https://github.com/hhu-stups/prob2_ui) is required to use it.<br>
-Furthermore, this repository contains two ProB2-UI project files (Project.prob2project and SimulationProject.prob2project).
+ProB2-UI (https://github.com/hhu-stups/prob2_ui) is required to use it.
 
 
 
