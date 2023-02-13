@@ -1,28 +1,37 @@
 {
   "activations": [
     {
-      "id": "$setup_constants",
-      "execute": "$setup_constants",
-      "after": null,
-      "priority": 0,
-      "additionalGuards": null,
-      "activationKind": null,
-      "fixedVariables": null,
-      "probabilisticVariables": null,
-      "activating": []
-    },
-    {
       "id": "$initialise_machine",
       "execute": "$initialise_machine",
       "after": null,
       "priority": 0,
       "additionalGuards": null,
       "activationKind": null,
-      "fixedVariables": null,
+      "fixedVariables": {
+        "direction_up": "TRUE",
+        "door_open": "FALSE",
+        "cur_floor": "-1",
+        "call_buttons": "∅",
+        "inside_buttons": "∅"
+      },
       "probabilisticVariables": null,
       "activating": [
         "user_interaction_0"
       ]
+    },
+    {
+      "id": "$setup_constants",
+      "execute": "$setup_constants",
+      "after": null,
+      "priority": 0,
+      "additionalGuards": null,
+      "activationKind": null,
+      "fixedVariables": {
+        "groundf": "-1",
+        "topf": "2"
+      },
+      "probabilisticVariables": null,
+      "activating": []
     },
     {
       "id": "move_up_1",
@@ -213,9 +222,9 @@
   ],
   "listeners": [],
   "metadata": {
-    "fileType": "Automatic_Simulation_with_User_Interaction",
+    "fileType": "Interaction_Replay",
     "formatVersion": 2,
-    "savedAt": "2023-02-01T12:29:17.474409Z",
+    "savedAt": "2023-02-13T14:42:42.751029Z",
     "creator": "User",
     "proB2KernelVersion": "4.0.0-SNAPSHOT",
     "proBCliVersion": null,
