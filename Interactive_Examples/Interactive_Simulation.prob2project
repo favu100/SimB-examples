@@ -15,12 +15,12 @@
       "traces": [
         {
           "id": null,
-          "location": "Lift/lift_simulation_to_highest.prob2trace",
+          "location": "Lift/SimB/lift_simulation_to_highest.prob2trace",
           "selected": true
         },
         {
           "id": null,
-          "location": "Lift/lift_simulation_to_highest_then_lowest.prob2trace",
+          "location": "Lift/SimB/lift_simulation_to_highest_then_lowest.prob2trace",
           "selected": true
         }
       ],
@@ -28,15 +28,15 @@
       "proofObligationItems": [],
       "simulations": [
         {
-          "path": "Lift/lift_simulation_interactive.json",
+          "path": "Lift/SimB/lift_simulation_interactive.json",
           "simulationItems": []
         },
         {
-          "path": "Lift/lift_simulation_to_highest.json",
+          "path": "Lift/SimB/lift_simulation_to_highest.json",
           "simulationItems": []
         },
         {
-          "path": "Lift/lift_simulation_to_highest_then_lowest.json",
+          "path": "Lift/SimB/lift_simulation_to_highest_then_lowest.json",
           "simulationItems": []
         }
       ],
@@ -82,95 +82,28 @@
       "traces": [
         {
           "id": null,
-          "location": "LandingGear/Retraction_Sequence.prob2trace",
+          "location": "LandingGear/SimB/Outgoing_Sequence.prob2trace",
           "selected": true
         },
         {
           "id": null,
-          "location": "LandingGear/Outgoing_Sequence.prob2trace",
+          "location": "LandingGear/SimB/Retraction_Sequence.prob2trace",
           "selected": true
         }
       ],
       "modelcheckingItems": [],
-      "proofObligationItems": [
-        {
-          "id": null,
-          "name": "INITIALISATION/r51/INV",
-          "description": "Invariant  establishment",
-          "selected": true
-        },
-        {
-          "id": null,
-          "name": "con_stimulate_open_door_valve/r51/INV",
-          "description": "Invariant  preservation",
-          "selected": true
-        },
-        {
-          "id": null,
-          "name": "con_stop_stimulate_open_door_valve/r51/INV",
-          "description": "Invariant  preservation",
-          "selected": true
-        },
-        {
-          "id": null,
-          "name": "con_stimulate_close_door_valve/r51/INV",
-          "description": "Invariant  preservation",
-          "selected": true
-        },
-        {
-          "id": null,
-          "name": "con_stop_stimulate_close_door_valve/r51/INV",
-          "description": "Invariant  preservation",
-          "selected": true
-        },
-        {
-          "id": null,
-          "name": "con_stimulate_retract_gear_valve/r51/INV",
-          "description": "Invariant  preservation",
-          "selected": true
-        },
-        {
-          "id": null,
-          "name": "con_stop_stimulate_retract_gear_valve/r51/INV",
-          "description": "Invariant  preservation",
-          "selected": true
-        },
-        {
-          "id": null,
-          "name": "con_stimulate_extend_gear_valve/r51/INV",
-          "description": "Invariant  preservation",
-          "selected": true
-        },
-        {
-          "id": null,
-          "name": "con_stop_stimulate_extend_gear_valve/r51/INV",
-          "description": "Invariant  preservation",
-          "selected": true
-        },
-        {
-          "id": null,
-          "name": "con_stimulate_general_valve/r51/INV",
-          "description": "Invariant  preservation",
-          "selected": true
-        },
-        {
-          "id": null,
-          "name": "con_stop_stimulate_general_valve/r51/INV",
-          "description": "Invariant  preservation",
-          "selected": true
-        }
-      ],
+      "proofObligationItems": [],
       "simulations": [
         {
-          "path": "LandingGear/Simulation_R6GearsDoorsHandleValvesControllerSwitch_Fast_Interactive.json",
+          "path": "LandingGear/SimB/Simulation_R6GearsDoorsHandleValvesControllerSwitch_Fast_Interactive.json",
           "simulationItems": []
         },
         {
-          "path": "LandingGear/Retraction_Sequence.json",
+          "path": "LandingGear/SimB/Outgoing_Sequence.json",
           "simulationItems": []
         },
         {
-          "path": "LandingGear/Outgoing_Sequence.json",
+          "path": "LandingGear/SimB/Retraction_Sequence.json",
           "simulationItems": []
         }
       ],
@@ -196,6 +129,10 @@
         {
           "path": "AMAN_v6/SimB/AMAN_sim_interactive.json",
           "simulationItems": []
+        },
+        {
+          "path": "AMAN_v6/SimB/AMAN_Simulation_Move_Airplane.json",
+          "simulationItems": []
         }
       ],
       "visBVisualisation": "AMAN_v6/VisB/AMAN_vis_M9.json",
@@ -216,8 +153,8 @@
   ],
   "metadata": {
     "fileType": "Project",
-    "formatVersion": 34,
-    "savedAt": "2023-02-01T15:16:14.260059Z",
+    "formatVersion": 36,
+    "savedAt": "2023-02-13T15:59:31.742614Z",
     "creator": "User",
     "proB2KernelVersion": "4.0.0-SNAPSHOT",
     "proBCliVersion": null,
