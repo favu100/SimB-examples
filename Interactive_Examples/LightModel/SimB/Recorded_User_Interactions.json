@@ -1,0 +1,165 @@
+{
+  "activations": [
+    {
+      "id": "$initialise_machine",
+      "execute": "$initialise_machine",
+      "after": null,
+      "priority": 0,
+      "additionalGuards": null,
+      "activationKind": null,
+      "fixedVariables": {
+        "blinkRight": "0",
+        "engineOn": "FALSE",
+        "onCycle": "FALSE",
+        "keyState": "KeyInsertedOnPosition",
+        "pitmanArmUpDown": "Neutral",
+        "remaining_blinks": "0",
+        "active_blinkers": "∅",
+        "hazardWarningSwitchOn": "switch_off",
+        "curDeadlines": "{(blink_deadline↦500)}",
+        "blinkLeft": "0"
+      },
+      "probabilisticVariables": null,
+      "activating": [
+        "user_interaction_0",
+        "user_interaction_1",
+        "user_interaction_2",
+        "user_interaction_3"
+      ]
+    },
+    {
+      "id": "$setup_constants",
+      "execute": "$setup_constants",
+      "after": null,
+      "priority": 0,
+      "additionalGuards": null,
+      "activationKind": null,
+      "fixedVariables": {},
+      "probabilisticVariables": null,
+      "activating": []
+    },
+    {
+      "id": "time_pass",
+      "execute": "RTIME_Nothing",
+      "after": "max(ran(curDeadlines))",
+      "priority": 0,
+      "additionalGuards": null,
+      "activationKind": "SINGLE_MAX",
+      "fixedVariables": {
+        "newOnCycle": "FALSE",
+        "delta": "max(ran(curDeadlines))"
+      },
+      "probabilisticVariables": null,
+      "activating": [
+        "time_pass",
+        "blinking_on",
+        "blinking_off"
+      ]
+    },
+    {
+      "id": "blinking_on",
+      "execute": "RTIME_BlinkerOn",
+      "after": "curDeadlines(blink_deadline)",
+      "priority": 0,
+      "additionalGuards": null,
+      "activationKind": "SINGLE_MAX",
+      "fixedVariables": {
+        "delta": "curDeadlines(blink_deadline)"
+      },
+      "probabilisticVariables": null,
+      "activating": [
+        "blinking_off"
+      ]
+    },
+    {
+      "id": "blinking_off",
+      "execute": "RTIME_BlinkerOff",
+      "after": "curDeadlines(blink_deadline)",
+      "priority": 0,
+      "additionalGuards": null,
+      "activationKind": "SINGLE_MAX",
+      "fixedVariables": {
+        "delta": "curDeadlines(blink_deadline)"
+      },
+      "probabilisticVariables": null,
+      "activating": [
+        "blinking_on"
+      ]
+    },
+    {
+      "id": "user_interaction_0",
+      "execute": "ENV_Turn_EngineOn",
+      "after": "0",
+      "priority": 0,
+      "additionalGuards": null,
+      "activationKind": null,
+      "fixedVariables": {},
+      "probabilisticVariables": null,
+      "activating": [
+        "time_pass",
+        "blinking_on",
+        "blinking_off"
+      ]
+    },
+    {
+      "id": "user_interaction_1",
+      "execute": "ENV_Pitman_DirectionBlinking",
+      "after": "4200",
+      "priority": 0,
+      "additionalGuards": null,
+      "activationKind": null,
+      "fixedVariables": {
+        "newPos": "Upward7"
+      },
+      "probabilisticVariables": null,
+      "activating": [
+        "blinking_on",
+        "blinking_off"
+      ]
+    },
+    {
+      "id": "user_interaction_2",
+      "execute": "ENV_Hazard_blinking",
+      "after": "7800",
+      "priority": 0,
+      "additionalGuards": null,
+      "activationKind": null,
+      "fixedVariables": {
+        "newSwitchPos": "switch_on"
+      },
+      "probabilisticVariables": null,
+      "activating": [
+        "time_pass",
+        "blinking_on",
+        "blinking_off"
+      ]
+    },
+    {
+      "id": "user_interaction_3",
+      "execute": "ENV_Hazard_blinking",
+      "after": "13800",
+      "priority": 0,
+      "additionalGuards": null,
+      "activationKind": null,
+      "fixedVariables": {
+        "newSwitchPos": "switch_off"
+      },
+      "probabilisticVariables": null,
+      "activating": [
+        "time_pass",
+        "blinking_on",
+        "blinking_off"
+      ]
+    }
+  ],
+  "listeners": [],
+  "metadata": {
+    "fileType": "Interaction_Replay",
+    "formatVersion": 2,
+    "savedAt": "2023-02-13T17:00:37.485695Z",
+    "creator": "User",
+    "proB2KernelVersion": "4.0.0-SNAPSHOT",
+    "proBCliVersion": null,
+    "modelName": null
+  }
+}
