@@ -1,23 +1,23 @@
 # SimB Examples
 
-SimB is a simulator built on top of ProB. 
-The modeler can write SimB annotations for a formal model to simulate it.
-This repository contains formal methods with corresponding SimB annotations.
-ProB2-UI (https://github.com/hhu-stups/prob2_ui) is required to use it.
+SimB is a simulator built on top of ProB. <br>
+The modeler can write SimB annotations for a formal model to simulate it.<br>
+This repository contains formal methods with corresponding SimB annotations.<br>
+ProB2-UI (https://github.com/hhu-stups/prob2_ui) is required to use it.<br>
 Furthermore, this repository contains two ProB2-UI project files (Project.prob2project and SimulationProject.prob2project).
 
 
 
-Furthermore, it is then possible to validate probabilistic and timing properties with statistical validation techniques such as hypothesis testing and estimation.
-Examples with statistical validations are available at: https://github.com/favu100/SimB-examples/tree/main/Simulation_Examples
-There are two ProB2-UI project files (Project.prob2project and SimulationProject.prob2project).
-Project.prob2project contains all timed probabilistic simulation examples presented in this repository. 
+Furthermore, it is then possible to validate probabilistic and timing properties with statistical validation techniques such as hypothesis testing and estimation. <br>
+Examples with statistical validations are available at: https://github.com/favu100/SimB-examples/tree/main/Simulation_Examples <br>
+There are two ProB2-UI project files (Project.prob2project and SimulationProject.prob2project). <br>
+Project.prob2project contains all timed probabilistic simulation examples presented in this repository. <br>
 SimulationProject.prob2project contains the examples in the paper ''Validation of Formal Models by Timed Probabilistic Simulation'' only.
 
 
-More recently, a new feature called ''interactive simulation'' has been implemented.
-Interactive simulation makes it possible to combine user interaction with automatic simulation.
-In particular, a user interaction is recognized (by newly introduced SimB listeners) where after an automatic timed probabilistic simulation is triggered.
+More recently, a new feature called ''interactive simulation'' has been implemented. <br>
+Interactive simulation makes it possible to combine user interaction with automatic simulation. <br>
+In particular, a user interaction is recognized (by newly introduced SimB listeners) where after an automatic timed probabilistic simulation is triggered. <br>
 Interactive simulation examples are available at: https://github.com/favu100/SimB-examples/tree/main/Interactive_Examples
 
 
