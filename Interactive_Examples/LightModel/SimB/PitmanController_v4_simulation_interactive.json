@@ -1,6 +1,15 @@
 {
     "activations": [
         {
+          "id": "$setup_constants",
+          "execute": "$setup_constants"
+        },
+        {
+          "id": "$initialise_machine",
+          "execute": "$initialise_machine",
+          "activating": "time_pass"
+        },
+        {
             "id": "time_pass",
             "execute": "RTIME_Nothing",
             "activationKind": "single:max",
@@ -26,11 +35,6 @@
         }
     ],
     "listeners": [
-      {
-          "id": "$initialise_machine",
-          "event": "$initialise_machine",
-          "activating": "time_pass"
-      },
       {
           "id": "ENV_Turn_EngineOn",
           "event": "ENV_Turn_EngineOn",

@@ -44,6 +44,127 @@
       "description": ""
     },
     {
+      "name": "RTIME_Nothing",
+      "params": {
+        "delta": "500",
+        "newOnCycle": "FALSE"
+      },
+      "results": {},
+      "destState": {
+        "curDeadlines": "{(blink_deadline↦100)}"
+      },
+      "destStateNotChanged": [
+        "blinkRight",
+        "engineOn",
+        "onCycle",
+        "keyState",
+        "pitmanArmUpDown",
+        "remaining_blinks",
+        "active_blinkers",
+        "hazardWarningSwitchOn",
+        "blinkLeft"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "RTIME_Nothing",
+      "params": {
+        "delta": "100",
+        "newOnCycle": "FALSE"
+      },
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "blinkRight",
+        "engineOn",
+        "onCycle",
+        "keyState",
+        "pitmanArmUpDown",
+        "remaining_blinks",
+        "active_blinkers",
+        "hazardWarningSwitchOn",
+        "curDeadlines",
+        "blinkLeft"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "RTIME_Nothing",
+      "params": {
+        "delta": "100",
+        "newOnCycle": "FALSE"
+      },
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "blinkRight",
+        "engineOn",
+        "onCycle",
+        "keyState",
+        "pitmanArmUpDown",
+        "remaining_blinks",
+        "active_blinkers",
+        "hazardWarningSwitchOn",
+        "curDeadlines",
+        "blinkLeft"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "RTIME_Nothing",
+      "params": {
+        "delta": "100",
+        "newOnCycle": "FALSE"
+      },
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "blinkRight",
+        "engineOn",
+        "onCycle",
+        "keyState",
+        "pitmanArmUpDown",
+        "remaining_blinks",
+        "active_blinkers",
+        "hazardWarningSwitchOn",
+        "curDeadlines",
+        "blinkLeft"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "RTIME_Nothing",
+      "params": {
+        "delta": "100",
+        "newOnCycle": "FALSE"
+      },
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "blinkRight",
+        "engineOn",
+        "onCycle",
+        "keyState",
+        "pitmanArmUpDown",
+        "remaining_blinks",
+        "active_blinkers",
+        "hazardWarningSwitchOn",
+        "curDeadlines",
+        "blinkLeft"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
       "name": "ENV_Turn_EngineOn",
       "params": {},
       "results": {},
@@ -68,13 +189,11 @@
     {
       "name": "RTIME_Nothing",
       "params": {
-        "delta": "500",
+        "delta": "100",
         "newOnCycle": "FALSE"
       },
       "results": {},
-      "destState": {
-        "curDeadlines": "{(blink_deadline↦100)}"
-      },
+      "destState": {},
       "destStateNotChanged": [
         "blinkRight",
         "engineOn",
@@ -84,6 +203,103 @@
         "remaining_blinks",
         "active_blinkers",
         "hazardWarningSwitchOn",
+        "curDeadlines",
+        "blinkLeft"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "RTIME_Nothing",
+      "params": {
+        "delta": "100",
+        "newOnCycle": "FALSE"
+      },
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "blinkRight",
+        "engineOn",
+        "onCycle",
+        "keyState",
+        "pitmanArmUpDown",
+        "remaining_blinks",
+        "active_blinkers",
+        "hazardWarningSwitchOn",
+        "curDeadlines",
+        "blinkLeft"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "RTIME_Nothing",
+      "params": {
+        "delta": "100",
+        "newOnCycle": "FALSE"
+      },
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "blinkRight",
+        "engineOn",
+        "onCycle",
+        "keyState",
+        "pitmanArmUpDown",
+        "remaining_blinks",
+        "active_blinkers",
+        "hazardWarningSwitchOn",
+        "curDeadlines",
+        "blinkLeft"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "RTIME_Nothing",
+      "params": {
+        "delta": "100",
+        "newOnCycle": "FALSE"
+      },
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "blinkRight",
+        "engineOn",
+        "onCycle",
+        "keyState",
+        "pitmanArmUpDown",
+        "remaining_blinks",
+        "active_blinkers",
+        "hazardWarningSwitchOn",
+        "curDeadlines",
+        "blinkLeft"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "RTIME_Nothing",
+      "params": {
+        "delta": "100",
+        "newOnCycle": "FALSE"
+      },
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "blinkRight",
+        "engineOn",
+        "onCycle",
+        "keyState",
+        "pitmanArmUpDown",
+        "remaining_blinks",
+        "active_blinkers",
+        "hazardWarningSwitchOn",
+        "curDeadlines",
         "blinkLeft"
       ],
       "preds": [],
@@ -1265,654 +1481,6 @@
       "preds": [],
       "postconditions": [],
       "description": ""
-    },
-    {
-      "name": "RTIME_BlinkerOn",
-      "params": {
-        "delta": "500"
-      },
-      "results": {},
-      "destState": {
-        "blinkRight": "100",
-        "onCycle": "TRUE"
-      },
-      "destStateNotChanged": [
-        "engineOn",
-        "keyState",
-        "pitmanArmUpDown",
-        "remaining_blinks",
-        "active_blinkers",
-        "hazardWarningSwitchOn",
-        "curDeadlines",
-        "blinkLeft"
-      ],
-      "preds": [],
-      "postconditions": [],
-      "description": ""
-    },
-    {
-      "name": "RTIME_BlinkerOff",
-      "params": {
-        "delta": "500"
-      },
-      "results": {},
-      "destState": {
-        "blinkRight": "0",
-        "onCycle": "FALSE"
-      },
-      "destStateNotChanged": [
-        "engineOn",
-        "keyState",
-        "pitmanArmUpDown",
-        "remaining_blinks",
-        "active_blinkers",
-        "hazardWarningSwitchOn",
-        "curDeadlines",
-        "blinkLeft"
-      ],
-      "preds": [],
-      "postconditions": [],
-      "description": ""
-    },
-    {
-      "name": "RTIME_BlinkerOn",
-      "params": {
-        "delta": "500"
-      },
-      "results": {},
-      "destState": {
-        "blinkRight": "100",
-        "onCycle": "TRUE"
-      },
-      "destStateNotChanged": [
-        "engineOn",
-        "keyState",
-        "pitmanArmUpDown",
-        "remaining_blinks",
-        "active_blinkers",
-        "hazardWarningSwitchOn",
-        "curDeadlines",
-        "blinkLeft"
-      ],
-      "preds": [],
-      "postconditions": [],
-      "description": ""
-    },
-    {
-      "name": "RTIME_BlinkerOff",
-      "params": {
-        "delta": "500"
-      },
-      "results": {},
-      "destState": {
-        "blinkRight": "0",
-        "onCycle": "FALSE"
-      },
-      "destStateNotChanged": [
-        "engineOn",
-        "keyState",
-        "pitmanArmUpDown",
-        "remaining_blinks",
-        "active_blinkers",
-        "hazardWarningSwitchOn",
-        "curDeadlines",
-        "blinkLeft"
-      ],
-      "preds": [],
-      "postconditions": [],
-      "description": ""
-    },
-    {
-      "name": "RTIME_BlinkerOn",
-      "params": {
-        "delta": "500"
-      },
-      "results": {},
-      "destState": {
-        "blinkRight": "100",
-        "onCycle": "TRUE"
-      },
-      "destStateNotChanged": [
-        "engineOn",
-        "keyState",
-        "pitmanArmUpDown",
-        "remaining_blinks",
-        "active_blinkers",
-        "hazardWarningSwitchOn",
-        "curDeadlines",
-        "blinkLeft"
-      ],
-      "preds": [],
-      "postconditions": [],
-      "description": ""
-    },
-    {
-      "name": "RTIME_BlinkerOff",
-      "params": {
-        "delta": "500"
-      },
-      "results": {},
-      "destState": {
-        "blinkRight": "0",
-        "onCycle": "FALSE"
-      },
-      "destStateNotChanged": [
-        "engineOn",
-        "keyState",
-        "pitmanArmUpDown",
-        "remaining_blinks",
-        "active_blinkers",
-        "hazardWarningSwitchOn",
-        "curDeadlines",
-        "blinkLeft"
-      ],
-      "preds": [],
-      "postconditions": [],
-      "description": ""
-    },
-    {
-      "name": "RTIME_BlinkerOn",
-      "params": {
-        "delta": "500"
-      },
-      "results": {},
-      "destState": {
-        "blinkRight": "100",
-        "onCycle": "TRUE"
-      },
-      "destStateNotChanged": [
-        "engineOn",
-        "keyState",
-        "pitmanArmUpDown",
-        "remaining_blinks",
-        "active_blinkers",
-        "hazardWarningSwitchOn",
-        "curDeadlines",
-        "blinkLeft"
-      ],
-      "preds": [],
-      "postconditions": [],
-      "description": ""
-    },
-    {
-      "name": "RTIME_BlinkerOff",
-      "params": {
-        "delta": "500"
-      },
-      "results": {},
-      "destState": {
-        "blinkRight": "0",
-        "onCycle": "FALSE"
-      },
-      "destStateNotChanged": [
-        "engineOn",
-        "keyState",
-        "pitmanArmUpDown",
-        "remaining_blinks",
-        "active_blinkers",
-        "hazardWarningSwitchOn",
-        "curDeadlines",
-        "blinkLeft"
-      ],
-      "preds": [],
-      "postconditions": [],
-      "description": ""
-    },
-    {
-      "name": "RTIME_BlinkerOn",
-      "params": {
-        "delta": "500"
-      },
-      "results": {},
-      "destState": {
-        "blinkRight": "100",
-        "onCycle": "TRUE"
-      },
-      "destStateNotChanged": [
-        "engineOn",
-        "keyState",
-        "pitmanArmUpDown",
-        "remaining_blinks",
-        "active_blinkers",
-        "hazardWarningSwitchOn",
-        "curDeadlines",
-        "blinkLeft"
-      ],
-      "preds": [],
-      "postconditions": [],
-      "description": ""
-    },
-    {
-      "name": "RTIME_BlinkerOff",
-      "params": {
-        "delta": "500"
-      },
-      "results": {},
-      "destState": {
-        "blinkRight": "0",
-        "onCycle": "FALSE"
-      },
-      "destStateNotChanged": [
-        "engineOn",
-        "keyState",
-        "pitmanArmUpDown",
-        "remaining_blinks",
-        "active_blinkers",
-        "hazardWarningSwitchOn",
-        "curDeadlines",
-        "blinkLeft"
-      ],
-      "preds": [],
-      "postconditions": [],
-      "description": ""
-    },
-    {
-      "name": "RTIME_BlinkerOn",
-      "params": {
-        "delta": "500"
-      },
-      "results": {},
-      "destState": {
-        "blinkRight": "100",
-        "onCycle": "TRUE"
-      },
-      "destStateNotChanged": [
-        "engineOn",
-        "keyState",
-        "pitmanArmUpDown",
-        "remaining_blinks",
-        "active_blinkers",
-        "hazardWarningSwitchOn",
-        "curDeadlines",
-        "blinkLeft"
-      ],
-      "preds": [],
-      "postconditions": [],
-      "description": ""
-    },
-    {
-      "name": "RTIME_BlinkerOff",
-      "params": {
-        "delta": "500"
-      },
-      "results": {},
-      "destState": {
-        "blinkRight": "0",
-        "onCycle": "FALSE"
-      },
-      "destStateNotChanged": [
-        "engineOn",
-        "keyState",
-        "pitmanArmUpDown",
-        "remaining_blinks",
-        "active_blinkers",
-        "hazardWarningSwitchOn",
-        "curDeadlines",
-        "blinkLeft"
-      ],
-      "preds": [],
-      "postconditions": [],
-      "description": ""
-    },
-    {
-      "name": "RTIME_BlinkerOn",
-      "params": {
-        "delta": "500"
-      },
-      "results": {},
-      "destState": {
-        "blinkRight": "100",
-        "onCycle": "TRUE"
-      },
-      "destStateNotChanged": [
-        "engineOn",
-        "keyState",
-        "pitmanArmUpDown",
-        "remaining_blinks",
-        "active_blinkers",
-        "hazardWarningSwitchOn",
-        "curDeadlines",
-        "blinkLeft"
-      ],
-      "preds": [],
-      "postconditions": [],
-      "description": ""
-    },
-    {
-      "name": "RTIME_BlinkerOff",
-      "params": {
-        "delta": "500"
-      },
-      "results": {},
-      "destState": {
-        "blinkRight": "0",
-        "onCycle": "FALSE"
-      },
-      "destStateNotChanged": [
-        "engineOn",
-        "keyState",
-        "pitmanArmUpDown",
-        "remaining_blinks",
-        "active_blinkers",
-        "hazardWarningSwitchOn",
-        "curDeadlines",
-        "blinkLeft"
-      ],
-      "preds": [],
-      "postconditions": [],
-      "description": ""
-    },
-    {
-      "name": "RTIME_BlinkerOn",
-      "params": {
-        "delta": "500"
-      },
-      "results": {},
-      "destState": {
-        "blinkRight": "100",
-        "onCycle": "TRUE"
-      },
-      "destStateNotChanged": [
-        "engineOn",
-        "keyState",
-        "pitmanArmUpDown",
-        "remaining_blinks",
-        "active_blinkers",
-        "hazardWarningSwitchOn",
-        "curDeadlines",
-        "blinkLeft"
-      ],
-      "preds": [],
-      "postconditions": [],
-      "description": ""
-    },
-    {
-      "name": "RTIME_BlinkerOff",
-      "params": {
-        "delta": "500"
-      },
-      "results": {},
-      "destState": {
-        "blinkRight": "0",
-        "onCycle": "FALSE"
-      },
-      "destStateNotChanged": [
-        "engineOn",
-        "keyState",
-        "pitmanArmUpDown",
-        "remaining_blinks",
-        "active_blinkers",
-        "hazardWarningSwitchOn",
-        "curDeadlines",
-        "blinkLeft"
-      ],
-      "preds": [],
-      "postconditions": [],
-      "description": ""
-    },
-    {
-      "name": "RTIME_BlinkerOn",
-      "params": {
-        "delta": "500"
-      },
-      "results": {},
-      "destState": {
-        "blinkRight": "100",
-        "onCycle": "TRUE"
-      },
-      "destStateNotChanged": [
-        "engineOn",
-        "keyState",
-        "pitmanArmUpDown",
-        "remaining_blinks",
-        "active_blinkers",
-        "hazardWarningSwitchOn",
-        "curDeadlines",
-        "blinkLeft"
-      ],
-      "preds": [],
-      "postconditions": [],
-      "description": ""
-    },
-    {
-      "name": "RTIME_BlinkerOff",
-      "params": {
-        "delta": "500"
-      },
-      "results": {},
-      "destState": {
-        "blinkRight": "0",
-        "onCycle": "FALSE"
-      },
-      "destStateNotChanged": [
-        "engineOn",
-        "keyState",
-        "pitmanArmUpDown",
-        "remaining_blinks",
-        "active_blinkers",
-        "hazardWarningSwitchOn",
-        "curDeadlines",
-        "blinkLeft"
-      ],
-      "preds": [],
-      "postconditions": [],
-      "description": ""
-    },
-    {
-      "name": "RTIME_BlinkerOn",
-      "params": {
-        "delta": "500"
-      },
-      "results": {},
-      "destState": {
-        "blinkRight": "100",
-        "onCycle": "TRUE"
-      },
-      "destStateNotChanged": [
-        "engineOn",
-        "keyState",
-        "pitmanArmUpDown",
-        "remaining_blinks",
-        "active_blinkers",
-        "hazardWarningSwitchOn",
-        "curDeadlines",
-        "blinkLeft"
-      ],
-      "preds": [],
-      "postconditions": [],
-      "description": ""
-    },
-    {
-      "name": "RTIME_BlinkerOff",
-      "params": {
-        "delta": "500"
-      },
-      "results": {},
-      "destState": {
-        "blinkRight": "0",
-        "onCycle": "FALSE"
-      },
-      "destStateNotChanged": [
-        "engineOn",
-        "keyState",
-        "pitmanArmUpDown",
-        "remaining_blinks",
-        "active_blinkers",
-        "hazardWarningSwitchOn",
-        "curDeadlines",
-        "blinkLeft"
-      ],
-      "preds": [],
-      "postconditions": [],
-      "description": ""
-    },
-    {
-      "name": "RTIME_BlinkerOn",
-      "params": {
-        "delta": "500"
-      },
-      "results": {},
-      "destState": {
-        "blinkRight": "100",
-        "onCycle": "TRUE"
-      },
-      "destStateNotChanged": [
-        "engineOn",
-        "keyState",
-        "pitmanArmUpDown",
-        "remaining_blinks",
-        "active_blinkers",
-        "hazardWarningSwitchOn",
-        "curDeadlines",
-        "blinkLeft"
-      ],
-      "preds": [],
-      "postconditions": [],
-      "description": ""
-    },
-    {
-      "name": "RTIME_BlinkerOff",
-      "params": {
-        "delta": "500"
-      },
-      "results": {},
-      "destState": {
-        "blinkRight": "0",
-        "onCycle": "FALSE"
-      },
-      "destStateNotChanged": [
-        "engineOn",
-        "keyState",
-        "pitmanArmUpDown",
-        "remaining_blinks",
-        "active_blinkers",
-        "hazardWarningSwitchOn",
-        "curDeadlines",
-        "blinkLeft"
-      ],
-      "preds": [],
-      "postconditions": [],
-      "description": ""
-    },
-    {
-      "name": "RTIME_BlinkerOn",
-      "params": {
-        "delta": "500"
-      },
-      "results": {},
-      "destState": {
-        "blinkRight": "100",
-        "onCycle": "TRUE"
-      },
-      "destStateNotChanged": [
-        "engineOn",
-        "keyState",
-        "pitmanArmUpDown",
-        "remaining_blinks",
-        "active_blinkers",
-        "hazardWarningSwitchOn",
-        "curDeadlines",
-        "blinkLeft"
-      ],
-      "preds": [],
-      "postconditions": [],
-      "description": ""
-    },
-    {
-      "name": "RTIME_BlinkerOff",
-      "params": {
-        "delta": "500"
-      },
-      "results": {},
-      "destState": {
-        "blinkRight": "0",
-        "onCycle": "FALSE"
-      },
-      "destStateNotChanged": [
-        "engineOn",
-        "keyState",
-        "pitmanArmUpDown",
-        "remaining_blinks",
-        "active_blinkers",
-        "hazardWarningSwitchOn",
-        "curDeadlines",
-        "blinkLeft"
-      ],
-      "preds": [],
-      "postconditions": [],
-      "description": ""
-    },
-    {
-      "name": "RTIME_BlinkerOn",
-      "params": {
-        "delta": "500"
-      },
-      "results": {},
-      "destState": {
-        "blinkRight": "100",
-        "onCycle": "TRUE"
-      },
-      "destStateNotChanged": [
-        "engineOn",
-        "keyState",
-        "pitmanArmUpDown",
-        "remaining_blinks",
-        "active_blinkers",
-        "hazardWarningSwitchOn",
-        "curDeadlines",
-        "blinkLeft"
-      ],
-      "preds": [],
-      "postconditions": [],
-      "description": ""
-    },
-    {
-      "name": "RTIME_BlinkerOff",
-      "params": {
-        "delta": "500"
-      },
-      "results": {},
-      "destState": {
-        "blinkRight": "0",
-        "onCycle": "FALSE"
-      },
-      "destStateNotChanged": [
-        "engineOn",
-        "keyState",
-        "pitmanArmUpDown",
-        "remaining_blinks",
-        "active_blinkers",
-        "hazardWarningSwitchOn",
-        "curDeadlines",
-        "blinkLeft"
-      ],
-      "preds": [],
-      "postconditions": [],
-      "description": ""
-    },
-    {
-      "name": "RTIME_BlinkerOn",
-      "params": {
-        "delta": "500"
-      },
-      "results": {},
-      "destState": {
-        "blinkRight": "100",
-        "onCycle": "TRUE"
-      },
-      "destStateNotChanged": [
-        "engineOn",
-        "keyState",
-        "pitmanArmUpDown",
-        "remaining_blinks",
-        "active_blinkers",
-        "hazardWarningSwitchOn",
-        "curDeadlines",
-        "blinkLeft"
-      ],
-      "preds": [],
-      "postconditions": [],
-      "description": ""
     }
   ],
   "variableNames": [
@@ -2790,7 +2358,7 @@
   "metadata": {
     "fileType": "Trace",
     "formatVersion": 5,
-    "savedAt": "2023-02-14T09:25:21.305378Z",
+    "savedAt": "2023-02-14T10:10:20.384170Z",
     "creator": "traceReplay",
     "proB2KernelVersion": "4.0.0-SNAPSHOT",
     "proBCliVersion": "1.12.0-nightly",

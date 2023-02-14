@@ -1,42 +1,32 @@
 {
   "activations": [
     {
-      "id": "$initialise_machine",
-      "execute": "$initialise_machine",
-      "after": null,
-      "priority": 0,
+      "id": "$setup_constants",
+      "execute": "$setup_constants",
+      "after": "0",
+      "priority": 1,
       "additionalGuards": null,
       "activationKind": "multi",
-      "fixedVariables": {
-        "blinkRight": "0",
-        "engineOn": "FALSE",
-        "onCycle": "FALSE",
-        "keyState": "KeyInsertedOnPosition",
-        "pitmanArmUpDown": "Neutral",
-        "remaining_blinks": "0",
-        "active_blinkers": "∅",
-        "hazardWarningSwitchOn": "switch_off",
-        "curDeadlines": "{(blink_deadline↦500)}",
-        "blinkLeft": "0"
-      },
+      "fixedVariables": null,
+      "probabilisticVariables": null,
+      "activating": []
+    },
+    {
+      "id": "$initialise_machine",
+      "execute": "$initialise_machine",
+      "after": "0",
+      "priority": 1,
+      "additionalGuards": null,
+      "activationKind": "multi",
+      "fixedVariables": null,
       "probabilisticVariables": null,
       "activating": [
+        "time_pass",
         "user_interaction_0",
         "user_interaction_1",
         "user_interaction_2",
         "user_interaction_3"
       ]
-    },
-    {
-      "id": "$setup_constants",
-      "execute": "$setup_constants",
-      "after": null,
-      "priority": 0,
-      "additionalGuards": null,
-      "activationKind": "multi",
-      "fixedVariables": {},
-      "probabilisticVariables": null,
-      "activating": []
     },
     {
       "id": "time_pass",
@@ -89,7 +79,7 @@
     {
       "id": "user_interaction_0",
       "execute": "ENV_Turn_EngineOn",
-      "after": "1500",
+      "after": "900",
       "priority": 0,
       "additionalGuards": null,
       "activationKind": "multi",
@@ -104,12 +94,12 @@
     {
       "id": "user_interaction_1",
       "execute": "ENV_Pitman_DirectionBlinking",
-      "after": "2600",
+      "after": "2000",
       "priority": 0,
       "additionalGuards": null,
       "activationKind": "multi",
       "fixedVariables": {
-        "newPos": "Upward7"
+        "newPos": "Downward7"
       },
       "probabilisticVariables": null,
       "activating": [
@@ -120,7 +110,7 @@
     {
       "id": "user_interaction_2",
       "execute": "ENV_Hazard_blinking",
-      "after": "12600",
+      "after": "12000",
       "priority": 0,
       "additionalGuards": null,
       "activationKind": "multi",
@@ -137,7 +127,7 @@
     {
       "id": "user_interaction_3",
       "execute": "ENV_Hazard_blinking",
-      "after": "17600",
+      "after": "17000",
       "priority": 0,
       "additionalGuards": null,
       "activationKind": "multi",
@@ -156,7 +146,7 @@
   "metadata": {
     "fileType": "Interaction_Replay",
     "formatVersion": 2,
-    "savedAt": "2023-02-14T09:21:27.146332Z",
+    "savedAt": "2023-02-14T10:03:45.141099Z",
     "creator": "User",
     "proB2KernelVersion": "4.0.0-SNAPSHOT",
     "proBCliVersion": null,
