@@ -89,7 +89,7 @@
     {
       "id": "user_interaction_0",
       "execute": "ENV_Turn_EngineOn",
-      "after": "0",
+      "after": "1500",
       "priority": 0,
       "additionalGuards": null,
       "activationKind": null,
@@ -104,7 +104,7 @@
     {
       "id": "user_interaction_1",
       "execute": "ENV_Pitman_DirectionBlinking",
-      "after": "4200",
+      "after": "2600",
       "priority": 0,
       "additionalGuards": null,
       "activationKind": null,
@@ -120,7 +120,7 @@
     {
       "id": "user_interaction_2",
       "execute": "ENV_Hazard_blinking",
-      "after": "7800",
+      "after": "12600",
       "priority": 0,
       "additionalGuards": null,
       "activationKind": null,
@@ -137,7 +137,7 @@
     {
       "id": "user_interaction_3",
       "execute": "ENV_Hazard_blinking",
-      "after": "13800",
+      "after": "17600",
       "priority": 0,
       "additionalGuards": null,
       "activationKind": null,
