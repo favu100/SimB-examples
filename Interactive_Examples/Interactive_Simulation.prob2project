@@ -131,7 +131,7 @@
       "name": "M9_Push_Mouse_Buttons_vis",
       "description": "",
       "location": "AMAN_v6/M9_Push_Mouse_Buttons_vis.bum",
-      "lastUsedPreferenceName": "default",
+      "lastUsedPreferenceName": "AMAN_Pref",
       "ltlFormulas": [],
       "ltlPatterns": [],
       "symbolicCheckingFormulas": [],
@@ -164,12 +164,19 @@
         "MAX_INITIALISATIONS": "224",
         "MAX_OPERATIONS": "10"
       }
+    },
+    {
+      "name": "AMAN_Pref",
+      "preferences": {
+        "MAX_INITIALISATIONS": "0",
+        "MAX_OPERATIONS": "0"
+      }
     }
   ],
   "metadata": {
     "fileType": "Project",
     "formatVersion": 36,
-    "savedAt": "2023-02-14T10:10:23.719366Z",
+    "savedAt": "2023-02-14T10:46:44.014394Z",
     "creator": "User",
     "proB2KernelVersion": "4.0.0-SNAPSHOT",
     "proBCliVersion": null,
