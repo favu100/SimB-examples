@@ -158,6 +158,14 @@
         {
           "path": "AMAN_v6/SimB/AMAN_Simulation_Do_Nothing.json",
           "simulationItems": []
+        },
+        {
+          "path": "AMAN_v6/SimB/AMAN_Simulation_Block_Timeslot.json",
+          "simulationItems": []
+        },
+        {
+          "path": "AMAN_v6/SimB/AMAN_Simulation_Block_Three_Timeslots.json",
+          "simulationItems": []
         }
       ],
       "visBVisualisation": "AMAN_v6/VisB/AMAN_vis_M9.json",
@@ -188,7 +196,7 @@
   "metadata": {
     "fileType": "Project",
     "formatVersion": 36,
-    "savedAt": "2023-02-14T11:05:59.910324Z",
+    "savedAt": "2023-02-14T15:14:04.311191Z",
     "creator": "User",
     "proB2KernelVersion": "4.0.0-SNAPSHOT",
     "proBCliVersion": null,
