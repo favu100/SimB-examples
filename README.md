@@ -78,8 +78,8 @@ ProB2-UI and SimB examples were used in the Git versions 1.1.1-SNAPSHOT (dee1414
 
 ## Interactive Simulation vs. Animation
 
-
 | Model                                          | Requirement                      | User Events | Automatic Events | Total |
+|------------------------------------------------|----------------------------------|-------------|------------------|-------|
 | Lift                                           | Calling Lift Highest             | 1           | 5                | 6     |
 | (Lift.mch)                                     | Calling Lift Highest + Lowest    | 2           | 11               | 13    |
 |                                                |                                  |             |                  |       |
@@ -95,4 +95,3 @@ ProB2-UI and SimB examples were used in the Git versions 1.1.1-SNAPSHOT (dee1414
 | M9_Push_Mouse_Buttons_vis.bum)                 | Blocking 3 Time Slots (1 Minute) | 9           | 6                | 15    |
 |                                                | Holding Airplane (1 Minute)      | 6           | 6                | 12    |
 |                                                | Do Nothing (3 Minutes)           | 0           | 18               | 18    |
-|                                                |                                  |             |                  |       |
