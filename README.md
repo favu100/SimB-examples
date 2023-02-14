@@ -1,6 +1,6 @@
-<style>
-{
-  font-size: 7px
+<style scoped>
+table {
+  font-size: 7px;
 }
 </style>
 
