@@ -78,21 +78,22 @@ ProB2-UI and SimB examples were used in the Git versions 1.1.1-SNAPSHOT (dee1414
 
 ## Interactive Simulation vs. Animation
 
-
-| Model                                          | Requirement                      | User Events | Automatic Events | Total |
-|------------------------------------------------|----------------------------------|-------------|------------------|-------|
-| Lift                                           | Calling Lift Highest             | 1           | 5                | 6     |
-| (Lift.mch)                                     | Calling Lift Highest + Lowest    | 2           | 11               | 13    |
-|                                                |                                  |             |                  |       |
-| Pitman Controller                              | ELS-1 (10 Seconds)               | 2           | 39               | 41    |
-| (PitmanController_TIME_MC_v4.mch)              | ELS-8 (5 Seconds)                | 1           | 10               | 11    |
-|                                                | ELS-12 (5 Seconds)               | 4           | 58               | 62    |
-|                                                |                                  |             |                  |       |
-| Landing Gear                                   | Retraction Sequence              | 1           | 38               | 39    |
-| (R6GearsDoorsHandleValvesControllerSwitch.bum) | Outgoing Sequence                | 2           | 75               | 77    |
-|                                                |                                  |             |                  |       |
-| Arrival Manager                                | Moving Airplane (1 Minute)       | 4           | 6                | 10    |
-| (AMAN;                                         | Blocking 1 Time Slot (1 Minute)  | 3           | 6                | 9     |
-| M9_Push_Mouse_Buttons_vis.bum)                 | Blocking 3 Time Slots (1 Minute) | 9           | 6                | 15    |
-|                                                | Holding Airplane (1 Minute)      | 6           | 6                | 12    |
-|                                                | Do Nothing (3 Minutes)           | 0           | 18               | 18    |
+| Model                                                | Requirement                      | Recorded User Interactions                  | User Events | Automatic Events | Total |
+|------------------------------------------------------|----------------------------------|---------------------------------------------|-------------|------------------|-------|
+| Lift                                                 | Calling Lift Highest             | lift_simulation_to_highest.json             | 1           | 5                | 6     |
+| (Lift.mch + lift_simulation_interactive.json)        | Calling Lift Highest + Lowest    | lift_simulation_to_highest_then_lowest.json | 2           | 11               | 13    |
+|                                                      |                                  |                                             |             |                  |       |
+| Pitman Controller                                    | ELS-1 (10 Seconds)               | Recorded_User_Interactions.json             | 2           | 39               | 41    |
+| (PitmanController_TIME_MC_v4.mch +                   | ELS-8 (5 Seconds)                | Recorded_User_Interactions.json             | 1           | 10               | 11    |
+| PitmanController_v4_simulation_interactive.json)     | ELS-12 (5 Seconds)               | Recorded_User_Interactions.json             | 4           | 58               | 62    |
+|                                                      |                                  |                                             |             |                  |       |
+| Landing Gear                                         | Retraction Sequence              | Retraction_Sequence.json                    | 1           | 38               | 39    |
+| (R6GearsDoorsHandleValvesControllerSwitch.bum +      | Outgoing Sequence                | Outgoing_Sequence.json                      | 2           | 75               | 77    |
+| Simulation_R6GearsDoorsHandleValvesControllerSwitch_ |                                  |                                             |             |                  |       |
+| Fast_Interactive.json)                               |                                  |                                             |             |                  |       |
+|                                                      |                                  |                                             |             |                  |       |
+| Arrival Manager                                      | Moving Airplane (1 Minute)       |                                             | 4           | 6                | 10    |
+| (AMAN;                                               | Blocking 1 Time Slot (1 Minute)  |                                             | 3           | 6                | 9     |
+| M9_Push_Mouse_Buttons_vis.bum +                      | Blocking 3 Time Slots (1 Minute) |                                             | 9           | 6                | 15    |
+| AMAN_sim_interactive.json)                           | Holding Airplane (1 Minute)      |                                             | 6           | 6                | 12    |
+|                                                      | Do Nothing (3 Minutes)           | AMAN_Simulation_Do_Nothing.json             | 0           | 18               | 18    |
