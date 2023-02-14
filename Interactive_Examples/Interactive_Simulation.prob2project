@@ -137,7 +137,13 @@
       "symbolicCheckingFormulas": [],
       "symbolicAnimationFormulas": [],
       "testCases": [],
-      "traces": [],
+      "traces": [
+        {
+          "id": null,
+          "location": "AMAN_v6/SimB/AMAN_Simulation_Do_Nothing.prob2trace",
+          "selected": true
+        }
+      ],
       "modelcheckingItems": [],
       "proofObligationItems": [],
       "simulations": [
@@ -147,6 +153,10 @@
         },
         {
           "path": "AMAN_v6/SimB/AMAN_Simulation_Move_Airplane.json",
+          "simulationItems": []
+        },
+        {
+          "path": "AMAN_v6/SimB/AMAN_Simulation_Do_Nothing.json",
           "simulationItems": []
         }
       ],
@@ -169,14 +179,16 @@
       "name": "AMAN_Pref",
       "preferences": {
         "MAX_INITIALISATIONS": "0",
-        "MAX_OPERATIONS": "0"
+        "Z3_SOLVE_FOR_ANIMATION": "false",
+        "MAX_OPERATIONS": "0",
+        "SAT_SUPPORTED_INTERPRETER": "true"
       }
     }
   ],
   "metadata": {
     "fileType": "Project",
     "formatVersion": 36,
-    "savedAt": "2023-02-14T10:46:44.014394Z",
+    "savedAt": "2023-02-14T11:05:59.910324Z",
     "creator": "User",
     "proB2KernelVersion": "4.0.0-SNAPSHOT",
     "proBCliVersion": null,
