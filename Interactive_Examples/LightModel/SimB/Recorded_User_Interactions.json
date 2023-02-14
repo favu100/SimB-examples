@@ -6,7 +6,7 @@
       "after": null,
       "priority": 0,
       "additionalGuards": null,
-      "activationKind": null,
+      "activationKind": "multi",
       "fixedVariables": {
         "blinkRight": "0",
         "engineOn": "FALSE",
@@ -33,7 +33,7 @@
       "after": null,
       "priority": 0,
       "additionalGuards": null,
-      "activationKind": null,
+      "activationKind": "multi",
       "fixedVariables": {},
       "probabilisticVariables": null,
       "activating": []
@@ -44,7 +44,7 @@
       "after": "max(ran(curDeadlines))",
       "priority": 0,
       "additionalGuards": null,
-      "activationKind": "SINGLE_MAX",
+      "activationKind": "single:max",
       "fixedVariables": {
         "newOnCycle": "FALSE",
         "delta": "max(ran(curDeadlines))"
@@ -62,7 +62,7 @@
       "after": "curDeadlines(blink_deadline)",
       "priority": 0,
       "additionalGuards": null,
-      "activationKind": "SINGLE_MAX",
+      "activationKind": "single:max",
       "fixedVariables": {
         "delta": "curDeadlines(blink_deadline)"
       },
@@ -77,7 +77,7 @@
       "after": "curDeadlines(blink_deadline)",
       "priority": 0,
       "additionalGuards": null,
-      "activationKind": "SINGLE_MAX",
+      "activationKind": "single:max",
       "fixedVariables": {
         "delta": "curDeadlines(blink_deadline)"
       },
@@ -92,7 +92,7 @@
       "after": "1500",
       "priority": 0,
       "additionalGuards": null,
-      "activationKind": null,
+      "activationKind": "multi",
       "fixedVariables": {},
       "probabilisticVariables": null,
       "activating": [
@@ -107,7 +107,7 @@
       "after": "2600",
       "priority": 0,
       "additionalGuards": null,
-      "activationKind": null,
+      "activationKind": "multi",
       "fixedVariables": {
         "newPos": "Upward7"
       },
@@ -123,7 +123,7 @@
       "after": "12600",
       "priority": 0,
       "additionalGuards": null,
-      "activationKind": null,
+      "activationKind": "multi",
       "fixedVariables": {
         "newSwitchPos": "switch_on"
       },
@@ -140,7 +140,7 @@
       "after": "17600",
       "priority": 0,
       "additionalGuards": null,
-      "activationKind": null,
+      "activationKind": "multi",
       "fixedVariables": {
         "newSwitchPos": "switch_off"
       },
@@ -156,7 +156,7 @@
   "metadata": {
     "fileType": "Interaction_Replay",
     "formatVersion": 2,
-    "savedAt": "2023-02-13T17:00:37.485695Z",
+    "savedAt": "2023-02-14T09:21:27.146332Z",
     "creator": "User",
     "proB2KernelVersion": "4.0.0-SNAPSHOT",
     "proBCliVersion": null,

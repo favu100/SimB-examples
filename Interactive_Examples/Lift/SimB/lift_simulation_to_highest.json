@@ -39,7 +39,7 @@
       "after": "200",
       "priority": 4,
       "additionalGuards": "direction_up = TRUE & card(call_buttons \\/ inside_buttons) > 0 & max(call_buttons \\/ inside_buttons) > cur_floor",
-      "activationKind": "SINGLE",
+      "activationKind": "single",
       "fixedVariables": null,
       "probabilisticVariables": null,
       "activating": [
@@ -53,7 +53,7 @@
       "after": "200",
       "priority": 4,
       "additionalGuards": "direction_up = TRUE & card(call_buttons \\/ inside_buttons) > 0 & max(call_buttons \\/ inside_buttons) > cur_floor",
-      "activationKind": "SINGLE_MAX",
+      "activationKind": "single:max",
       "fixedVariables": null,
       "probabilisticVariables": null,
       "activating": [
@@ -67,7 +67,7 @@
       "after": "200",
       "priority": 4,
       "additionalGuards": "direction_up = FALSE & card(call_buttons \\/ inside_buttons) > 0 & min(call_buttons \\/ inside_buttons) < cur_floor",
-      "activationKind": "SINGLE",
+      "activationKind": "single",
       "fixedVariables": null,
       "probabilisticVariables": null,
       "activating": [
@@ -81,7 +81,7 @@
       "after": "200",
       "priority": 4,
       "additionalGuards": "direction_up = FALSE & card(call_buttons \\/ inside_buttons) > 0 & min(call_buttons \\/ inside_buttons) < cur_floor",
-      "activationKind": "SINGLE_MAX",
+      "activationKind": "single:max",
       "fixedVariables": null,
       "probabilisticVariables": null,
       "activating": [
@@ -95,7 +95,7 @@
       "after": "100",
       "priority": 3,
       "additionalGuards": "card(call_buttons \\/ inside_buttons) > 0 & min(call_buttons \\/ inside_buttons) > cur_floor",
-      "activationKind": "SINGLE",
+      "activationKind": "single",
       "fixedVariables": null,
       "probabilisticVariables": null,
       "activating": [
@@ -108,7 +108,7 @@
       "after": "100",
       "priority": 3,
       "additionalGuards": "card(call_buttons \\/ inside_buttons) > 0 & min(call_buttons \\/ inside_buttons) > cur_floor",
-      "activationKind": "SINGLE_MAX",
+      "activationKind": "single:max",
       "fixedVariables": null,
       "probabilisticVariables": null,
       "activating": [
@@ -121,7 +121,7 @@
       "after": "100",
       "priority": 3,
       "additionalGuards": "card(call_buttons \\/ inside_buttons) > 0 & max(call_buttons \\/ inside_buttons) < cur_floor",
-      "activationKind": "SINGLE_MAX",
+      "activationKind": "single:max",
       "fixedVariables": null,
       "probabilisticVariables": null,
       "activating": [
@@ -134,7 +134,7 @@
       "after": "100",
       "priority": 3,
       "additionalGuards": "card(call_buttons \\/ inside_buttons) > 0 & max(call_buttons \\/ inside_buttons) < cur_floor",
-      "activationKind": "SINGLE",
+      "activationKind": "single",
       "fixedVariables": null,
       "probabilisticVariables": null,
       "activating": [
@@ -147,7 +147,7 @@
       "after": "200",
       "priority": 2,
       "additionalGuards": "cur_floor : call_buttons \\/ inside_buttons",
-      "activationKind": "SINGLE",
+      "activationKind": "single",
       "fixedVariables": null,
       "probabilisticVariables": null,
       "activating": [
@@ -160,7 +160,7 @@
       "after": "200",
       "priority": 2,
       "additionalGuards": "cur_floor : call_buttons \\/ inside_buttons",
-      "activationKind": "SINGLE_MAX",
+      "activationKind": "single:max",
       "fixedVariables": null,
       "probabilisticVariables": null,
       "activating": [
@@ -173,7 +173,7 @@
       "after": "200",
       "priority": 2,
       "additionalGuards": "cur_floor : call_buttons \\/ inside_buttons",
-      "activationKind": "SINGLE",
+      "activationKind": "single",
       "fixedVariables": null,
       "probabilisticVariables": null,
       "activating": [
@@ -189,7 +189,7 @@
       "after": "200",
       "priority": 2,
       "additionalGuards": "cur_floor : call_buttons \\/ inside_buttons",
-      "activationKind": "SINGLE_MAX",
+      "activationKind": "single:max",
       "fixedVariables": null,
       "probabilisticVariables": null,
       "activating": [
