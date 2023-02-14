@@ -1,9 +1,3 @@
-<style scoped>
-table {
-  font-size: 7px;
-}
-</style>
-
 # SimB Examples
 
 SimB is a simulator built on top of ProB.
