@@ -44,6 +44,7 @@ Citation:
 
 ProB2-UI and SimB examples were used in the Git versions 1.1.1-SNAPSHOT (dee1414f56ee9e78cd5ff002a812b160d6576f36) and (a4dbb4867cf686302ec45d47c0d757fd387daf27) respectively.
 
+<font size="3">
 
 | Model                                                    | Simulation                                           | Property                                     | Runs  | VS    | ET        | Result      |
 |----------------------------------------------------------|------------------------------------------------------|----------------------------------------------|-------|-------|-----------|-------------|
@@ -76,7 +77,12 @@ ProB2-UI and SimB examples were used in the Git versions 1.1.1-SNAPSHOT (dee1414
 |                                                          |                                                      |                                              |       |       |           |             |
 
 
+</font>
+
+
 ## Interactive Simulation vs. Animation
+
+<font size="3">
 
 | Model                                          | Requirement                      | User Events | Automatic Events | Total |
 |------------------------------------------------|----------------------------------|-------------|------------------|-------|
@@ -95,3 +101,5 @@ ProB2-UI and SimB examples were used in the Git versions 1.1.1-SNAPSHOT (dee1414
 | M9_Push_Mouse_Buttons_vis.bum)                 | Blocking 3 Time Slots (1 Minute) | 9           | 6                | 15    |
 |                                                | Holding Airplane (1 Minute)      | 6           | 6                | 12    |
 |                                                | Do Nothing (3 Minutes)           | 0           | 18               | 18    |
+
+</font>
