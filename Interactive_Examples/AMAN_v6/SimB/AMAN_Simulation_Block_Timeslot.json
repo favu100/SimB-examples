@@ -25,7 +25,8 @@
         "Continue_Update_Pass_Minute",
         "user_interaction_0",
         "user_interaction_1",
-        "user_interaction_2"
+        "user_interaction_2",
+        "user_interaction_3"
       ]
     },
     {
@@ -122,6 +123,17 @@
       "activating": [
         "AMAN_Update"
       ]
+    },
+    {
+      "id": "user_interaction_3",
+      "execute": "Move_Mouse_Nothing",
+      "after": "10600",
+      "priority": 0,
+      "additionalGuards": null,
+      "activationKind": "multi",
+      "fixedVariables": {},
+      "probabilisticVariables": null,
+      "activating": []
     }
   ],
   "listeners": [],

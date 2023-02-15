@@ -173,14 +173,14 @@
       "description": ""
     },
     {
-      "name": "Move_Mouse_Airplane",
+      "name": "Move_Mouse_Block",
       "params": {
-        "airplane": "AIRPLANES1"
+        "block": "37"
       },
       "results": {},
       "destState": {
-        "currentMousePosition": "airplane_pos",
-        "mousePositionAirplane": "{AIRPLANES1}"
+        "mousePositionBlockSlot": "{37}",
+        "currentMousePosition": "block_time_pos"
       },
       "destStateNotChanged": [
         "isClickedBlock",
@@ -188,13 +188,13 @@
         "landing_sequence",
         "mousePositionZoomSlider",
         "blockedTimesProcessed",
-        "mousePositionBlockSlot",
         "selectedAirplane",
         "timeout",
         "held_airplanes",
         "dragged_zoom_level",
         "clickStartPosition",
         "scheduledAirplanes",
+        "mousePositionAirplane",
         "blockedTime",
         "dragging_airplane",
         "dragged_airplane"
@@ -204,50 +204,14 @@
       "description": ""
     },
     {
-      "name": "selectAirplane",
-      "params": {
-        "airplane": "AIRPLANES1"
-      },
+      "name": "Click_Block_Time",
+      "params": {},
       "results": {},
       "destState": {
-        "clickStartPosition": "{airplane_pos}",
-        "dragging_airplane": "TRUE",
-        "selectedAirplane": "{AIRPLANES1}",
-        "dragged_airplane": "{(AIRPLANES1↦40)}"
+        "isClickedBlock": "{37}",
+        "clickStartPosition": "{block_time_pos}"
       },
       "destStateNotChanged": [
-        "isClickedBlock",
-        "zoomLevel",
-        "landing_sequence",
-        "mousePositionZoomSlider",
-        "blockedTimesProcessed",
-        "mousePositionBlockSlot",
-        "timeout",
-        "held_airplanes",
-        "currentMousePosition",
-        "dragged_zoom_level",
-        "scheduledAirplanes",
-        "mousePositionAirplane",
-        "blockedTime"
-      ],
-      "preds": [],
-      "postconditions": [],
-      "description": ""
-    },
-    {
-      "name": "stop_dragging_airplane",
-      "params": {
-        "airplane": "AIRPLANES1",
-        "time": "40"
-      },
-      "results": {},
-      "destState": {
-        "clickStartPosition": "∅",
-        "dragging_airplane": "FALSE",
-        "dragged_airplane": "∅"
-      },
-      "destStateNotChanged": [
-        "isClickedBlock",
         "zoomLevel",
         "landing_sequence",
         "mousePositionZoomSlider",
@@ -260,7 +224,222 @@
         "dragged_zoom_level",
         "scheduledAirplanes",
         "mousePositionAirplane",
-        "blockedTime"
+        "blockedTime",
+        "dragging_airplane",
+        "dragged_airplane"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "Release_Trigger_Block_Time",
+      "params": {
+        "time": "37"
+      },
+      "results": {},
+      "destState": {
+        "isClickedBlock": "∅",
+        "clickStartPosition": "∅",
+        "blockedTime": "{37}"
+      },
+      "destStateNotChanged": [
+        "zoomLevel",
+        "landing_sequence",
+        "mousePositionZoomSlider",
+        "blockedTimesProcessed",
+        "mousePositionBlockSlot",
+        "selectedAirplane",
+        "timeout",
+        "held_airplanes",
+        "currentMousePosition",
+        "dragged_zoom_level",
+        "scheduledAirplanes",
+        "mousePositionAirplane",
+        "dragging_airplane",
+        "dragged_airplane"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "Move_Mouse_Block",
+      "params": {
+        "block": "38"
+      },
+      "results": {},
+      "destState": {
+        "mousePositionBlockSlot": "{38}"
+      },
+      "destStateNotChanged": [
+        "isClickedBlock",
+        "zoomLevel",
+        "landing_sequence",
+        "mousePositionZoomSlider",
+        "blockedTimesProcessed",
+        "selectedAirplane",
+        "timeout",
+        "held_airplanes",
+        "currentMousePosition",
+        "dragged_zoom_level",
+        "clickStartPosition",
+        "scheduledAirplanes",
+        "mousePositionAirplane",
+        "blockedTime",
+        "dragging_airplane",
+        "dragged_airplane"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "Click_Block_Time",
+      "params": {},
+      "results": {},
+      "destState": {
+        "isClickedBlock": "{38}",
+        "clickStartPosition": "{block_time_pos}"
+      },
+      "destStateNotChanged": [
+        "zoomLevel",
+        "landing_sequence",
+        "mousePositionZoomSlider",
+        "blockedTimesProcessed",
+        "mousePositionBlockSlot",
+        "selectedAirplane",
+        "timeout",
+        "held_airplanes",
+        "currentMousePosition",
+        "dragged_zoom_level",
+        "scheduledAirplanes",
+        "mousePositionAirplane",
+        "blockedTime",
+        "dragging_airplane",
+        "dragged_airplane"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "Release_Trigger_Block_Time",
+      "params": {
+        "time": "38"
+      },
+      "results": {},
+      "destState": {
+        "isClickedBlock": "∅",
+        "clickStartPosition": "∅",
+        "blockedTime": "{37,38}"
+      },
+      "destStateNotChanged": [
+        "zoomLevel",
+        "landing_sequence",
+        "mousePositionZoomSlider",
+        "blockedTimesProcessed",
+        "mousePositionBlockSlot",
+        "selectedAirplane",
+        "timeout",
+        "held_airplanes",
+        "currentMousePosition",
+        "dragged_zoom_level",
+        "scheduledAirplanes",
+        "mousePositionAirplane",
+        "dragging_airplane",
+        "dragged_airplane"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "Move_Mouse_Block",
+      "params": {
+        "block": "39"
+      },
+      "results": {},
+      "destState": {
+        "mousePositionBlockSlot": "{39}"
+      },
+      "destStateNotChanged": [
+        "isClickedBlock",
+        "zoomLevel",
+        "landing_sequence",
+        "mousePositionZoomSlider",
+        "blockedTimesProcessed",
+        "selectedAirplane",
+        "timeout",
+        "held_airplanes",
+        "currentMousePosition",
+        "dragged_zoom_level",
+        "clickStartPosition",
+        "scheduledAirplanes",
+        "mousePositionAirplane",
+        "blockedTime",
+        "dragging_airplane",
+        "dragged_airplane"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "Click_Block_Time",
+      "params": {},
+      "results": {},
+      "destState": {
+        "isClickedBlock": "{39}",
+        "clickStartPosition": "{block_time_pos}"
+      },
+      "destStateNotChanged": [
+        "zoomLevel",
+        "landing_sequence",
+        "mousePositionZoomSlider",
+        "blockedTimesProcessed",
+        "mousePositionBlockSlot",
+        "selectedAirplane",
+        "timeout",
+        "held_airplanes",
+        "currentMousePosition",
+        "dragged_zoom_level",
+        "scheduledAirplanes",
+        "mousePositionAirplane",
+        "blockedTime",
+        "dragging_airplane",
+        "dragged_airplane"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "Release_Trigger_Block_Time",
+      "params": {
+        "time": "39"
+      },
+      "results": {},
+      "destState": {
+        "isClickedBlock": "∅",
+        "clickStartPosition": "∅",
+        "blockedTime": "{37,38,39}"
+      },
+      "destStateNotChanged": [
+        "zoomLevel",
+        "landing_sequence",
+        "mousePositionZoomSlider",
+        "blockedTimesProcessed",
+        "mousePositionBlockSlot",
+        "selectedAirplane",
+        "timeout",
+        "held_airplanes",
+        "currentMousePosition",
+        "dragged_zoom_level",
+        "scheduledAirplanes",
+        "mousePositionAirplane",
+        "dragging_airplane",
+        "dragged_airplane"
       ],
       "preds": [],
       "postconditions": [],
@@ -271,124 +450,7 @@
       "params": {},
       "results": {},
       "destState": {
-        "currentMousePosition": "nothing_pos",
-        "mousePositionAirplane": "∅"
-      },
-      "destStateNotChanged": [
-        "isClickedBlock",
-        "zoomLevel",
-        "landing_sequence",
-        "mousePositionZoomSlider",
-        "blockedTimesProcessed",
-        "mousePositionBlockSlot",
-        "selectedAirplane",
-        "timeout",
-        "held_airplanes",
-        "dragged_zoom_level",
-        "clickStartPosition",
-        "scheduledAirplanes",
-        "blockedTime",
-        "dragging_airplane",
-        "dragged_airplane"
-      ],
-      "preds": [],
-      "postconditions": [],
-      "description": ""
-    },
-    {
-      "name": "Move_Mouse_Hold",
-      "params": {},
-      "results": {},
-      "destState": {
-        "currentMousePosition": "hold_button_pos"
-      },
-      "destStateNotChanged": [
-        "isClickedBlock",
-        "zoomLevel",
-        "landing_sequence",
-        "mousePositionZoomSlider",
-        "blockedTimesProcessed",
-        "mousePositionBlockSlot",
-        "selectedAirplane",
-        "timeout",
-        "held_airplanes",
-        "dragged_zoom_level",
-        "clickStartPosition",
-        "scheduledAirplanes",
-        "mousePositionAirplane",
-        "blockedTime",
-        "dragging_airplane",
-        "dragged_airplane"
-      ],
-      "preds": [],
-      "postconditions": [],
-      "description": ""
-    },
-    {
-      "name": "Click_Hold_Button",
-      "params": {},
-      "results": {},
-      "destState": {
-        "clickStartPosition": "{hold_button_pos}"
-      },
-      "destStateNotChanged": [
-        "isClickedBlock",
-        "zoomLevel",
-        "landing_sequence",
-        "mousePositionZoomSlider",
-        "blockedTimesProcessed",
-        "mousePositionBlockSlot",
-        "selectedAirplane",
-        "timeout",
-        "held_airplanes",
-        "currentMousePosition",
-        "dragged_zoom_level",
-        "scheduledAirplanes",
-        "mousePositionAirplane",
-        "blockedTime",
-        "dragging_airplane",
-        "dragged_airplane"
-      ],
-      "preds": [],
-      "postconditions": [],
-      "description": ""
-    },
-    {
-      "name": "Release_Trigger_Hold_Button",
-      "params": {
-        "airplane": "AIRPLANES1"
-      },
-      "results": {},
-      "destState": {
-        "clickStartPosition": "∅",
-        "held_airplanes": "{AIRPLANES1}",
-        "selectedAirplane": "∅"
-      },
-      "destStateNotChanged": [
-        "isClickedBlock",
-        "zoomLevel",
-        "landing_sequence",
-        "mousePositionZoomSlider",
-        "blockedTimesProcessed",
-        "mousePositionBlockSlot",
-        "timeout",
-        "currentMousePosition",
-        "dragged_zoom_level",
-        "scheduledAirplanes",
-        "mousePositionAirplane",
-        "blockedTime",
-        "dragging_airplane",
-        "dragged_airplane"
-      ],
-      "preds": [],
-      "postconditions": [],
-      "description": ""
-    },
-    {
-      "name": "Move_Mouse_Nothing",
-      "params": {},
-      "results": {},
-      "destState": {
+        "mousePositionBlockSlot": "∅",
         "currentMousePosition": "nothing_pos"
       },
       "destStateNotChanged": [
@@ -397,7 +459,6 @@
         "landing_sequence",
         "mousePositionZoomSlider",
         "blockedTimesProcessed",
-        "mousePositionBlockSlot",
         "selectedAirplane",
         "timeout",
         "held_airplanes",
@@ -416,41 +477,8 @@
     {
       "name": "AMAN_Update_mouse_to_nothing",
       "params": {
-        "new_landing_sequence": "{(AIRPLANES2↦32)}",
-        "new_blockedTime": "∅",
-        "passed_minutes": "0"
-      },
-      "results": {},
-      "destState": {
-        "landing_sequence": "{(AIRPLANES2↦32)}",
-        "scheduledAirplanes": "{AIRPLANES2}",
-        "held_airplanes": "∅"
-      },
-      "destStateNotChanged": [
-        "isClickedBlock",
-        "zoomLevel",
-        "mousePositionZoomSlider",
-        "blockedTimesProcessed",
-        "mousePositionBlockSlot",
-        "selectedAirplane",
-        "timeout",
-        "currentMousePosition",
-        "dragged_zoom_level",
-        "clickStartPosition",
-        "mousePositionAirplane",
-        "blockedTime",
-        "dragging_airplane",
-        "dragged_airplane"
-      ],
-      "preds": [],
-      "postconditions": [],
-      "description": ""
-    },
-    {
-      "name": "AMAN_Update_mouse_to_nothing",
-      "params": {
-        "new_landing_sequence": "{(AIRPLANES2↦32)}",
-        "new_blockedTime": "∅",
+        "new_landing_sequence": "{(AIRPLANES1↦40),(AIRPLANES2↦32)}",
+        "new_blockedTime": "{37,38,39}",
         "passed_minutes": "0"
       },
       "results": {},
@@ -471,6 +499,71 @@
         "scheduledAirplanes",
         "mousePositionAirplane",
         "blockedTime",
+        "dragging_airplane",
+        "dragged_airplane"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "AMAN_Update_mouse_to_nothing",
+      "params": {
+        "new_landing_sequence": "{(AIRPLANES1↦40),(AIRPLANES2↦32)}",
+        "new_blockedTime": "{37,38,39}",
+        "passed_minutes": "0"
+      },
+      "results": {},
+      "destState": {},
+      "destStateNotChanged": [
+        "isClickedBlock",
+        "zoomLevel",
+        "landing_sequence",
+        "mousePositionZoomSlider",
+        "blockedTimesProcessed",
+        "mousePositionBlockSlot",
+        "selectedAirplane",
+        "timeout",
+        "held_airplanes",
+        "currentMousePosition",
+        "dragged_zoom_level",
+        "clickStartPosition",
+        "scheduledAirplanes",
+        "mousePositionAirplane",
+        "blockedTime",
+        "dragging_airplane",
+        "dragged_airplane"
+      ],
+      "preds": [],
+      "postconditions": [],
+      "description": ""
+    },
+    {
+      "name": "AMAN_Update_mouse_to_nothing",
+      "params": {
+        "new_landing_sequence": "{(AIRPLANES1↦39),(AIRPLANES2↦31)}",
+        "new_blockedTime": "{36,37,38}",
+        "passed_minutes": "1"
+      },
+      "results": {},
+      "destState": {
+        "blockedTime": "{36,37,38}",
+        "landing_sequence": "{(AIRPLANES1↦39),(AIRPLANES2↦31)}"
+      },
+      "destStateNotChanged": [
+        "isClickedBlock",
+        "zoomLevel",
+        "mousePositionZoomSlider",
+        "blockedTimesProcessed",
+        "mousePositionBlockSlot",
+        "selectedAirplane",
+        "timeout",
+        "held_airplanes",
+        "currentMousePosition",
+        "dragged_zoom_level",
+        "clickStartPosition",
+        "scheduledAirplanes",
+        "mousePositionAirplane",
         "dragging_airplane",
         "dragged_airplane"
       ],
@@ -1208,7 +1301,7 @@
   "metadata": {
     "fileType": "Trace",
     "formatVersion": 5,
-    "savedAt": "2023-02-15T12:00:55.904213Z",
+    "savedAt": "2023-02-15T12:14:38.787018Z",
     "creator": "traceReplay",
     "proB2KernelVersion": "4.0.0-SNAPSHOT",
     "proBCliVersion": "1.12.0-nightly",

@@ -152,6 +152,16 @@
           "id": null,
           "location": "AMAN_v6/SimB/AMAN_Simulation_Holding_Airplane.prob2trace",
           "selected": true
+        },
+        {
+          "id": null,
+          "location": "AMAN_v6/SimB/AMAN_Simulation_Block_Timeslot.prob2trace",
+          "selected": true
+        },
+        {
+          "id": null,
+          "location": "AMAN_v6/SimB/AMAN_Simulation_Block_Three_Timeslots.prob2trace",
+          "selected": true
         }
       ],
       "modelcheckingItems": [],
@@ -205,7 +215,7 @@
   "metadata": {
     "fileType": "Project",
     "formatVersion": 36,
-    "savedAt": "2023-02-15T11:53:15.439603Z",
+    "savedAt": "2023-02-15T12:14:58.738292Z",
     "creator": "User",
     "proB2KernelVersion": "4.0.0-SNAPSHOT",
     "proBCliVersion": null,

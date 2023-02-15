@@ -31,7 +31,8 @@
         "user_interaction_5",
         "user_interaction_6",
         "user_interaction_7",
-        "user_interaction_8"
+        "user_interaction_8",
+        "user_interaction_9"
       ]
     },
     {
@@ -206,6 +207,17 @@
       "activating": [
         "AMAN_Update"
       ]
+    },
+    {
+      "id": "user_interaction_9",
+      "execute": "Move_Mouse_Nothing",
+      "after": "14600",
+      "priority": 0,
+      "additionalGuards": null,
+      "activationKind": "multi",
+      "fixedVariables": {},
+      "probabilisticVariables": null,
+      "activating": []
     }
   ],
   "listeners": [],
