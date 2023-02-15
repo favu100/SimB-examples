@@ -166,6 +166,10 @@
         {
           "path": "AMAN_v6/SimB/AMAN_Simulation_Block_Three_Timeslots.json",
           "simulationItems": []
+        },
+        {
+          "path": "AMAN_v6/SimB/AMAN_Simulation_Holding_Airplane.json",
+          "simulationItems": []
         }
       ],
       "visBVisualisation": "AMAN_v6/VisB/AMAN_vis_M9.json",
@@ -186,17 +190,14 @@
     {
       "name": "AMAN_Pref",
       "preferences": {
-        "MAX_INITIALISATIONS": "0",
-        "Z3_SOLVE_FOR_ANIMATION": "false",
-        "MAX_OPERATIONS": "0",
-        "SAT_SUPPORTED_INTERPRETER": "true"
+        "MAX_OPERATIONS": "0"
       }
     }
   ],
   "metadata": {
     "fileType": "Project",
     "formatVersion": 36,
-    "savedAt": "2023-02-14T15:14:04.311191Z",
+    "savedAt": "2023-02-15T10:21:23.939672Z",
     "creator": "User",
     "proB2KernelVersion": "4.0.0-SNAPSHOT",
     "proBCliVersion": null,
