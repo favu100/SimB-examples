@@ -21,7 +21,7 @@
       "execute": "AMAN_Update_mouse_to_nothing",
       "after": 0,
       "priority": 2,
-      "activationKind": "single:min",
+      "activationKind": "single:max",
       "fixedVariables": {
         "new_landing_sequence": "{(AIRPLANES1 |-> 40), (AIRPLANES2 |-> 32)}",
         "passed_minutes": "0"
@@ -32,14 +32,14 @@
       "id": "ContinueUpdate",
       "execute": "skip",
       "after": 0,
-      "activating" : ["ContinueUpdate1", "ContinueUpdate2"]
+      "activating" : ["ContinueUpdate1", "ContinueUpdate2", "Continue_Update_Pass_Minute1", "Continue_Update_Pass_Minute2"]
     },
     {
       "id": "ContinueUpdate1",
       "execute": "AMAN_Update_mouse_to_nothing",
       "after": 4000,
       "priority": 2,
-      "activationKind": "single:min",
+      "activationKind": "single:max",
       "fixedVariables": {
         "new_landing_sequence": "held_airplanes <<| landing_sequence",
         "passed_minutes": "0"
@@ -51,7 +51,7 @@
       "execute": "AMAN_Update_mouse_stays",
       "after": 4000,
       "priority": 2,
-      "activationKind": "single:min",
+      "activationKind": "single:max",
       "fixedVariables": {
         "new_landing_sequence": "held_airplanes <<| landing_sequence",
         "passed_minutes": "0"
