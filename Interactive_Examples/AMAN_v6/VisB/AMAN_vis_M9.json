@@ -1,11 +1,17 @@
 {
   "svg":"AMAN_M9.svg",
+  "definitions": [
+    { "name":"bottomY",
+      "value" : "760",
+      "comment" : "bottom reference coordinate; was 760"
+    }
+  ],
   "items":[
     {
       "for": {"from":1, "to":45},
       "id":"ap_%0",
       "attr":"visibility",
-      "value":"IF (%0 : ran(landing_sequence) or %0 : ran(dragged_airplane)) & zoomLevel >= %0 THEN \"visibile\" ELSE \"hidden\" END"
+      "value":"IF (%0 : ran(landing_sequence) or %0 : ran(dragged_airplane)) & zoomLevel >= %0 THEN \"visible\" ELSE \"hidden\" END"
     },
     {
       "for": {"from":1, "to":45},
@@ -17,25 +23,25 @@
       "for": {"from":1, "to":"card(AIRPLANES)"},
       "id":"tap_%0",
       "attr":"visibility",
-      "value":"IF AIRPLANES%0 : dom(landing_sequence) & zoomLevel >= landing_sequence(AIRPLANES%0) THEN \"visibile\" ELSE \"hidden\" END"
+      "value":"IF AIRPLANES%0 : dom(landing_sequence) & zoomLevel >= landing_sequence(AIRPLANES%0) THEN \"visible\" ELSE \"hidden\" END"
     },
     {
       "for": {"from":1, "to":"card(AIRPLANES)"},
       "id":"tap_%0",
       "attr":"y",
-      "value":"IF AIRPLANES%0 : dom(landing_sequence) THEN 760 - landing_sequence(AIRPLANES%0) * TIME_SLOT_HEIGHT_BY_ZOOM(zoomLevel) ELSE 0 END"
+      "value":"IF AIRPLANES%0 : dom(landing_sequence) THEN bottomY - landing_sequence(AIRPLANES%0) * TIME_SLOT_HEIGHT_BY_ZOOM(zoomLevel) ELSE 0 END"
     },
     {
       "for": {"from":1, "to":"card(AIRPLANES)"},
       "id":"tap_ghost_%0",
       "attr":"visibility",
-      "value":"IF AIRPLANES%0 : dom(dragged_airplane) & zoomLevel >= dragged_airplane(AIRPLANES%0) THEN \"visibile\" ELSE \"hidden\" END"
+      "value":"IF AIRPLANES%0 : dom(dragged_airplane) & zoomLevel >= dragged_airplane(AIRPLANES%0) THEN \"visible\" ELSE \"hidden\" END"
     },
     {
       "for": {"from":1, "to":"card(AIRPLANES)"},
       "id":"tap_ghost_%0",
       "attr":"y",
-      "value":"IF AIRPLANES%0 : dom(dragged_airplane) THEN 760 - dragged_airplane(AIRPLANES%0) * TIME_SLOT_HEIGHT_BY_ZOOM(zoomLevel) ELSE 0 END"
+      "value":"IF AIRPLANES%0 : dom(dragged_airplane) THEN bottomY - dragged_airplane(AIRPLANES%0) * TIME_SLOT_HEIGHT_BY_ZOOM(zoomLevel) ELSE 0 END"
     },
     {
       "for": {"from":1, "to":45},
@@ -107,7 +113,7 @@
       "for": {"from":1, "to":45},
       "id":"bl_%0",
       "attr":"visibility",
-      "value":"IF %0 <= zoomLevel THEN \"visibile\" ELSE \"hidden\" END"
+      "value":"IF %0 <= zoomLevel THEN \"visible\" ELSE \"hidden\" END"
     },
     {
       "for": {"from":1, "to":45},
@@ -119,13 +125,13 @@
       "for": {"from":1, "to":45},
       "id":"bl_%0",
       "attr":"y",
-      "value":"IF %0 : dom(TIME_SLOT_YS_BY_ZOOM(zoomLevel)) THEN TIME_SLOT_YS_BY_ZOOM(zoomLevel)(%0) + 1 ELSE 0 END"
+      "value":"IF %0 : dom(TIME_YS_BY_ZOOM(zoomLevel)) THEN TIME_YS_BY_ZOOM(zoomLevel)(%0) + 1 ELSE 0 END"
     },
     {
       "for": {"from":1, "to":45},
       "id":"mv_%0",
       "attr":"visibility",
-      "value":"IF %0 <= zoomLevel THEN \"visibile\" ELSE \"hidden\" END"
+      "value":"IF %0 <= zoomLevel THEN \"visible\" ELSE \"hidden\" END"
     },
     {
       "for": {"from":1, "to":45},
@@ -137,7 +143,7 @@
       "for": {"from":1, "to":45},
       "id":"mv_%0",
       "attr":"y",
-      "value":"IF %0 : dom(TIME_SLOT_YS_BY_ZOOM(zoomLevel)) THEN TIME_SLOT_YS_BY_ZOOM(zoomLevel)(%0) + 1 ELSE 0 END"
+      "value":"IF %0 : dom(TIME_YS_BY_ZOOM(zoomLevel)) THEN TIME_YS_BY_ZOOM(zoomLevel)(%0) + 1 ELSE 0 END"
     },
     {
       "for": {"from":1, "to":45},
@@ -150,12 +156,12 @@
       "id":"rect_ap_%0",
       "attr":"stroke",
       "value":"IF %0 : ran(landing_sequence) THEN
-                IF landing_sequence~(%0) : held_airplanes THEN \"red\"
-                ELSIF landing_sequence~(%0) : selectedAirplane THEN \"grey\"
-                ELSE \"black\"
-                END
-              ELSIF %0 : ran(dragged_airplane) THEN \"white\"
-              ELSE \"black\" END"
+      IF landing_sequence~(%0) : held_airplanes THEN \"red\"
+      ELSIF landing_sequence~(%0) : selectedAirplane THEN \"grey\"
+      ELSE \"black\"
+      END
+      ELSIF %0 : ran(dragged_airplane) THEN \"white\"
+      ELSE \"black\" END"
     },
     {
       "for": {"from":1, "to":45},
@@ -210,20 +216,20 @@
       "id":"mouse",
       "attr":"x",
       "value":"IF block_time_pos = currentMousePosition THEN 210
-              ELSIF airplane_pos = currentMousePosition THEN IF dragging_airplane = TRUE THEN 285 ELSE 430 END
-              ELSIF hold_button_pos = currentMousePosition THEN 740
-              ELSIF zoom_slider_pos = currentMousePosition THEN 713 + 40 * (MU(mousePositionZoomSlider)/5 - 3)
-              ELSE 500 END"
+      ELSIF airplane_pos = currentMousePosition THEN IF dragging_airplane = TRUE THEN 285 ELSE 430 END
+      ELSIF hold_button_pos = currentMousePosition THEN 740
+      ELSIF zoom_slider_pos = currentMousePosition THEN 713 + 40 * (MU(mousePositionZoomSlider)/5 - 3)
+      ELSE 500 END"
     },
     {
       "id":"mouse",
       "attr":"y",
       "value":"IF block_time_pos = currentMousePosition THEN
-                IF MU(mousePositionBlockSlot) : dom(TIME_SLOT_YS_BY_ZOOM(zoomLevel)) THEN TIME_SLOT_YS_BY_ZOOM(zoomLevel)(MU(mousePositionBlockSlot)) + 1 ELSE 0 END
-              ELSIF airplane_pos = currentMousePosition THEN IF MU(mousePositionAirplane) : dom(dragged_airplane) THEN 760 - dragged_airplane(MU(mousePositionAirplane)) * TIME_SLOT_HEIGHT_BY_ZOOM(zoomLevel) - 10 ELSIF MU(mousePositionAirplane) : dom(landing_sequence) THEN 760 - landing_sequence(MU(mousePositionAirplane)) * TIME_SLOT_HEIGHT_BY_ZOOM(zoomLevel) - 10 ELSE 0 END
-              ELSIF hold_button_pos = currentMousePosition THEN 510
-              ELSIF zoom_slider_pos = currentMousePosition THEN 75
-              ELSE 500 END"
+      IF MU(mousePositionBlockSlot) : dom(TIME_YS_BY_ZOOM(zoomLevel)) THEN TIME_YS_BY_ZOOM(zoomLevel)(MU(mousePositionBlockSlot)) + 1 ELSE 0 END
+      ELSIF airplane_pos = currentMousePosition THEN IF MU(mousePositionAirplane) : dom(dragged_airplane) THEN bottomY - dragged_airplane(MU(mousePositionAirplane)) * TIME_SLOT_HEIGHT_BY_ZOOM(zoomLevel) ELSIF MU(mousePositionAirplane) : dom(landing_sequence) THEN bottomY - landing_sequence(MU(mousePositionAirplane)) * TIME_SLOT_HEIGHT_BY_ZOOM(zoomLevel) ELSE 0 END
+      ELSIF hold_button_pos = currentMousePosition THEN 510
+      ELSIF zoom_slider_pos = currentMousePosition THEN 75
+      ELSE 500 END"
     }
   ],
   "events": [

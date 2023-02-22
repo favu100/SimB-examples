@@ -7,7 +7,7 @@
     {
       "id": "$initialise_machine",
       "execute": "$initialise_machine",
-      "activating" : ["ContinueUpdate", "SpawnAirplanes"]
+      "activating" : ["SpawnAirplanes"]
     },
     {
       "id": "SpawnAirplanes",
@@ -21,12 +21,6 @@
       },
       "activating" : ["ContinueUpdate1_2"],
       "onlyWhenExecuted": "false"
-    },
-    {
-      "id": "ContinueUpdate",
-      "execute": "skip",
-      "after": 0,
-      "activating" : ["ContinueUpdate1_1", "ContinueUpdate2_1"]
     },
     {
       "id": "ContinueUpdate1_1",
