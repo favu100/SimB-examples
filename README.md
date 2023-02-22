@@ -78,6 +78,9 @@ ProB2-UI and SimB examples were used in the Git versions 1.1.1-SNAPSHOT (dee1414
 
 ## Interactive Simulation vs. Animation
 
+ProB2-UI and SimB examples were used in the Git versions 1.2.0-SNAPSHOT (8a1c793a4d702efadda6b964c90b3df8359f32f1) and (346376446651e0a684d5921d8af1179e62c058d7) respectively.
+
+
 | Model                                                | Requirement                      | Recorded User Interactions                  | User Events | Automatic Events | Total |
 |------------------------------------------------------|----------------------------------|---------------------------------------------|-------------|------------------|-------|
 | Lift                                                 | Calling Lift Highest             | lift_simulation_to_highest.json             | 1           | 5                | 6     |
