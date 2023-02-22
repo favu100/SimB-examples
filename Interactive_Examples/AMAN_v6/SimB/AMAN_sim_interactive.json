@@ -1,4 +1,7 @@
 {
+  "variables": {
+    "passed_minutes_since_update": "0"
+  },
   "activations": [
     {
       "id": "$setup_constants",
@@ -17,166 +20,80 @@
       "activationKind": "single",
       "fixedVariables": {
         "new_landing_sequence": "{(AIRPLANES1 |-> 40), (AIRPLANES2 |-> 32)}",
-        "passed_minutes": "0"
+        "passed_minutes": "$passed_minutes_since_update"
       },
-      "activating" : ["ContinueUpdate1_2"],
-      "onlyWhenExecuted": "false"
+      "activating" : ["Pass_Time_1"],
+      "activatingOnlyWhenExecuted": "false"
     },
     {
-      "id": "ContinueUpdate1_1",
+      "id": "ContinueUpdate1",
       "execute": "AMAN_Update_mouse_to_nothing",
       "after": 4000,
       "priority": 2,
       "activationKind": "single",
       "fixedVariables": {
-        "new_landing_sequence": "held_airplanes <<| landing_sequence",
-        "passed_minutes": "0"
+        "new_landing_sequence": "held_airplanes <<| {x |-> y | x : dom(landing_sequence) & y = landing_sequence(x) - $passed_minutes_since_update & y > 0}",
+        "passed_minutes": "$passed_minutes_since_update"
       },
-      "activating" : ["ContinueUpdate1_2"],
-      "onlyWhenExecuted": "false"
+      "activating" : ["ContinueUpdate1"],
+      "activatingOnlyWhenExecuted": "false",
+      "updating": {
+        "passed_minutes_since_update": "0"
+      }
     },
     {
-      "id": "ContinueUpdate1_2",
-      "execute": "AMAN_Update_mouse_to_nothing",
-      "after": 4000,
-      "priority": 2,
-      "activationKind": "single",
-      "fixedVariables": {
-        "new_landing_sequence": "held_airplanes <<| landing_sequence",
-        "passed_minutes": "0"
-      },
-      "activating" : ["ContinueUpdate1_3"],
-      "onlyWhenExecuted": "false"
-    },
-    {
-      "id": "ContinueUpdate1_3",
-      "execute": "AMAN_Update_mouse_to_nothing",
-      "after": 4000,
-      "priority": 2,
-      "activationKind": "single",
-      "fixedVariables": {
-        "new_landing_sequence": "held_airplanes <<| landing_sequence",
-        "passed_minutes": "0"
-      },
-      "activating" : ["ContinueUpdate1_4"],
-      "onlyWhenExecuted": "false"
-    },
-    {
-      "id": "ContinueUpdate1_4",
-      "execute": "AMAN_Update_mouse_to_nothing",
-      "after": 4000,
-      "priority": 2,
-      "activationKind": "single",
-      "fixedVariables": {
-        "new_landing_sequence": "held_airplanes <<| landing_sequence",
-        "passed_minutes": "0"
-      },
-      "activating" : ["ContinueUpdate1_5"],
-      "onlyWhenExecuted": "false"
-    },
-    {
-      "id": "ContinueUpdate1_5",
-      "execute": "AMAN_Update_mouse_to_nothing",
-      "after": 4000,
-      "priority": 2,
-      "activationKind": "single",
-      "fixedVariables": {
-        "new_landing_sequence": "held_airplanes <<| landing_sequence",
-        "passed_minutes": "0"
-      },
-      "activating" : ["Continue_Update_Pass_Minute1"],
-      "onlyWhenExecuted": "false"
-    },
-    {
-      "id": "ContinueUpdate2_1",
+      "id": "ContinueUpdate2",
       "execute": "AMAN_Update_mouse_stays",
       "after": 4000,
       "priority": 2,
       "activationKind": "single",
       "fixedVariables": {
-        "new_landing_sequence": "held_airplanes <<| landing_sequence",
-        "passed_minutes": "0"
+        "new_landing_sequence": "held_airplanes <<| {x |-> y | x : dom(landing_sequence) & y = landing_sequence(x) - $passed_minutes_since_update & y > 0}",
+        "passed_minutes": "$passed_minutes_since_update"
       },
-      "activating" : ["ContinueUpdate2_2"],
-      "onlyWhenExecuted": "false"
+      "activating" : ["ContinueUpdate2"],
+      "activatingOnlyWhenExecuted": "false",
+      "updating": {
+        "passed_minutes_since_update": "0"
+      }
     },
     {
-      "id": "ContinueUpdate2_2",
-      "execute": "AMAN_Update_mouse_stays",
-      "after": 4000,
-      "priority": 2,
-      "activationKind": "single",
-      "fixedVariables": {
-        "new_landing_sequence": "held_airplanes <<| landing_sequence",
-        "passed_minutes": "0"
-      },
-      "activating" : ["ContinueUpdate2_3"],
-      "onlyWhenExecuted": "false"
-    },
-    {
-      "id": "ContinueUpdate2_3",
-      "execute": "AMAN_Update_mouse_stays",
-      "after": 4000,
-      "priority": 2,
-      "activationKind": "single",
-      "fixedVariables": {
-        "new_landing_sequence": "held_airplanes <<| landing_sequence",
-        "passed_minutes": "0"
-      },
-      "activating" : ["ContinueUpdate2_4"],
-      "onlyWhenExecuted": "false"
-    },
-    {
-      "id": "ContinueUpdate2_4",
-      "execute": "AMAN_Update_mouse_stays",
-      "after": 4000,
-      "priority": 2,
-      "activationKind": "single",
-      "fixedVariables": {
-        "new_landing_sequence": "held_airplanes <<| landing_sequence",
-        "passed_minutes": "0"
-      },
-      "activating" : ["ContinueUpdate2_5"],
-      "onlyWhenExecuted": "false"
-    },
-    {
-      "id": "ContinueUpdate2_5",
-      "execute": "AMAN_Update_mouse_stays",
-      "after": 4000,
-      "priority": 2,
-      "activationKind": "single",
-      "fixedVariables": {
-        "new_landing_sequence": "held_airplanes <<| landing_sequence",
-        "passed_minutes": "0"
-      },
-      "activating" : ["Continue_Update_Pass_Minute2"],
-      "onlyWhenExecuted": "false"
-    },
-    {
-      "id": "Continue_Update_Pass_Minute1",
-      "execute": "AMAN_Update_mouse_to_nothing",
+      "id": "Pass_Time_1",
+      "execute": "skip",
       "after": 4000,
       "priority": 1,
-      "activationKind": "single",
-      "fixedVariables": {
-        "new_landing_sequence": "held_airplanes <<| (landing_sequence; pred) |>> {0}",
-        "passed_minutes": "1"
-      },
-      "activating" : ["ContinueUpdate1_1"],
-      "onlyWhenExecuted": "false"
+      "activating": ["Pass_Time_2", "ContinueUpdate1", "ContinueUpdate2"]
     },
     {
-      "id": "Continue_Update_Pass_Minute2",
-      "execute": "AMAN_Update_mouse_stays",
+      "id": "Pass_Time_2",
+      "execute": "skip",
       "after": 4000,
       "priority": 1,
-      "activationKind": "single",
-      "fixedVariables": {
-        "new_landing_sequence": "held_airplanes <<| (landing_sequence; pred) |>> {0}",
-        "passed_minutes": "1"
-      },
-      "activating" : ["ContinueUpdate2_1"],
-      "onlyWhenExecuted": "false"
+      "activating": ["Pass_Time_3", "ContinueUpdate1", "ContinueUpdate2"]
+    },
+    {
+      "id": "Pass_Time_3",
+      "execute": "skip",
+      "after": 4000,
+      "priority": 1,
+      "activating": ["Pass_Time_4", "ContinueUpdate1", "ContinueUpdate2"]
+    },
+    {
+      "id": "Pass_Time_4",
+      "execute": "skip",
+      "after": 4000,
+      "priority": 1,
+      "activating": ["Pass_Time_5", "ContinueUpdate1", "ContinueUpdate2"]
+    },
+    {
+      "id": "Pass_Time_5",
+      "execute": "skip",
+      "after": 4000,
+      "priority": 1,
+      "activating": ["Pass_Time_1", "ContinueUpdate1", "ContinueUpdate2"],
+      "updating": {
+        "passed_minutes_since_update": "$passed_minutes_since_update + 1"
+      }
     }
   ],
   "listeners": []
