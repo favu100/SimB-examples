@@ -39,8 +39,7 @@
       "symbolicAnimationFormulas": [],
       "testCases": [],
       "traces": [
-        "traces/PitmanController_TIME_v3_Trace7.prob2trace",
-        "traces/PitmanController_TIME_MC_v4_Trace7.prob2trace"
+        "traces/PitmanController_TIME_v3_Trace7.prob2trace"
       ],
       "modelcheckingItems": [
         {
