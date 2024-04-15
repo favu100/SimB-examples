@@ -24,7 +24,11 @@ Interactive simulation examples are available at: https://github.com/favu100/Sim
 
 ## Citation
 
+### SimB Paper
+
 Paper: https://www.researchgate.net/publication/351802078_Validation_of_Formal_Models_by_Timed_Probabilistic_Simulation
+
+Final authenticated version is available online at: https://link.springer.com/chapter/10.1007/978-3-030-77543-8_6
 
 Citation:
 
@@ -39,6 +43,37 @@ Citation:
   Pages = {81--96}
 }
 ```
+
+### Interactive SimB Paper
+
+Paper: https://www.researchgate.net/publication/351802078_Validation_of_Formal_Models_by_Timed_Probabilistic_Simulation
+
+Final authenticated version is available online at: https://link.springer.com/chapter/10.1007/978-3-031-33163-3_5
+
+Citation:
+
+```
+@InProceedings{interactive_simb,
+author="Vu, Fabian
+and Leuschel, Michael",
+editor="Gl{\"a}sser, Uwe
+and Creissac Campos, Jose
+and M{\'e}ry, Dominique
+and Palanque, Philippe",
+title="Validation of Formal Models by Interactive Simulation",
+booktitle="Rigorous State-Based Methods",
+year="2023",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="59--69",
+abstract="Validating requirements for safety-critical systems with user interactions often involves techniques like animation, trace replay, and LTL model checking. However, animation and trace replay can be challenging since user and system events are not distinguished, and formulating LTL properties requires expertise.",
+isbn="978-3-031-33163-3"
+}
+
+
+```
+
+
 
 ## Application of Statistical Validation Techniques
 
