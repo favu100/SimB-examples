@@ -46,7 +46,7 @@ Citation:
 
 ### Interactive SimB Paper
 
-Paper: https://www.researchgate.net/publication/351802078_Validation_of_Formal_Models_by_Timed_Probabilistic_Simulation
+Paper: https://www.researchgate.net/publication/370786179_Validation_of_Formal_Models_by_Interactive_Simulation
 
 Final authenticated version is available online at: https://link.springer.com/chapter/10.1007/978-3-031-33163-3_5
 
