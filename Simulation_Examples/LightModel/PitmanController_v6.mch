@@ -1,3 +1,6 @@
+/*
+From Michael Leuschel, Mareike Mutz, Michelle Werth. Modelling and Validating an Automotive System in Classical B and Event-B. Proceedings ABZ 2020
+*/
 MACHINE PitmanController_v6
 INCLUDES BlinkLamps_v3, Sensors
 /*
@@ -75,6 +78,7 @@ OPERATIONS
  // corresponds to pitmanArmUpDown = 2 or 4 (Upward/Downward7)
  // ELS-1, ELS-5
  PRE newPos /= pitmanArmUpDown THEN
+
     IF hazardWarningSwitchOn = switch_off & engineOn = TRUE THEN
 		SET_BlinkersOn(pitman_direction(newPos),continuousBlink)
     END

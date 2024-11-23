@@ -1,3 +1,6 @@
+/*
+From Michael Leuschel, Mareike Mutz, Michelle Werth. Modelling and Validating an Automotive System in Classical B and Event-B. Proceedings ABZ 2020
+*/
 MACHINE PitmanController_TIME_MC_v4
 // v2: uses GenericTimer machine
 SETS

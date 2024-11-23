@@ -1,3 +1,6 @@
+/*
+From Michael Leuschel, Mareike Mutz, Michelle Werth. Modelling and Validating an Automotive System in Classical B and Event-B. Proceedings ABZ 2020
+*/
 MACHINE BlinkLamps_v3
 // Manage Blinking Lights Actuators (blinkLeft, blinkRight)
 // and manage timing cycles
