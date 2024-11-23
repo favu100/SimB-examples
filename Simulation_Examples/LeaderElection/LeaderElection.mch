@@ -1,3 +1,7 @@
+/*
+From Thai Son Hoang. Reasoning about almost-certain convergence properties using Event-B. Proceedings AVoCS 2014
+*/
+
 MACHINE LeaderElection
 
 SETS Nodes

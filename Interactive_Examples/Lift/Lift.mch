@@ -2,6 +2,9 @@ MACHINE Lift
 /* A simple model of a lift without a controller; The controller
    will be added in a refinement (by refining the lift moving operations) or
    by a CSP controller */
+/*
+Taken from ProB Examples
+*/
 DEFINITIONS
   FLOORS == (groundf .. topf);
   all_buttons_pressed == (inside_buttons \/ call_buttons);

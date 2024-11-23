@@ -1,3 +1,9 @@
+/*
+Abstract version of dueling cowboys based on
+Thai Son Hoang. Reasoning about almost-certain convergence properties using Event-B. Proceedings AVoCS 2014
+*/
+
+
 MACHINE AbstractDuellingCowboys
 
 VARIABLES numberAliveCowboys
