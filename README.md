@@ -135,3 +135,27 @@ ProB2-UI and SimB examples were used in the Git versions 1.2.0-SNAPSHOT (8a1c793
 | M9_Push_Mouse_Buttons_vis.bum +                      | Blocking 3 Time Slots (1 Minute) |                                             | 9           | 6                | 15    |
 | AMAN_sim_interactive.json)                           | Holding Airplane (1 Minute)      |                                             | 6           | 6                | 12    |
 |                                                      | Do Nothing (3 Minutes)           | AMAN_Simulation_Do_Nothing.json             | 0           | 18               | 18    |
+
+
+## Information about Formal Models
+- AMAN: Arrival Manager is an air traffic control system modeled in 
+  - D. Geleßus, S. Stock, F. Vu, M. Leuschel, and A. Mashkoor. Modeling and Analysis of a Safety-critical Interactive System through Validation Obligations. In Proceedings ABZ, LNCS 14010, pages 284–302. Springer, 2023.
+  - Requirements specification provided in P. Palanque and J. C. Campos. AMAN case study. In Proeedings ABZ, LNCS 14010, pages 265–283. Springer, 2023.
+- Landing Gear System modeled in
+  - L. Ladenberger, D. Hansen, H. Wiegard, J. Bendisposto, and M. Leuschel. Validation of the ABZ landing gear system using ProB. In Int. J. Softw. Tools Technol. Transf., 19(2):187–203, Apr. 2017.
+  - Requirements specification provided in F. Boniol and V. Wiels. The landing gear system case study. In ABZ 2014: The Landing Gear Case Study, CCIS 433, pages 1–18, 2014.
+- Exterior Light System presented in
+  - M. Leuschel, M. Mutz, and M. Werth. Modelling and Validating an Automotive System in Classical B and Event-B. In Proceedings ABZ, LNCS 12071, pages 335–350, 2020.
+  - Requirements specification provided in F. Houdek and A. Raschke. Adaptive Exterior Light and Speed Control System. In Proceedings ABZ, LNCS 12071, pages 281–301, 2020.
+- Lift:
+  - From ProB Examples
+- Dueling Cowboys modeled in
+  - Thai Son Hoang. Reasoning about almost-certain convergence properties using Event-B. Proceedings AVoCS 2014
+- Leader Election modeled in 
+  - Thai Son Hoang. Reasoning about almost-certain convergence properties using Event-B. Proceedings AVoCS 2014
+- Train modeled in 
+  - J.-R. Abrial. Modeling in Event-B: System and Software Engineering. Cambridge University Press, 2010.
+  - Also used in M. Leuschel, J. Bendisposto, and D. Hansen. Unlocking the Mysteries of a Formal Model of an Interlocking System. Proceedings Rodin Workshop, 2014.
+- Moving Particles:
+  - Modeled by Michael Leuschel
+  - From ProB Examples
