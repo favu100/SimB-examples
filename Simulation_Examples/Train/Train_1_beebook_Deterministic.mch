@@ -1,5 +1,6 @@
 /*
-Model from ProB examples
+From J.-R. Abrial. Modeling in Event-B: System and Software Engineering. Cambridge University Press, 2010.
+Also used in M. Leuschel, J. Bendisposto, and D. Hansen. Unlocking the Mysteries of a Formal Model of an Interlocking System. Proceedings Rodin Workshop, 2014.
 */
 MACHINE Train_1_beebook_Deterministic
 SETS /* enumerated */
