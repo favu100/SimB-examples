@@ -154,8 +154,10 @@ ProB2-UI and SimB examples were used in the Git versions 1.2.0-SNAPSHOT (8a1c793
 - Leader Election modeled in 
   - Thai Son Hoang. Reasoning about almost-certain convergence properties using Event-B. Proceedings AVoCS 2014
 - Train modeled in 
-  - J.-R. Abrial. Modeling in Event-B: System and Software Engineering. Cambridge University Press, 2010.
+  - J.-R. Abrial. Modeling in Event-B: System and Software Engineering. pages 508-549, Cambridge University Press, 2010.
   - Also used in M. Leuschel, J. Bendisposto, and D. Hansen. Unlocking the Mysteries of a Formal Model of an Interlocking System. Proceedings Rodin Workshop, 2014.
 - Moving Particles:
   - Modeled by Michael Leuschel
   - From ProB Examples
+- Bridge modeled
+  - J.-R. Abrial. Modeling in Event-B: System and Software Engineering. pages 24-99, Cambridge University Press, 2010.
