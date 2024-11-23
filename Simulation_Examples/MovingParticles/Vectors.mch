@@ -1,3 +1,6 @@
+/*
+Model from ProB examples
+*/
 MACHINE Vectors
 DEFINITIONS
   "LibraryReals.def"

@@ -1,3 +1,6 @@
+/*
+Model from ProB examples
+*/
 MACHINE Train_1_beebook_Deterministic
 SETS /* enumerated */
   BLOCKS={A,B,C,D,E,F,G,H,I,J,K,L,M,N};

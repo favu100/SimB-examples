@@ -1,3 +1,6 @@
+/*
+Model from ProB examples
+*/
 MACHINE VectorsAsPairs2 // an optimized instance of Vectors for n=2 with a pair representation
 DEFINITIONS
   "LibraryReals.def";

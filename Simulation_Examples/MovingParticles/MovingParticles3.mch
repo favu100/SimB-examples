@@ -1,3 +1,6 @@
+/*
+Model from ProB examples
+*/
 MACHINE MovingParticles3
 // Encoding of an n-body problem in B using the REAL datatype
 INCLUDES MovingParticles PROMOTES Move

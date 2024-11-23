@@ -1,3 +1,6 @@
+/*
+Model from ProB examples
+*/
 MACHINE Vectors2 // an optimized instance of Vectors for n=2
 DEFINITIONS
   "LibraryReals.def"

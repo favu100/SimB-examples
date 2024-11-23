@@ -1,3 +1,6 @@
+/*
+Model from ProB examples
+*/
 MACHINE MovingParticles
 // Encoding of an n-body problem in B using the REAL datatype
 INCLUDES Vectors2 //VectorsAsPairs2 faster; but VisB file needs to be adapted
