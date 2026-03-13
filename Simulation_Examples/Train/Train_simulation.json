@@ -13,14 +13,14 @@
             "id": "route_reservation_activation",
             "execute": "route_reservation",
             "after": 0,
-            "probabilisticVariables": "uniform",
+            "transitionSelection": "uniform",
             "activating" : "point_positionning_activation"
         },
         {
             "id": "route_reservation_activation2",
             "execute": "route_reservation",
             "after": 5000,
-            "probabilisticVariables": "uniform",
+            "transitionSelection": "uniform",
             "activating" : "point_positionning_activation"
         },
         {

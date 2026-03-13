@@ -9,7 +9,7 @@
             "id": "roll",
             "execute": "roll",
             "after": 500,
-            "probabilisticVariables": "uniform",
+            "transitionSelection": "uniform",
             "activating": "roll"
         }
     ]
