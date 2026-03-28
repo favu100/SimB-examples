@@ -1,5 +1,5 @@
 OPTS = -model-check -disable-time-out -p MAX_INITIALISATIONS 100000 -p MAX_OPERATIONS 10000
-
+PROBCLI = /Users/leuschel/git_root/prob_prolog/probcli
 classic:
 	probcli $(OPTS) BlinkLamps_v3.mch -coverage
 	probcli $(OPTS) PitmanController_v6.mch -coverage
@@ -11,3 +11,6 @@ eventb:
 minmax:
 	probcli $(OPTS) PitmanController_TIME_MC_v4.mch -get_min_max_coverage minmax_classic.txt
 	probcli $(OPTS) Rodin/v4/PitmanController2_TIME_MC_mch.eventb -get_min_max_coverage minmax_eventb.txt
+
+mc:
+	$(PROBCLI) PitmanController_TIME_v4.mch -mc_simulate Simulation/PitmanController_v4_simulation.json 100 1000 -simb-profile -silent

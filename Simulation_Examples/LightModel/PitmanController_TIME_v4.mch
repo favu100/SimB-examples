@@ -14,7 +14,7 @@ PROMOTES
   ENV_Pitman_Reset_to_Neutral,
   ENV_Hazard_blinking
 DEFINITIONS
- 
+  SIMB_JSON_FILE == "Simulation/PitmanController_v4_simulation.json";
   ASSERT_LTL1 == "G not(deadlock(ENV_Turn_EngineOn,ENV_Turn_EngineOff))";
   ASSERT_LTL2 == "G not(deadlock(RTIME_BlinkerOn, RTIME_BlinkerOff, RTIME_Nothing,RTIME_Tip_blinking_Timeout))";
   ASSERT_LTL3 == "G controller(ENV_Turn_EngineOn, ENV_Turn_EngineOff)";

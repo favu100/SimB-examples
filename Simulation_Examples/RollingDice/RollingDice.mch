@@ -1,4 +1,5 @@
 MACHINE RollingDice
+DEFINITIONS SIMB_JSON_FILE == "RollingDice_simulation.json"
 
 VARIABLES lastNumber
 

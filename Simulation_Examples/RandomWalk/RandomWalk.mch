@@ -1,5 +1,7 @@
 MACHINE RandomWalk
 
+DEFINITIONS SIMB_JSON_FILE == "RandomWalk_simulation.json"
+
 VARIABLES position
 
 INVARIANT position : INTEGER

@@ -1,4 +1,5 @@
 MACHINE SimpleClock
+DEFINITIONS SIMB_JSON_FILE == "SimpleClock_simulation.json"
 VARIABLES c1, c2
 INVARIANT c1 : INTEGER & c2 : INTEGER
 INITIALISATION c1 := 0 || c2 := 0
